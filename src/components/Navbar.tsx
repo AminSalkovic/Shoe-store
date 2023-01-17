@@ -3,15 +3,20 @@ import { Container,Navbar as NavbarBs ,Nav,Button} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import * as AiIcons from 'react-icons/ai'
 import { useShoppingCart } from '../context/ShoppingCartContext'
+import MenDropdown from './pages/men/MenDropdown'
 
 const Navbar = () => {
 
-    const{openShoppingCart}=useShoppingCart()
+    const{openShoppingCart,openMenDropdown,closeMenDropdown}=useShoppingCart()
   return (
+    <>
     <NavbarBs variant='dark' sticky='top' className='bg-dark shadow-sm mb-3'>
     <Container>
        <Nav className='me-auto'>
-            <Nav.Link to='/Muskarci' as={NavLink}>
+            <Nav.Link to='/Muskarci' as={NavLink}
+             onMouseEnter={openMenDropdown}
+             onClick={closeMenDropdown}
+            >
                 MUSKARCI
             </Nav.Link>
             <Nav.Link to='/Deca' as={NavLink}>
@@ -31,7 +36,7 @@ const Navbar = () => {
             </Nav.Link>
        </Nav>
        <Button  onClick={openShoppingCart} variant='secondary' style={{width:'3rem',height:"3rem",position:'relative'}} >
-          <AiIcons.AiOutlineShoppingCart/>
+           <AiIcons.AiOutlineShoppingCart/>
              <Container className="rounded-circle bg-danger d-flex align-items-center justify-content-center"
              style={{
                  position:"absolute",
@@ -45,6 +50,7 @@ const Navbar = () => {
         </Button>
     </Container>
 </NavbarBs>
+</>
 )
 }
 

@@ -1,11 +1,15 @@
-
-import CarouselImage from './carousel/CarouselImage'
+import { Container } from "react-bootstrap"
 
 
 const Home = () => {
   return (
     <>
-    <CarouselImage/>
+      <Container>
+          <div style={{border:'2px solid green'}}>
+             <h1 style={{textAlign:'center',color:'green'}}>MUSKARCI</h1>
+          </div>
+
+      </Container>
     </>
   )
 }

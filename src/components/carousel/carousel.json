@@ -1,11 +1,11 @@
 [
     {   
          "id":1,
-        "imgUrl":"/imgs/bike1.jpg"
+        "imgUrl":"/img/carousel1.jpg"
     },
     {   
         "id":2,
-       "imgUrl":"/imgs/bike2.jpg"
+       "imgUrl":"/img/carousel2.jpg"
    },
    {   
          "id":3,
