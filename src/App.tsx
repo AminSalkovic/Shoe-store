@@ -1,7 +1,8 @@
-
+import { Routes,Route } from 'react-router-dom'
 import { ShoppingCartProvider } from './context/ShoppingCartContext'
 import Navbar from './components/Navbar'
-import MobileDropdown from './components/MobileDropdown'
+import MainNavbar from './components/MainNavbar'
+import Home from './components/Home'
 
 function App() {
   
@@ -10,7 +11,11 @@ function App() {
   return (
 
    <ShoppingCartProvider>
+    <MainNavbar/>
      <Navbar/>
+     <Routes>
+      <Route path='/' element={<Home/>}/>
+     </Routes>
    </ShoppingCartProvider>
   )
 }

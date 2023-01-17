@@ -6,7 +6,7 @@ import { useShoppingCart } from '../context/ShoppingCartContext'
 
 const Navbar = () => {
 
-    const{openShoppingCart,openMobileDropdown}=useShoppingCart()
+    const{openShoppingCart}=useShoppingCart()
   return (
     <NavbarBs variant='dark' sticky='top' className='bg-dark shadow-sm mb-3'>
     <Container>
@@ -43,9 +43,6 @@ const Navbar = () => {
                  >
              </Container>
         </Button>
-        <div>
-            <AiIcons.AiOutlineMenu onClick={openMobileDropdown} style={{color:'white'}}/>
-        </div>
     </Container>
 </NavbarBs>
 )
