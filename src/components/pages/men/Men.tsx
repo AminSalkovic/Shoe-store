@@ -1,15 +1,17 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Row,Container,Col } from 'react-bootstrap'
 import CategoryItems from '../../CategoryItems'
 import categoryItems from './categoryMen.json'
 import articles from '../../articles.json'
 import ArticleCard from '../../ArticleCard'
 import Pagination from '../../Pagination'
+import './Men.css'
 
 const Men = () => {
      
     const[currentPage,setCurrentPage]=useState(1)
-    const [postPerPage,setPostPerPage]=useState(6);
+    const [postPerPage,setPostPerPage]=useState(20);
 
     const lastPostIndex=currentPage*postPerPage;
     const firstPostindex=lastPostIndex-postPerPage;
@@ -18,15 +20,19 @@ const Men = () => {
   return (
     <Container>
       <div style={{display:'flex'}}>
-        <div style={{width:'300px'}}>
-            <ul>
-                 <h1>kategorija</h1>
-                 {categoryItems.map((el)=>{
-                   return(
-                    <li>{el.category}</li>
-                   )
-                 })}
-            </ul>
+        <div className='div-part-1'>
+                <h1>kategorija</h1>
+              <div className='scroll-div-men'>
+                  <ul>
+                      {categoryItems.map((el)=>{
+                        return(
+                           <Link to={el.imgPath}>
+                              <li>{el.category}({el.count})</li>
+                           </Link>
+                          )
+                          })}
+                  </ul>
+                </div>
         </div>
         <Container>
             <Container>

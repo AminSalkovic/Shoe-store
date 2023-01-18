@@ -1,5 +1,9 @@
-import {Offcanvas} from 'react-bootstrap'
+import {Offcanvas,Stack} from 'react-bootstrap'
 import { useShoppingCart } from '../context/ShoppingCartContext'
+import { formatCurrency } from './utilities/formatCurrency'
+import articleItems from './articles.json'
+import CartItem from './CartItem'
+
 
 type ShoppingCartProps={
     isOpenCart:boolean
@@ -7,7 +11,7 @@ type ShoppingCartProps={
 
 const ShoppingCart = ({isOpenCart}:ShoppingCartProps) => {
      
-    const{closeShoppingCart}=useShoppingCart()
+    const{closeShoppingCart,cartItems}=useShoppingCart()
 
   return (
     <Offcanvas show={isOpenCart}  onHide={closeShoppingCart} placement='end'>
@@ -15,7 +19,19 @@ const ShoppingCart = ({isOpenCart}:ShoppingCartProps) => {
           <Offcanvas.Title>cart</Offcanvas.Title>
     </Offcanvas.Header>
     <Offcanvas.Body>
-        AMIN
+    <Stack gap={3}>
+            {cartItems.map((item)=>
+              <CartItem key={item.id} {...item}/>
+            )}      
+        </Stack>
+        <div className='ms-auto fw-bold fs-5'>
+                    Total{' '}{formatCurrency(
+                        cartItems.reduce((total,cartItem)=>{
+                            const item=articleItems.find(i=> i.id === cartItem.id)
+                            return total + (item?.price || 0) * cartItem.quantity
+                        },0)
+                    )}
+                </div>
     </Offcanvas.Body>
 </Offcanvas>
   )

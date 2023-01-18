@@ -6,7 +6,7 @@ import { useShoppingCart } from '../context/ShoppingCartContext'
 
 const Navbar = () => {
 
-    const{openShoppingCart,openMenDropdown,closeMenDropdown}=useShoppingCart()
+    const{openShoppingCart,openMenDropdown,closeMenDropdown,cartQuantity}=useShoppingCart()
   return (
     <>
     <NavbarBs variant='dark' sticky='top' className='bg-dark shadow-sm mb-3'>
@@ -14,7 +14,7 @@ const Navbar = () => {
        <Nav className='me-auto'>
             <Nav.Link to='/Muskarci' as={NavLink}
              onMouseEnter={openMenDropdown}
-             onClick={closeMenDropdown}
+             onMouseLeave={closeMenDropdown}
             >
                 MUSKARCI
             </Nav.Link>
@@ -45,6 +45,7 @@ const Navbar = () => {
                  height:'1.5rem',
                  transform:'translate(25%,25%)'}}
                  >
+                    {cartQuantity}
              </Container>
         </Button>
     </Container>

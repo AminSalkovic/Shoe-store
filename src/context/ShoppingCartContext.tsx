@@ -7,6 +7,11 @@ type ShoppingCartProviderProps={
    children:ReactNode
 }
 
+type CartItem={
+  id:number
+  quantity:number
+}
+
 type ShoppingCartContext={
   openShoppingCart:()=>void
   closeShoppingCart:()=>void
@@ -14,7 +19,14 @@ type ShoppingCartContext={
   closeMobileDropdown:()=>void
   openMenDropdown:()=>void
   closeMenDropdown:()=>void
+  cartItems:CartItem[],
+  getItemQuantity:(id:number)=>void,
+  removeFromCart:(id:number)=>void,
+  increaseCartQuantity:(id:number)=>void
+  cartQuantity:number
 }
+
+
 
 const ShoppingCartContext=createContext({} as ShoppingCartContext)
 
@@ -24,6 +36,8 @@ export function useShoppingCart(){
 
 export function ShoppingCartProvider({children}:ShoppingCartProviderProps){
      
+  const [cartItems,setCartItems]=useState<CartItem[]>([])
+
    const[isOpenCart,setIsOpenCart]=useState(false);
    const[isOpenMobileDropdown,setIsOpenMobileDropdown]=useState(false);
    const[isOpenMenDropdown,setIsOpenMenDropdown]=useState(false);
@@ -35,11 +49,41 @@ export function ShoppingCartProvider({children}:ShoppingCartProviderProps){
    const closeMobileDropdown=()=>setIsOpenMobileDropdown(false);
    const openMenDropdown=()=>setIsOpenMenDropdown(true);
    const closeMenDropdown=()=>setIsOpenMenDropdown(false);
+  
+   const cartQuantity=cartItems.reduce((quantity,item)=>item.quantity + quantity,0)
+
+   function getItemQuantity(id:number){
+       return cartItems.find((item  => item.id === id))?.quantity || 0
+     }
+
+   function increaseCartQuantity(id:number){
+    setCartItems(currItems => {
+     if(currItems.find(item => item.id === id)==null){
+       return [...currItems,{id,quantity:1}]
+     }else{
+       return currItems.map(item=>{
+         if(item.id===id){
+           return {...item,quantity:item.quantity+1}
+         }else{
+           return item
+         }
+       })
+     }
+    })
+ }
+ function removeFromCart(id:number){
+  setCartItems(currItems =>{
+     return currItems.filter(item=>item.id !== id)
+  })
+}
+
 
 
     return(
        <ShoppingCartContext.Provider value={{openShoppingCart,closeShoppingCart,openMobileDropdown,
-       closeMobileDropdown,openMenDropdown,closeMenDropdown}}> 
+       closeMobileDropdown,openMenDropdown,closeMenDropdown,cartItems,cartQuantity,
+       removeFromCart,
+       increaseCartQuantity,getItemQuantity}}> 
          {children}
          <ShoppingCart isOpenCart={isOpenCart}/>
          <MobileDropdown isOpenMobileDropdown={isOpenMobileDropdown}/>

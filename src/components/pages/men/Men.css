@@ -1,0 +1,22 @@
+.div-part-1{
+    width: 300px;
+}
+.scroll-div-men{
+    max-width: 200px;
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top:0.2px solid gray;
+    border-bottom:0.2px solid gray;
+}
+.scroll-div-men ul  {
+    list-style: none;
+    cursor: pointer;
+}
+.scroll-div-men a{
+    text-decoration: none;
+    color: gray;
+}
+.scroll-div-men li:hover{
+    background-color: aliceblue;
+}
