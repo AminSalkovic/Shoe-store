@@ -1,5 +1,3 @@
-
-
 import { Button, Card, Container,} from "react-bootstrap"
 import { Link } from "react-router-dom"
 
@@ -24,7 +22,7 @@ const CategoryItems = ({imgUrl,category,imgPath}:CategoryItemsProps) => {
         </Card>
             <Card.Body className='d-flex flex-column'>
                 <Card.Title className='d-flex justify-content-space-between align-items-baseline mb-4'>
-                    <h1 style={{color:'gray',fontSize:'23px',marginTop:'2px'}}>{category}</h1>
+                    <h1 style={{color:'gray',fontSize:'23px',marginTop:'2px'}}>{category.toLocaleUpperCase()}</h1>
                 </Card.Title>
             </Card.Body>
         </Link>

@@ -1,9 +1,8 @@
-import React from 'react'
 import { Container,Navbar as NavbarBs ,Nav,Button} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import * as AiIcons from 'react-icons/ai'
 import { useShoppingCart } from '../context/ShoppingCartContext'
-import MenDropdown from './pages/men/MenDropdown'
+
 
 const Navbar = () => {
 

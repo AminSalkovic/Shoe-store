@@ -28,6 +28,7 @@ export function ShoppingCartProvider({children}:ShoppingCartProviderProps){
    const[isOpenMobileDropdown,setIsOpenMobileDropdown]=useState(false);
    const[isOpenMenDropdown,setIsOpenMenDropdown]=useState(false);
 
+
    const openShoppingCart=()=> setIsOpenCart(true);
    const closeShoppingCart=()=>setIsOpenCart(false);
    const openMobileDropdown=()=>setIsOpenMobileDropdown(true);
