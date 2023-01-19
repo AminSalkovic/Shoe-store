@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Route,Routes } from 'react-router-dom'
 import { Row,Container,Col } from 'react-bootstrap'
 import CategoryItems from '../../CategoryItems'
 import categoryItems from './categoryMen.json'
@@ -8,14 +8,20 @@ import ArticleCard from '../../ArticleCard'
 import Pagination from '../../Pagination'
 import './Men.css'
 
+
+
 const Men = () => {
      
     const[currentPage,setCurrentPage]=useState(1)
-    const [postPerPage,setPostPerPage]=useState(20);
+    const [postPerPage,setPostPerPage]=useState(15);
 
     const lastPostIndex=currentPage*postPerPage;
     const firstPostindex=lastPostIndex-postPerPage;
     const currentPost=articles.slice(firstPostindex,lastPostIndex)
+
+    const[number,setNumber]=useState(0);
+    const [number2,setNumber2]=useState(0)
+    
 
   return (
     <Container>
@@ -24,11 +30,12 @@ const Men = () => {
                 <h1>kategorija</h1>
               <div className='scroll-div-men'>
                   <ul>
-                      {categoryItems.map((el)=>{
+                      {categoryItems.map((el,index)=>{
                         return(
-                           <Link to={el.imgPath}>
-                              <li>{el.category}({el.count})</li>
-                           </Link>
+                              <li key={index} onClick={()=>{
+                                setNumber(el.num)
+                                setNumber2(el.amin)
+                              }}>{el.category}({el.count})</li>
                           )
                           })}
                   </ul>
@@ -40,7 +47,7 @@ const Men = () => {
                 {categoryItems.map((item)=>{
                   if(item.id<4){
                     return(
-                                <Col key={item.id}>
+                                <Col  key={item.id}>
                                     <CategoryItems {...item}/>
                                  </Col> 
                             )
@@ -48,7 +55,10 @@ const Men = () => {
                         })}
                 </Row>
             </Container>
-            <Container>
+          <Container>
+            <button onClick={()=>{setNumber(0)
+              setNumber2(10)
+            }}>Svi proizvodi</button>
               <Pagination 
               setCurrentPages={setCurrentPage}
               totalPost={articles.length} 
@@ -56,16 +66,20 @@ const Men = () => {
                currentPage={currentPage}
               />
             <Row md={2} xs={1} lg={3} className='g-3'>
-                  {currentPost.map((item,id)=>{
-                    return(
-                      <Col key={id}>
-                         <ArticleCard {...item}/>
-                      </Col> 
-                    )
+                  {currentPost.map((item,index)=>{
+                     if(item.id<number && item.id>number2){
+                      return(
+                          <Col key={index}>
+                             <ArticleCard {...item}/>
+                          </Col> 
+                      )
+                     }
+                     
+                    
                   })}
                 </Row>
             </Container>
-          </Container>
+        </Container>
        </div>
     </Container>
   )
