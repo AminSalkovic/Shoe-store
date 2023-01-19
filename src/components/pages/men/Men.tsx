@@ -57,7 +57,7 @@ const Men = () => {
             </Container>
           <Container>
             <button onClick={()=>{setNumber(0)
-              setNumber2(10)
+              setNumber2(0)
             }}>Svi proizvodi</button>
               <Pagination 
               setCurrentPages={setCurrentPage}
@@ -73,9 +73,13 @@ const Men = () => {
                              <ArticleCard {...item}/>
                           </Col> 
                       )
+                     }else if(number===0 ){
+                      return(
+                        <Col key={index}>
+                           <ArticleCard {...item}/>
+                        </Col> 
+                    )
                      }
-                     
-                    
                   })}
                 </Row>
             </Container>

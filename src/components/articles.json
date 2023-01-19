@@ -1,62 +1,94 @@
 [
     {
         "id":1,
-         "category":"MODNE PATIKE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0oWxz_WbgXyF5C6iio_aaJUfNrl9fJHOFFA&usqp=CAU",
+        "category":"MODNE PATIKE",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0oWxz_WbgXyF5C6iio_aaJUfNrl9fJHOFFA&usqp=CAU",
          "imgPath":"/muskarci/modne-patike",
          "brend":"Skechers",
          "name":"Patike",
          "password":1234343,
          "price":5990
-    },
-    {
-        "id":2,
-        "category":"cipele",
-        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwx18PtMqdTTVZnvwOLu3BNL6_IdyOe1uLYg&usqp=CAU",
-         "imgPath":"/modne-patike",
-         "brend":"Skechers",
-         "name":"Patike",
-         "password":1234343,
-         "price":6300
-         }, {
-         "id":4,
-          "category":"MODNE PATIKE",
-         "imgUrl":"data:image/jpeg;base64,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",
-         "imgPath":"/modne-patike",
-         "brend":"Adidas",
-         "name":"Patike",
-         "password":1234343,
-         "price":7990
-         }, {
-        "id":5,
-         "category":"MODNE PATIKE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7LRKXZ6Gy2i7EriwjhuHAuFDXc7yCNwdCHw&usqp=CAU",
-         "imgPath":"/modne-patike",
-         "brend":"Adidas",
-         "name":"Patike",
-         "password":1234343,
-         "price":10800
-         }, {
-          "id":6,
-          "category":"MODNE PATIKE",
-          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2SrFgelJWYWhi6k7-wutcm-vLPQ4HJkhrEg&usqp=CAU",
-         "imgPath":"/modne-patike",
-         "brend":"Adidas",
-         "name":"Patike",
-         "password":1234343,
-         "price":7990
+        },
+        {
+            "id":20,
+            "category":"MODNE PATIKE",
+            "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbqMBgJQQ95CmxqXX95NQ5xbDwHUBlAgJWQg&usqp=CAU",
+            "imgPath":"/modne-patike",
+            "brend":"Kappa",
+            "name":"Patike",
+            "password":1234343,
+            "price":8000
+        },
+        {
+         "id":22,
+          "category":"ČIZME&GLEŽNJAČE",
+          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZrJyU8vjFnAkRuC2xFfnaLiTq8VkwGsXGA&usqp=CAU",
+          "imgPath":"/modne-patike",
+          "brend":"Nike",
+          "name":"Čizme ",
+          "password":1234343,
+          "price":11000
+         },
+        {
+            "id":2,
+            "category":"cipele",
+            "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwx18PtMqdTTVZnvwOLu3BNL6_IdyOe1uLYg&usqp=CAU",
+             "imgPath":"/modne-patike",
+             "brend":"Skechers",
+             "name":"Patike",
+             "password":1234343,
+             "price":6300
+             }, {
+    "id":4,
+    "category":"MODNE PATIKE",
+    "imgUrl":"data:image/jpeg;base64,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",
+    "imgPath":"/modne-patike",
+    "brend":"Adidas",
+    "name":"Patike",
+    "password":1234343,
+    "price":7990
     }, {
+        "id":5,
+        "category":"MODNE PATIKE",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7LRKXZ6Gy2i7EriwjhuHAuFDXc7yCNwdCHw&usqp=CAU",
+        "imgPath":"/modne-patike",
+        "brend":"Adidas",
+        "name":"Patike",
+        "password":1234343,
+        "price":10800
+    }, 
+    {
+        "id":6,
+                "category":"MODNE PATIKE",
+                "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2SrFgelJWYWhi6k7-wutcm-vLPQ4HJkhrEg&usqp=CAU",
+                "imgPath":"/modne-patike",
+                "brend":"Adidas",
+                "name":"Patike",
+                "password":1234343,
+                "price":7990
+            },
+            {
         "id":7,
-         "category":"cipele",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMlmDu7g8EyLtVpqxL9aPVaE8FvYvW_-1daQ&usqp=CAU",
-         "imgPath":"/modne-patike",
+        "category":"cipele",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMlmDu7g8EyLtVpqxL9aPVaE8FvYvW_-1daQ&usqp=CAU",
+        "imgPath":"/modne-patike",
          "brend":"Adidas",
          "name":"Patike",
          "password":1234343,
          "price":9300
-    },
-    {
-        "id":8,
+        },
+        {
+            "id":23,
+            "category":"ČIZME&GLEŽNJAČE",
+            "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfLP_cSoDM0WfSIVfzWnU2ZRVej1VNjNEYOA&usqp=CAU",
+            "imgPath":"/modne-patike",
+            "brend":"Puma",
+            "name":"Čizme ",
+            "password":1234343,
+            "price":10300
+        },
+            {
+                "id":8,
         "category":"MODNE PATIKE",
         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnBjuXhijiKITAAGkKl6DE8yuF8GZ5127AQ&usqp=CAU",
          "imgPath":"/modne-patike",
@@ -64,21 +96,21 @@
          "name":"Patike",
          "password":1234343,
          "price":8700
-    },{
-        "id":9,
-         "category":"MODNE PATIKE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgYa8Dun9tKb0Hh_kKq3p_u1KlG35idVQCw&usqp=CAU",
-         "imgPath":"/muskarci/modne-patike",
-         "brend":"Fila",
-         "name":"Patike",
-         "password":1234343,
-         "price":7500
          },{
-         "id":10,
-         "category":"MODNE PATIKE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdzPemKRpBXPbdc6EtSDgQ1uhOhDKVySZwg&usqp=CAU",
-         "imgPath":"/modne-patike",
-         "brend":"Fila",
+             "id":9,
+             "category":"MODNE PATIKE",
+             "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgYa8Dun9tKb0Hh_kKq3p_u1KlG35idVQCw&usqp=CAU",
+             "imgPath":"/muskarci/modne-patike",
+             "brend":"Fila",
+             "name":"Patike",
+             "password":1234343,
+             "price":7500
+             },{
+                 "id":10,
+                 "category":"MODNE PATIKE",
+                 "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdzPemKRpBXPbdc6EtSDgQ1uhOhDKVySZwg&usqp=CAU",
+                 "imgPath":"/modne-patike",
+                 "brend":"Fila",
          "name":"Patike",
          "password":1234343,
          "price":8600
@@ -93,7 +125,7 @@
          "price":8800
          }, {
              "id":3,
-              "category":"MODNE PATIKE",
+             "category":"MODNE PATIKE",
               "imgUrl":"https://www.n-sport.net/UserFiles/products/medium/03/02/muske-patike-skechers-verse-58350-CCOR.jpg",
               "imgPath":"/modne-patike",
               "brend":"Skechers",
@@ -103,48 +135,48 @@
         },
         {
             "id":12,
-             "category":"MODNE PATIKE",
-             "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSj4wgULo1qglpmQTN8uGfxTNaG0p5JwfbxQ&usqp=CAU",
-             "imgPath":"/modne-patike",
-             "brend":"Puma",
-             "name":"Patike",
-             "password":1234343,
-             "price":10900
-       },
-       {
-        "id":13,
-         "category":"MODNE PATIKE",
+            "category":"MODNE PATIKE",
+            "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSj4wgULo1qglpmQTN8uGfxTNaG0p5JwfbxQ&usqp=CAU",
+            "imgPath":"/modne-patike",
+            "brend":"Puma",
+            "name":"Patike",
+            "password":1234343,
+            "price":10900
+        },
+        {
+            "id":13,
+            "category":"MODNE PATIKE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcqkOnB9cFq7KZLXSHHzLqE7VCBkv_MubLRQ&usqp=CAU",
          "imgPath":"/modne-patike",
          "brend":"Puma",
          "name":"Patike",
          "password":1234343,
          "price":8200
-      },
-      {
-        "id":14,
-         "category":"MODNE PATIKE",
+        },
+        {
+            "id":14,
+            "category":"MODNE PATIKE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmb8UbqFRw4pYaW8DDf9lb7fU5oj_vDqnokA&usqp=CAU",
          "imgPath":"/modne-patike",
          "brend":"Rebook",
          "name":"Patike",
          "password":1234343,
          "price":5690
-       },
-       {
-        "id":15,
-         "category":"MODNE PATIKE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTaN4R056U0-nwC9u5LrIPoaifGW-F833TrQ&usqp=CAU",
-         "imgPath":"/modne-patike",
-         "brend":"Rebook",
-         "name":"Patike",
-         "password":1234343,
-         "price":7000
-       },
-       {
-        "id":16,
-         "category":"MODNE PATIKE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_I4mNWJj7DZop1zuCIdHoarLpyR0ELKER-g&usqp=CAU",
+        },
+        {
+            "id":15,
+            "category":"MODNE PATIKE",
+            "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTaN4R056U0-nwC9u5LrIPoaifGW-F833TrQ&usqp=CAU",
+            "imgPath":"/modne-patike",
+            "brend":"Rebook",
+            "name":"Patike",
+            "password":1234343,
+            "price":7000
+        },
+        {
+            "id":16,
+            "category":"MODNE PATIKE",
+            "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_I4mNWJj7DZop1zuCIdHoarLpyR0ELKER-g&usqp=CAU",
          "imgPath":"/modne-patike",
          "brend":"Rebook",
          "name":"Patike",
@@ -152,7 +184,7 @@
          "price":6500
        },
        {
-        "id":17,
+           "id":17,
          "category":"MODNE PATIKE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw8qAWbVh2o1jWanH07Ni7QdFES41p7zHepA&usqp=CAU",
          "imgPath":"/modne-patike",
@@ -163,7 +195,7 @@
        },
        {
         "id":18,
-         "category":"MODNE PATIKE",
+        "category":"MODNE PATIKE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2O_5LHHOzIkWl-xfooRe4Bv6MnYzyIP8Qg&usqp=CAU",
          "imgPath":"/modne-patike",
          "brend":"Rebook",
@@ -182,17 +214,7 @@
          "price":7000
        },
        {
-        "id":20,
-         "category":"MODNE PATIKE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbqMBgJQQ95CmxqXX95NQ5xbDwHUBlAgJWQg&usqp=CAU",
-         "imgPath":"/modne-patike",
-         "brend":"Kappa",
-         "name":"Patike",
-         "password":1234343,
-         "price":8000
-       },
-       {
-        "id":21,
+           "id":21,
          "category":"ČIZME&GLEŽNJAČE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2bfkmxXqKIKPV45d9kr3Odw8DqsRvX414bA&usqp=CAU",
          "imgPath":"/modne-patike",
@@ -202,17 +224,37 @@
          "price":8500
        },
        {
-        "id":22,
+           "id":24,
+               "category":"ČIZME&GLEŽNJAČE",
+               "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBzPjotvuJMVs6Dvt8DrdqH05K5-69aQ3Usw&usqp=CAU",
+               "imgPath":"/modne-patike",
+               "brend":"Puma",
+               "name":"Čizme ",
+               "password":1234343,
+               "price":9500
+            },
+            {
+        "id":25,
          "category":"ČIZME&GLEŽNJAČE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZrJyU8vjFnAkRuC2xFfnaLiTq8VkwGsXGA&usqp=CAU",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQquihRj9FmMhFMTSQUsutrgF2Pu1Wx6G-N5A&usqp=CAU",
          "imgPath":"/modne-patike",
-         "brend":"Nike",
+         "brend":"Adidas",
          "name":"Čizme ",
          "password":1234343,
-         "price":11000
+         "price":10300
        },
        {
-        "id":23,
+        "id":26,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNh01SNnhYiBUrXHwmy5Nqa2hUEbeAnMOpfA&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"Kapa",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":14000
+       },
+       {
+        "id":27,
          "category":"ČIZME&GLEŽNJAČE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfLP_cSoDM0WfSIVfzWnU2ZRVej1VNjNEYOA&usqp=CAU",
          "imgPath":"/modne-patike",
@@ -222,17 +264,7 @@
          "price":10300
        },
        {
-        "id":24,
-         "category":"ČIZME&GLEŽNJAČE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBzPjotvuJMVs6Dvt8DrdqH05K5-69aQ3Usw&usqp=CAU",
-         "imgPath":"/modne-patike",
-         "brend":"Puma",
-         "name":"Čizme ",
-         "password":1234343,
-         "price":9500
-       },
-       {
-        "id":22,
+        "id":28,
          "category":"ČIZME&GLEŽNJAČE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZrJyU8vjFnAkRuC2xFfnaLiTq8VkwGsXGA&usqp=CAU",
          "imgPath":"/modne-patike",
@@ -242,7 +274,7 @@
          "price":11000
        },
        {
-        "id":22,
+        "id":28,
          "category":"ČIZME&GLEŽNJAČE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZrJyU8vjFnAkRuC2xFfnaLiTq8VkwGsXGA&usqp=CAU",
          "imgPath":"/modne-patike",
@@ -252,17 +284,17 @@
          "price":11000
        },
        {
-        "id":22,
+        "id":28,
          "category":"ČIZME&GLEŽNJAČE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfLP_cSoDM0WfSIVfzWnU2ZRVej1VNjNEYOA&usqp=CAU",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZrJyU8vjFnAkRuC2xFfnaLiTq8VkwGsXGA&usqp=CAU",
          "imgPath":"/modne-patike",
-         "brend":"Puma",
+         "brend":"Nike",
          "name":"Čizme ",
          "password":1234343,
-         "price":10300
+         "price":11000
        },
        {
-        "id":22,
+        "id":28,
          "category":"ČIZME&GLEŽNJAČE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZrJyU8vjFnAkRuC2xFfnaLiTq8VkwGsXGA&usqp=CAU",
          "imgPath":"/modne-patike",
