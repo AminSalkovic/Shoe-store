@@ -10,7 +10,7 @@
     },
      {   
         "id":3,   
-        "imgPath":"/fila",
+        "imgPath":"/marke/fila",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/fila_%20225x197%20(52).jpg"
     },
     {  
@@ -20,7 +20,7 @@
     },
     {  
         "id":4,  
-       "imgPath":"/puma",
+       "imgPath":"/marke/puma",
        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/puma_%20225x197%20(35).jpg"
     },
     {  

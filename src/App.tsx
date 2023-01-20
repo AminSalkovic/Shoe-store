@@ -7,6 +7,8 @@ import Men from './components/pages/men/Men'
 import Brends from './components/pages/brends/Brends'
 import Adidas from './components/pages/brends/Adidas'
 import Nike from './components/pages/brends/Nike'
+import Fila from './components/pages/brends/Fila'
+import Puma from './components/pages/brends/Puma'
 
 function App() {
   
@@ -23,6 +25,8 @@ function App() {
       <Route path='/Marke' element={<Brends/>}/>
       <Route path='/marke/adidas' element={<Adidas/>}/>
       <Route path='/marke/nike' element={<Nike/>}/>
+      <Route path='/marke/fila' element={<Fila/>}/>
+      <Route path='/marke/puma' element={<Puma/>}/>
      </Routes>
    </ShoppingCartProvider>
   )

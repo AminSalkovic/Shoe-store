@@ -1,10 +1,10 @@
 import {useState} from 'react'
 import { Container,Row,Col} from 'react-bootstrap'
 import ArticleCard from '../../ArticleCard'
-import articleNike from '../../articles.json'
+import articleFila from '../../articles.json'
 import categoryItems from '../men/categoryMen.json'
 
-const Nike = () => {
+const Fila = () => {
  
     const[number,setNumber]=useState(0);
     const [number2,setNumber2]=useState(0)
@@ -31,8 +31,8 @@ const Nike = () => {
             </div>
       <Container>
               <Row md={2} xs={1} lg={3} className='g-3'>
-                {articleNike.map((item,index)=>{
-                  if(item.brend==='Nike'){    
+                {articleFila.map((item,index)=>{
+                  if(item.brend==='Fila'){    
                     if(item.id<number && item.id>number2){
                       return(
                           <Col key={index}>
@@ -54,4 +54,4 @@ const Nike = () => {
     )
 }
 
-export default Nike
+export default Fila

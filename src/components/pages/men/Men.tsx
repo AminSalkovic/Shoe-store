@@ -21,11 +21,22 @@ const Men = () => {
 
     const[number,setNumber]=useState(0);
     const [number2,setNumber2]=useState(0)
+
+    const[brend,setBrend]=useState('')
+    const[adidas,setAdidas]=useState(false);
+
+    const adidasFunction=()=>{
+      setBrend('Adidas')
+      console.log(brend);
+      
+    }
     
 
   return (
     <Container>
       <div style={{display:'flex'}}>
+        <div>
+
         <div className='div-part-1'>
                 <h1>kategorija</h1>
               <div className='scroll-div-men'>
@@ -40,7 +51,17 @@ const Men = () => {
                           })}
                   </ul>
                 </div>
+          </div>
+        <div className='div-part-1'>
+                <h1>MARKE</h1>
+              <div className='scroll-div-men'>
+                  <ul>
+                     <li onClick={adidasFunction}>Adidas</li>
+                     <li>Nike</li>
+                  </ul>
+                </div>
         </div>
+    </div>
         <Container>
             <Container>
             <Row md={2} xs={1} lg={3} className='g-3'>
@@ -73,7 +94,8 @@ const Men = () => {
                              <ArticleCard {...item}/>
                           </Col> 
                       )
-                     }else if(number===0 ){
+                     }
+                     else if(number===0){
                       return(
                         <Col key={index}>
                            <ArticleCard {...item}/>
