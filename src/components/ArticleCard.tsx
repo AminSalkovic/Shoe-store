@@ -30,12 +30,12 @@ const ArticleCard = ({id,imgPath,imgUrl,category,name,password,brend,price}:Cate
          </Link>
             <Card.Body className='d-flex flex-column'>
                 <Card.Title>
-                    <h1 style={{color:'gray',fontSize:'23px',marginTop:'2px'}}>{brend}</h1>
-                     <p>{name}</p>
+                    <h1 style={{color:'gray',fontSize:'20px',marginTop:'2px'}}>{brend}</h1>
+                     <p style={{color:'gray',fontSize:'15px'}}>{name}</p>
                 </Card.Title>
                 <Card.Title className="d-flex align-items-baseline justify-content-space-between mb-4">
-                    <p style={{fontSize:'12px'}}>{password}</p>
-                     <h1 style={{fontSize:'24px',color:'green',marginLeft:'10px'}}>{price}RSD</h1>
+                    <p style={{fontSize:'12px',color:'gray'}}>{password}</p>
+                     <h1 style={{fontSize:'20px',color:'green',marginLeft:'10px'}}>{price}RSD</h1>
                 </Card.Title>
                 <div className="mt-auto">
               <Button  onClick={()=>increaseCartQuantity(id)} className='w-100'>+ Add To Card </Button> 

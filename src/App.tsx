@@ -9,6 +9,7 @@ import Adidas from './components/pages/brends/Adidas'
 import Nike from './components/pages/brends/Nike'
 import Fila from './components/pages/brends/Fila'
 import Puma from './components/pages/brends/Puma'
+import Rebook from './components/pages/brends/Rebook'
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
       <Route path='/marke/nike' element={<Nike/>}/>
       <Route path='/marke/fila' element={<Fila/>}/>
       <Route path='/marke/puma' element={<Puma/>}/>
+      <Route path='marke/rebook' element={<Rebook/>}/>
      </Routes>
    </ShoppingCartProvider>
   )

@@ -1,12 +1,20 @@
 import { Container,Navbar as NavbarBs ,Nav,Button} from 'react-bootstrap'
+import {useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import * as AiIcons from 'react-icons/ai'
 import { useShoppingCart } from '../context/ShoppingCartContext'
+import BrendDropDown from './BrendDropDown'
 
 
 const Navbar = () => {
 
     const{openShoppingCart,openMenDropdown,closeMenDropdown,cartQuantity}=useShoppingCart()
+    const[brendsDropdown,setBrendDropdown]=useState(false);
+     
+    const openBrendDropDown=()=>setBrendDropdown(!brendsDropdown);
+    const closeBrendDropDown=()=>setBrendDropdown(false)
+
+
   return (
     <>
     <NavbarBs variant='dark' sticky='top' className='bg-dark shadow-sm mb-3'>
@@ -27,7 +35,7 @@ const Navbar = () => {
             <Nav.Link to='/Specijalne-cene' as={NavLink}>
                 SPECIJALNE CENE %
             </Nav.Link>
-            <Nav.Link to='/Marke' as={NavLink}>
+            <Nav.Link to='/Marke' as={NavLink} onMouseEnter={openBrendDropDown}>
                 MARKE
             </Nav.Link>
             <Nav.Link to='/Novo' as={NavLink}>
@@ -50,6 +58,7 @@ const Navbar = () => {
         </Button>
     </Container>
 </NavbarBs>
+  {brendsDropdown && <BrendDropDown  closeBrendDropDown={closeBrendDropDown}/>}
 </>
 )
 }

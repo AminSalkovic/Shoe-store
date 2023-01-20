@@ -1,0 +1,21 @@
+.brendDropDown{
+    position: absolute;
+    top: 130px;
+    left: 36%;
+    width: 500px;
+    min-height: 330px;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(207, 201, 201);
+}
+.brendDropDown a{
+    list-style: none;
+    text-decoration: none;
+}
+.brendDropDown li {
+    color: gray;
+    font-size: 20px;
+}
+.brendDropDown li:hover{
+    background-color: aliceblue;
+}
