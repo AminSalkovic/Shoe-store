@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, Route,Routes } from 'react-router-dom'
-import { Row,Container,Col } from 'react-bootstrap'
+import { Row,Container,Col, Button } from 'react-bootstrap'
 import CategoryItems from '../../CategoryItems'
 import categoryItems from './categoryMen.json'
 import articles from '../../articles.json'
@@ -15,37 +15,44 @@ const Men = () => {
     const[currentPage,setCurrentPage]=useState(1)
     const [postPerPage,setPostPerPage]=useState(15);
 
-    const lastPostIndex=currentPage*postPerPage;
+    const  lastPostIndex=currentPage*postPerPage;
     const firstPostindex=lastPostIndex-postPerPage;
     const currentPost=articles.slice(firstPostindex,lastPostIndex)
 
     const[number,setNumber]=useState(0);
     const [number2,setNumber2]=useState(0)
+    
+    const[category,setCategory]=useState('')
 
-    const[brend,setBrend]=useState('')
+
     const[adidas,setAdidas]=useState(false);
+    const[nike,setNike]=useState(false)
+    
+    const adidasFunction=()=>setAdidas(true);
+    const nikeFunction=()=>setNike(true)
 
-    const adidasFunction=()=>{
-      setBrend('Adidas')
-      console.log(brend);
+    const cipele=()=>setCategory('cipele');
+    const cizme=()=>setCategory('ČIZME&GLEŽNJAČE')
+     
+
       
-    }
+    
     
 
-  return (
-    <Container>
+    return (
+      <Container>
       <div style={{display:'flex'}}>
         <div>
-
         <div className='div-part-1'>
                 <h1>kategorija</h1>
               <div className='scroll-div-men'>
                   <ul>
                       {categoryItems.map((el,index)=>{
                         return(
-                              <li key={index} onClick={()=>{
-                                setNumber(el.num)
+                          <li key={index} onClick={()=>{
+                            setNumber(el.num)
                                 setNumber2(el.amin)
+                             
                               }}>{el.category}({el.count})</li>
                           )
                           })}
@@ -57,7 +64,9 @@ const Men = () => {
               <div className='scroll-div-men'>
                   <ul>
                      <li onClick={adidasFunction}>Adidas</li>
-                     <li>Nike</li>
+                     <li onClick={nikeFunction}>Nike</li>
+                     <li onClick={cipele}>cipele</li>
+                     <li onClick={cizme}>cizme</li>
                   </ul>
                 </div>
         </div>
@@ -77,9 +86,10 @@ const Men = () => {
                 </Row>
             </Container>
           <Container>
-            <button onClick={()=>{setNumber(0)
-              setNumber2(0)
-            }}>Svi proizvodi</button>
+            <button onClick={()=>{setNumber(0);setNumber2(0);setCurrentPage(1);setCategory('')}}>Svi proizvodi</button>
+            {adidas&& <button onClick={()=>setAdidas(false)}>Adidas</button>}
+            {nike&& <button onClick={()=>setNike(false)}>Nike</button>}
+            
               <Pagination 
               setCurrentPages={setCurrentPage}
               totalPost={articles.length} 
@@ -87,8 +97,8 @@ const Men = () => {
                currentPage={currentPage}
               />
             <Row md={2} xs={1} lg={3} className='g-3'>
-                  {currentPost.map((item,index)=>{
-                     if(item.id<number && item.id>number2){
+            {currentPost.map((item,index)=>{
+                     if(it){
                       return(
                           <Col key={index}>
                              <ArticleCard {...item}/>
@@ -103,6 +113,7 @@ const Men = () => {
                     )
                      }
                   })}
+
                 </Row>
             </Container>
         </Container>

@@ -4,11 +4,12 @@ import ArticleCard from '../../ArticleCard'
 import articleNike from '../../articles.json'
 import categoryItems from '../men/categoryMen.json'
 
+
 const Nike = () => {
  
     const[number,setNumber]=useState(0);
     const [number2,setNumber2]=useState(0)
-  
+
     return (
       <Container>
        <div style={{display:'flex'}}>

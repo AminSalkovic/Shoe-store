@@ -1,5 +1,5 @@
 [
-    {
+    {   "brojredni":1,
         "id":1,
         "category":"MODNE PATIKE",
         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0oWxz_WbgXyF5C6iio_aaJUfNrl9fJHOFFA&usqp=CAU",
@@ -9,7 +9,8 @@
          "password":1234343,
          "price":5990
         },
-        {
+        {   
+            "brojredni":20,
             "id":20,
             "category":"MODNE PATIKE",
             "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbqMBgJQQ95CmxqXX95NQ5xbDwHUBlAgJWQg&usqp=CAU",
@@ -20,6 +21,7 @@
             "price":8000
         },
         {
+         "brojredni":22,
          "id":22,
           "category":"ČIZME&GLEŽNJAČE",
           "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZrJyU8vjFnAkRuC2xFfnaLiTq8VkwGsXGA&usqp=CAU",
@@ -29,7 +31,7 @@
           "password":1234343,
           "price":11000
          },
-        {
+         {  "brojredni":2,
             "id":2,
             "category":"cipele",
             "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwx18PtMqdTTVZnvwOLu3BNL6_IdyOe1uLYg&usqp=CAU",
@@ -38,7 +40,9 @@
              "name":"Patike",
              "password":1234343,
              "price":6300
-             }, {
+             }, 
+             {
+    "brojredni":4,           
     "id":4,
     "category":"MODNE PATIKE",
     "imgUrl":"data:image/jpeg;base64,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",
@@ -48,6 +52,7 @@
     "password":1234343,
     "price":7990
     }, {
+        "brojredni":5,
         "id":5,
         "category":"MODNE PATIKE",
         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7LRKXZ6Gy2i7EriwjhuHAuFDXc7yCNwdCHw&usqp=CAU",
@@ -58,6 +63,7 @@
         "price":10800
     }, 
     {
+      "brojredni":6,
         "id":6,
                 "category":"MODNE PATIKE",
                 "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2SrFgelJWYWhi6k7-wutcm-vLPQ4HJkhrEg&usqp=CAU",
@@ -68,6 +74,7 @@
                 "price":7990
             },
             {
+        "brojredni":7,
         "id":7,
         "category":"cipele",
         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMlmDu7g8EyLtVpqxL9aPVaE8FvYvW_-1daQ&usqp=CAU",
@@ -77,7 +84,9 @@
          "password":1234343,
          "price":9300
         },
-        {
+        {   
+
+           "brojredni":23,
             "id":23,
             "category":"ČIZME&GLEŽNJAČE",
             "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfLP_cSoDM0WfSIVfzWnU2ZRVej1VNjNEYOA&usqp=CAU",
@@ -88,6 +97,7 @@
             "price":10300
         },
             {
+        "brojredni":8,
                 "id":8,
         "category":"MODNE PATIKE",
         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnBjuXhijiKITAAGkKl6DE8yuF8GZ5127AQ&usqp=CAU",
@@ -97,7 +107,8 @@
          "password":1234343,
          "price":8700
          },{
-             "id":9,
+             "brojredni":9,
+              "id":9,
              "category":"MODNE PATIKE",
              "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgYa8Dun9tKb0Hh_kKq3p_u1KlG35idVQCw&usqp=CAU",
              "imgPath":"/muskarci/modne-patike",
@@ -106,6 +117,7 @@
              "password":1234343,
              "price":7500
              },{
+        "brojredni":10,
                  "id":10,
                  "category":"MODNE PATIKE",
                  "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdzPemKRpBXPbdc6EtSDgQ1uhOhDKVySZwg&usqp=CAU",
@@ -115,6 +127,7 @@
          "password":1234343,
          "price":8600
          },{
+        "brojredni":11,
         "id":11,
         "category":"MODNE PATIKE",
         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj_hy6egi3q1LPMeg3o40ngAh_vcGA81_USQ&usqp=CAU",
@@ -124,6 +137,7 @@
          "password":1234343,
          "price":8800
          }, {
+        "brojredni":3,
              "id":3,
              "category":"MODNE PATIKE",
               "imgUrl":"https://www.n-sport.net/UserFiles/products/medium/03/02/muske-patike-skechers-verse-58350-CCOR.jpg",
@@ -134,6 +148,7 @@
               "price":7990
         },
         {
+        "brojredni":12,
             "id":12,
             "category":"MODNE PATIKE",
             "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSj4wgULo1qglpmQTN8uGfxTNaG0p5JwfbxQ&usqp=CAU",
@@ -143,7 +158,8 @@
             "password":1234343,
             "price":10900
         },
-        {
+        {   
+        "brojredni":13,
             "id":13,
             "category":"MODNE PATIKE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcqkOnB9cFq7KZLXSHHzLqE7VCBkv_MubLRQ&usqp=CAU",
@@ -153,7 +169,8 @@
          "password":1234343,
          "price":8200
         },
-        {
+        {  
+        "brojredni":14,
             "id":14,
             "category":"MODNE PATIKE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmb8UbqFRw4pYaW8DDf9lb7fU5oj_vDqnokA&usqp=CAU",
@@ -163,7 +180,8 @@
          "password":1234343,
          "price":5690
         },
-        {
+        {    
+        "brojredni":15,
             "id":15,
             "category":"MODNE PATIKE",
             "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTaN4R056U0-nwC9u5LrIPoaifGW-F833TrQ&usqp=CAU",
@@ -173,7 +191,8 @@
             "password":1234343,
             "price":7000
         },
-        {
+        {    
+        "brojredni":16,
             "id":16,
             "category":"MODNE PATIKE",
             "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_I4mNWJj7DZop1zuCIdHoarLpyR0ELKER-g&usqp=CAU",
@@ -183,7 +202,8 @@
          "password":1234343,
          "price":6500
        },
-       {
+       { 
+        "brojredni":17,
            "id":17,
          "category":"MODNE PATIKE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw8qAWbVh2o1jWanH07Ni7QdFES41p7zHepA&usqp=CAU",
@@ -193,7 +213,8 @@
          "password":1234343,
          "price":7400
        },
-       {
+       { 
+        "brojredni":18,
         "id":18,
         "category":"MODNE PATIKE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2O_5LHHOzIkWl-xfooRe4Bv6MnYzyIP8Qg&usqp=CAU",
@@ -204,6 +225,7 @@
          "price":5000
        },
        {
+        "brojredni":19,
         "id":19,
          "category":"MODNE PATIKE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDlxF1fEQBZ3Wz4977eGXUj9n6_rmr-ORfLQ&usqp=CAU",
@@ -213,7 +235,8 @@
          "password":1234343,
          "price":7000
        },
-       {
+       {   
+        "brojredni":21,
            "id":21,
          "category":"ČIZME&GLEŽNJAČE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2bfkmxXqKIKPV45d9kr3Odw8DqsRvX414bA&usqp=CAU",
@@ -223,7 +246,8 @@
          "password":1234343,
          "price":8500
        },
-       {
+       {   
+        "brojredni":24,
            "id":24,
                "category":"ČIZME&GLEŽNJAČE",
                "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBzPjotvuJMVs6Dvt8DrdqH05K5-69aQ3Usw&usqp=CAU",
@@ -234,6 +258,7 @@
                "price":9500
             },
             {
+        "brojredni":25,
         "id":25,
          "category":"ČIZME&GLEŽNJAČE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQquihRj9FmMhFMTSQUsutrgF2Pu1Wx6G-N5A&usqp=CAU",
@@ -244,6 +269,7 @@
          "price":10300
        },
        {
+        "brojredni":26,
         "id":26,
          "category":"ČIZME&GLEŽNJAČE",
          "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNh01SNnhYiBUrXHwmy5Nqa2hUEbeAnMOpfA&usqp=CAU",
@@ -253,10 +279,11 @@
          "password":1234343,
          "price":14000
        },
-       {
+       { 
+        "brojredni":27,
         "id":27,
          "category":"ČIZME&GLEŽNJAČE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfLP_cSoDM0WfSIVfzWnU2ZRVej1VNjNEYOA&usqp=CAU",
+         "imgUrl":"data:image/jpeg;base64,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",
          "imgPath":"/modne-patike",
          "brend":"Puma",
          "name":"Čizme ",
@@ -264,43 +291,189 @@
          "price":10300
        },
        {
+        "brojredni":28,
         "id":28,
          "category":"ČIZME&GLEŽNJAČE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZrJyU8vjFnAkRuC2xFfnaLiTq8VkwGsXGA&usqp=CAU",
+         "imgUrl":"data:image/jpeg;base64,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",
          "imgPath":"/modne-patike",
-         "brend":"Nike",
+         "brend":"Adidas",
          "name":"Čizme ",
          "password":1234343,
-         "price":11000
+         "price":8700
        },
        {
-        "id":28,
-         "category":"ČIZME&GLEŽNJAČE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZrJyU8vjFnAkRuC2xFfnaLiTq8VkwGsXGA&usqp=CAU",
-         "imgPath":"/modne-patike",
-         "brend":"Nike",
-         "name":"Čizme ",
-         "password":1234343,
-         "price":11000
-       },
-       {
+        "brojredni":29,
         "id":29,
          "category":"ČIZME&GLEŽNJAČE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZrJyU8vjFnAkRuC2xFfnaLiTq8VkwGsXGA&usqp=CAU",
+         "imgUrl":"data:image/jpeg;base64,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AX3Rl8KYHyl4dO8H+N/yGYw+zzDfjqfmH0no+z3DfiqfmH0lJaDpLxLCYh0qUXs5uHBBXNoMrX2uLW7we6YNF6YHXdUBZRmJvYXuxAGp0kvH2fYXtqfm/tKl6A4Tsf8APIywlu1TKyaRKoEzn2NQ1EAUq9spD3a625W6pv3zKw3s2JD4inTym2Ug3bTUnLa2vmdZKF6DYQfcf85ladCsGP8Aln8xmfHN7b73SI4twr5UqLUXKDnXNuSwK6m4IsD5zZcNwAqXz1Up2sBe7MxtqbZhYSS0+iuFXakPUzIp8Cw67Ulj45s97pDeJ8Oqo4WmRUQi4ZFBbN95SovlG1jfXXsks4LwtUo5KiqzOpD6DZhYppyt8bzYJgkXZFHlL6oBsJUwku2XK2KaNJUUKihVGwUAAeQlcRKSREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/9k=",
          "imgPath":"/modne-patike",
-         "brend":"Nike",
+         "brend":"Adidas",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":12000
+       },
+       {
+        "brojredni":30,
+        "id":30,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjU037QniZfYI-a7bFQf3OEBXbUOQPoL0nZQ&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"Adidas",
          "name":"Čizme ",
          "password":1234343,
          "price":11000
        },
        {
-        "id":30,
+        "id":31,
          "category":"ČIZME&GLEŽNJAČE",
-         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZrJyU8vjFnAkRuC2xFfnaLiTq8VkwGsXGA&usqp=CAU",
+         "imgUrl":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgICAkICAgKCgkLBwoIBwYGBxsKCggKIB0iIiAdHx8kKCggJBolHR8TITEhJSkrLy4uIx8zRDMsNygtLisBCgoKDg0NDg0NDisZFRkrKysrKysrKysrKysrLSsrKysrKysrKysrKysrKysrKysrKysrKystKysrKysrKysrK//AABEIAPoAyAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAwUCBAYBB//EAEUQAAEDAwAFBwgHBgUFAAAAAAIAAQMEERIFEyEiMgYxQUJRYYEUYnGRobHB0SNDUnKC4fAHJDNTorIVY4OSkxdzdNLx/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EABsRAQEBAQEAAwAAAAAAAAAAAAABERICITFR/9oADAMBAAIRAxEAPwD7QiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIsTJhFyfmZBjLKIWHIWMh3BJQ+VOH8WN2b+ZHvCtWZtdJZiYsuOIuqP69CkFzFyBnzx3TEd7HufwdQbscoSNcDYm80lmqWo1bXkiPVyNvbpYiXy/WxbGhdJtXRyCWyWIhGXq5X5nsmiyREVBERAREQEREBERAREQEREBERAREQEREBadVMzm0OeO9xLbImZnJ+ZhyXOaR1JiRzjxHxY5FkpRlUy1DOJgBRzyfQ0oz2LV32kT9zM1/C3SpoTCnEYxcsB/mFkRFzu7v0u77XdUbPURv+56QLZwwyHl/SXyUX+Mz3IJ44JSEyAtQbxSZN29HsWOsXFppWE5GKop3OQWHKWmi3pB72bpWzyQppBhmq5WZtcWMQjw4s7u7t3XJ2b0d6pI9JwsTE0ksB5fXxPIPhjd39TK80fpojsFwkZuIqaVpcfSzbW8VZZaYv1HObxxkYtc+YAIsdZI+xm9dlHFVxGzPkzecRbqgqqp/KaenhDWSEJzbOCEW2ZE/ZtfZzu9rdLtrUY01PUwVMetr5KgpIpCqKaSNhjHzhZm3Wvss7ve/crFRxRsGT3cjLeOUuIvy7lIkBERUEREBERAREQEREBERAREQEWBmIs93/AAiqTT7UJvFJXVFQAcIUkFSccZbWd7sG178z3u1tltqDd0tVNBTSSE8YxgY68pzxjGO9nd36Lc65rSdfTtaMZ4meLIpSqZ3GMh7crP6drdKuoHpHhOnhCMacoiIYIoGjERfi3eZudn8V86rNGVVLR1lPxuBEeuxxGQWZmv6N26x61YvJjuzucMjN/MhHXx/03t42WkUrFiUUoyMBbnNIMfg/Mq4aiVrFchd95TvV62zzRhI/8yQfpB9D9CzqojIhfbFLG+7kMcReGWx/UpaaW7O5O54b30kGOI9zdCYRFwGQebJvj81kEGwhdxfLHh63h81BvUump42YdbJZ8R1cpNOJc2yxX2beh+jZdXGiNPRxVEZHFGwHq6eXyS8YiLvuvg97bX6H27dj2a3MtTbdp3brY8Rfq7/rmxoa8HqTaGO4U1TGRFwjJMz3dvBmZr9/crNg+uIvBJiZjHhIch+6vV1ZEREBERAREQEREBERARFFJMzMTA7ETf3diCR3Zmu/MtearANmTMXnKGWaoGNzcHkIRy1UZYlJ6Gv8VgJs4iZgwSEAkcMhMRR9z27O7YoM5zJyZgYn+0XV8VrU4zRyTPLIMgFqxpoxifWRizbbv0vf3d+zWiqKemKUAqZqmaQ8xpiNpZIxtsZmZmsHe/S+1+zTrB17/vAtMOY5U3FSR9O1rtm/e92bZYdrk8txU9dW6NZ92tpoJhyIZSqhHV9t2cm2P4dq53SldTBA9FDUtWVUxSBroxbGON3fbdrtsa2y9351eVdHCzNJBTRRyRZHBqomEfQ9uh22KsCgpGxmhjZgIcgLH+H3eHMl0VtRTA7WtzLRKBxfZzK7nja+xaUwizOROzC3ERcIrNitMBsvSkCNsjNhFusRYqKplId0Btf6yT5c/jZ2VedO5vnMZG/+Zw+pvnbuUG3LpZnYo6dnN8sNYW7GJfrx7nWOhQeKCNjZ3kIiOUiH6x39a8o6QpHFowsPCMhDiOPd+Vm71f0NDHG4ZMxW3t4e3nTLR3egp3m0bSG/E0GqL7w7vwW+qnk07DSyRC7vq6gt0iyxF2a3xVsuk+mRERUEREBER3tz7EBFg8gt2v8AdFYvMzuQtbJt7Ei3se23r9SCVYkYioXlJ3/BkUeW8Ph6+noWnPHcXN5ZwHVZSx0xOM0hW83p7hba6gmnqWATOYtTGP1s5tHH63Wi1XDUPFNDHLIICJxTQxGMZC7c/NYm2v2sp4KKmjkeQYgKR+CeUXkqBHszJ3fn2rJiHM7Ez47pbvWQQS1FW7M8dO0bZDeWrkbEY77XZme7v3Pj6WUEVAOLeXYVc/Eck8TFDGXmBzC3tfpd1ukTOzs77HUASZM8bv8ASRjvD9oeh0EFUQRA0MYhGJ8QxCw+FvB/V3rSOzi4NZvsiXz7+3vXukZmjnFnvcwHHEeK19nvf8LrUOZna7EzssevtqLMKuEhYTPCRh34iFyIfUqaqMKaYijmjeEyIjiz1ckJdrM9r97dKxlrcbA5M/2RLeWtVV5wtiZjC5DuxybsknoBt5/Up1TEk9QTjnEDMD8MkhcXou128RdlUzym75Obu4b2Ue6Mfi/D4WZZXmkc8QJ93MfKQxIrdgMTe0vB1NFovJxKY9Y7bwjJYhH0Dwt6k+aK4AOX+CF2f6zhEvHnfw9a3qXRbXY5t8uLeHdHw+d371ZxQxxts5+sRcSmZxZank1HFAI8zWWyAM1lixMykZ2dlUXXJwrTVAfaijP1O7fFXq5vk6X76bdtGX9wrpFYgiIqCIiCGqm1QtbiIsRWgxn1JTH7wtJ79qzqpAkPfGTd3RKMm9yhZ4dja9huOWM4PGoJNZUdEsf4oH+axeWq6JILf+MX/svBjI2vHLFI3+XKjwTt1L/dNvmgxKWru7iVM78OXkxZf3KMpa532SQN/oP81K8czfVn+EclG4TP9TL/AMDoIzCaVvpq2THrQUgtAJD6W3vU7LMSCMWCMWAB4RFYvHO/1Mv/AAOnk9Q/1Mn4gxQYlI7rWnc3cTAsZo96KT3s/az9i3Go6l22Ru33jb5qGWgns+UkUf8A3JfyQaVZhX0zu4PGYHice3KCTn59j22M7O1n2M+x2VDIFWxEOujN2LeKehCWTxdsb+LXV4wRRTawa2mkJx1U8UR5awW9G27KQ4KJ3I44KiQi4tZaDL03s6zmrrnGgne+c8jM/FHTCNJGXpwa7+tZQ00MDPgMcd+Ih3SL0vzuui1DNbCipxbrFLef32WQQVDvuasW63k1Kw/F1eTXPxOAsxlJERCRFlFw432dL9CliCR2xjCQ2YiEdTTEQ432czdiuypqh23pp+L6wRHw4V61Md2vO726vl2r9jOyYaqRpap+anm/FA4+9TBo2vfnp3FvtSTh8CVg1ODO95G28WVYUnxdeNBTi2LnE7fZKJ5Pg6uI1h0VUM7ZzU0fmyTvl7lMFFE2TFXwu48Yw/SY+1SiFKDMwmIs3CMFNiI+jYykaWD7cxfeBsfemCfRMcFNUsQynKUgan+BiI3dn+Cv1zkdRGBCYRk5CWQlIbD7LK+pZClhjkJmZyHIseFUSoiIC09LGcdKUgX3TjyIeqN//i3FiYCYkBixCQ4kJdYUooI9IOWyVhfziHL81LrgtfC3nQnitTSOiaincigYpYcsvo96UPS3T6W9i0AqDB7DsfhxIfe2z4Ln1Z8VrPxcE8D2cxK7cOQNJisbQdU3Dey4Xj9yrnrrNchHaQjltHefZ2P708vjdttm3cuJuG9unvWuvKZVm2DPcao2d/8APk+OxesRNzVZP/q/kq7yuPsduLrN0eKeUg6dQyrHI8cXrD4eLX73sZYkQvbKqJ7b27OfwVe8w2vfzuJl5rRvzt/uZNhjdPUO7Oc7lb7REXvUTtQs+TBcuHIaYR9q1HmC/R1eu3TzLF6iL7Q8OXEnUMrcKohbY0ZE3nEvHq36kYD/AFLTephZ7O/9S98qgbZf+pk6hlbL1Mz9a33RxUZGZ8ZkX3iyUPlsGyz3vj1u3mXj10Nrtbbj8k6hlTCGT25vOWWrFn42/wBr/JaclbEYO1n/AAl32961yqoWZ3K9mEiLKXhtzp1DKtmAbtvs/WIcX4V4Mhk5XFhxLcxFt79d/YqtqqMXIGHectUW++WVsrd2zasGroWdnZhZ/oS3pftviPrfYynUOatJJjAScTwfLLLVZezYsswd8pCd3y3cVUnXRxjmbMIxhMRERboiPEpIatpGIQEX1cuBkO8IlZn7e9XqHNWwSRdAu/4vyXQ6MK9LGV2s+WOPV2uuLKUyaxXZusPCuw0JG8VDBGTtniRkIlw3d39e1J62lmN5ERaQWvVUcdSLgZyCz9aCd4y9i2EQcnV8g6Cody/xLSoO/wBnSOfvZV//AE1aM3kpeUuloi87CUfFnazrvEUyLrhqvkLpOoppKU+UjE0gj+9S6EEaiOzs7OziY7bt2LCi5EaXo6UKUNN0s+EUw+UV+jDKSaQjzyJ9Zt2u7d67xFOYbXz0eRnKEdIy1b6WpZKU9cUeiJAMIwkIcb5Wd3bptzeh9ql0jyW5RTQENJU6OpqhpaeWKpGc5B3W2s7OG1nXeonMNr5/R8leUkFJFBKei6iYaWSKSqmrJB1smV2e2HNboWuHJDlc2lTrC0ho8tHvPNMGhpKk90iDHaeru7M+23N719IROYbXz+t5J8o6mk1MdXo2imxoXCspjkl1ckb3fdcWuz9j9F73UlDyO01DSx082kqKeQaeSKWsqKYyKaQjyu7XbZztb0bWtZd4icw2vn8XILSw19TWlygjKOXygodGyaOKSGmkJma982crW7vBZ6V5BaQroWjHT7UZDVRzR1Gj9GOMwi0bhjfPpyd/V2LvUTmG1xtPyMrYRhAdMQuMQU4Dlod94Qa236Tp5/BV+iP2b1OjdZq+UUk7m9KOVdQa3VRxu7sA7+wd59nfssvoSJzDa+c6Q/ZlPW1FPUycoZQOEIQKKmoNXDU4yObZjntsT+xunatuq5A1tTDNTy6eHVzQVUEox6FEfoz57b3Q2xvbd9q7tFeYbXz3Rn7NqqgBwg5STkxVZVUh1GjROQ5MMNru/NZm9Xgo5v2VtPV0tdNyhrCqKYIQgkjooxHdd3Z3a1ne7uvoyJzDa4aX9nbzRSQz8pNJnHJBUQTxjTwjrIzfebg8G7G2NZZaO/ZtR0MA0tPprSwQiWQxCUPv1d126JzDa5WPkDofJiqZtIVliyGOv0qRR5fdazexdHS0dPSgwQRsANuiOSnRMiCIioIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIP/9k=",
          "imgPath":"/modne-patike",
          "brend":"Nike",
          "name":"Čizme ",
          "password":1234343,
-         "price":11000
+         "price":11400
+       },
+       {
+        "brojredni":32,
+        "id":32,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMoaYxF3FbRgXlFA1cpfSbRfe_CYwTLQXd1w&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"Nike",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":13400
+       },
+       {
+        "brojredni":33,
+        "id":33,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"data:image/jpeg;base64,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",
+         "imgPath":"/modne-patike",
+         "brend":"Fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":10400
+       },
+       { 
+        "brojredni":34,
+        "id":34,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"data:image/jpeg;base64,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",
+         "imgPath":"/modne-patike",
+         "brend":"Fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":9400
+       },
+       {
+        "brojredni":35,
+        "id":35,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgiHkneStN1m06RmrLJb_vASFt_tLFc1Bag&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":13400
+       },
+       {
+        "brojredni":36,
+        "id":36,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgiHkneStN1m06RmrLJb_vASFt_tLFc1Bag&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":13400
+       },
+       {
+        "brojredni":37,
+        "id":37,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgiHkneStN1m06RmrLJb_vASFt_tLFc1Bag&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":13400
+       },
+       {
+        "brojredni":38,
+        "id":38,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgiHkneStN1m06RmrLJb_vASFt_tLFc1Bag&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":13400
+       },
+       {
+        "brojredni":39,
+        "id":39,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgiHkneStN1m06RmrLJb_vASFt_tLFc1Bag&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":13400
+       },
+       {
+        "brojredni":40,
+        "id":40,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgiHkneStN1m06RmrLJb_vASFt_tLFc1Bag&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":13400
+       },
+       {
+        "brojredni":41,
+        "id":41,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgiHkneStN1m06RmrLJb_vASFt_tLFc1Bag&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":13400
+       },
+       {
+        "brojredni":42,
+        "id":42,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgiHkneStN1m06RmrLJb_vASFt_tLFc1Bag&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":13400
+       },
+       {
+        "brojredni":43,
+        "id":43,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgiHkneStN1m06RmrLJb_vASFt_tLFc1Bag&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":13400
+       },
+       { 
+        "brojredni":44,
+        "id":44,
+         "category":"ČIZME&GLEŽNJAČE",
+         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgiHkneStN1m06RmrLJb_vASFt_tLFc1Bag&usqp=CAU",
+         "imgPath":"/modne-patike",
+         "brend":"fila",
+         "name":"Čizme ",
+         "password":1234343,
+         "price":13400
        }
     ]
