@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Container,Row,Col} from 'react-bootstrap'
+import { Container,Row,Col,Button} from 'react-bootstrap'
 import ArticleCard from '../../ArticleCard'
 import articles from '../../articles.json'
 import categoryItems from '../men/categoryMen.json'
@@ -17,7 +17,7 @@ const BrendFile = ({brend}:BrendFileProps) => {
     <Container>
      <div style={{display:'flex'}}>
      <div className='div-part-1'>
-                <h1>kategorija</h1>
+                <p style={{textAlign:'center'}}>Kategorija</p>
               <div className='scroll-div-men'>
                   <ul>
                       {categoryItems.map((el,index)=>{
@@ -30,9 +30,9 @@ const BrendFile = ({brend}:BrendFileProps) => {
                           })}
                   </ul>
                 </div>
-            <button onClick={()=>{setNumber(0);setNumber2(0)}}>Svi proizvodi</button>
           </div>
     <Container>
+            <Button onClick={()=>{setNumber(0);setNumber2(0)}}>Svi proizvodi</Button>
             <Row md={2} xs={1} lg={3} className='g-3'>
               {articles.map((item,index)=>{
                 if(item.brend===brend){    

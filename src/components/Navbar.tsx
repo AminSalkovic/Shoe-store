@@ -3,27 +3,28 @@ import {useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import * as AiIcons from 'react-icons/ai'
 import { useShoppingCart } from '../context/ShoppingCartContext'
-import BrendDropDown from './BrendDropDown'
+import BrendDropDown from './pages/brends/BrendDropDown'
+import MenDropdown from './pages/men/MenDropdown'
 
 
 const Navbar = () => {
 
-    const{openShoppingCart,openMenDropdown,closeMenDropdown,cartQuantity}=useShoppingCart()
+    const{openShoppingCart,cartQuantity}=useShoppingCart()
     const[brendsDropdown,setBrendDropdown]=useState(false);
+    const[isOpenMenDropdown,setIsOpenMenDropdown]=useState(false);
      
     const openBrendDropDown=()=>setBrendDropdown(!brendsDropdown);
-    const closeBrendDropDown=()=>setBrendDropdown(false)
+    const closeBrendDropDown=()=>setBrendDropdown(false);
+    const openMenDropdown=()=>setIsOpenMenDropdown(true);
+    const closeMenDropdown=()=>setIsOpenMenDropdown(false);
 
 
   return (
     <>
-    <NavbarBs variant='dark' sticky='top' className='bg-dark shadow-sm mb-3'>
+    <NavbarBs variant='dark' className='bg-dark shadow-sm mb-3'>
     <Container>
        <Nav className='me-auto'>
-            <Nav.Link to='/Muskarci' as={NavLink}
-             onMouseEnter={openMenDropdown}
-             onMouseLeave={closeMenDropdown}
-            >
+            <Nav.Link to='/Muskarci' as={NavLink} onMouseEnter={openMenDropdown}>
                 MUSKARCI
             </Nav.Link>
             <Nav.Link to='/Deca' as={NavLink}>
@@ -59,6 +60,7 @@ const Navbar = () => {
     </Container>
 </NavbarBs>
   {brendsDropdown && <BrendDropDown  closeBrendDropDown={closeBrendDropDown}/>}
+  {isOpenMenDropdown && <MenDropdown closeMenDropDown={closeMenDropdown}/>}
 </>
 )
 }

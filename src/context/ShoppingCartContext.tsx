@@ -17,8 +17,6 @@ type ShoppingCartContext={
   closeShoppingCart:()=>void
   openMobileDropdown:()=>void
   closeMobileDropdown:()=>void
-  openMenDropdown:()=>void
-  closeMenDropdown:()=>void
   cartItems:CartItem[],
   getItemQuantity:(id:number)=>void,
   removeFromCart:(id:number)=>void,
@@ -40,15 +38,14 @@ export function ShoppingCartProvider({children}:ShoppingCartProviderProps){
 
    const[isOpenCart,setIsOpenCart]=useState(false);
    const[isOpenMobileDropdown,setIsOpenMobileDropdown]=useState(false);
-   const[isOpenMenDropdown,setIsOpenMenDropdown]=useState(false);
+  
 
 
    const openShoppingCart=()=> setIsOpenCart(true);
    const closeShoppingCart=()=>setIsOpenCart(false);
    const openMobileDropdown=()=>setIsOpenMobileDropdown(true);
    const closeMobileDropdown=()=>setIsOpenMobileDropdown(false);
-   const openMenDropdown=()=>setIsOpenMenDropdown(true);
-   const closeMenDropdown=()=>setIsOpenMenDropdown(false);
+
   
    const cartQuantity=cartItems.reduce((quantity,item)=>item.quantity + quantity,0)
 
@@ -81,13 +78,12 @@ export function ShoppingCartProvider({children}:ShoppingCartProviderProps){
 
     return(
        <ShoppingCartContext.Provider value={{openShoppingCart,closeShoppingCart,openMobileDropdown,
-       closeMobileDropdown,openMenDropdown,closeMenDropdown,cartItems,cartQuantity,
+       closeMobileDropdown,cartItems,cartQuantity,
        removeFromCart,
        increaseCartQuantity,getItemQuantity}}> 
          {children}
          <ShoppingCart isOpenCart={isOpenCart}/>
          <MobileDropdown isOpenMobileDropdown={isOpenMobileDropdown}/>
-        {isOpenMenDropdown && <MenDropdown/>}
        </ShoppingCartContext.Provider>
     )
 }

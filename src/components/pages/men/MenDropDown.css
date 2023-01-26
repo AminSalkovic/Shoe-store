@@ -1,0 +1,23 @@
+.men-drop-down{
+   position: absolute;
+   top: 135px;
+   z-index: 10;
+   width: 100%;
+   height: 340px;
+   background: white;
+   border: 1px solid rgb(207, 201, 201);
+}
+.men-drop-down a{
+    list-style: none;
+    text-decoration: none;
+}
+.men-drop-down li {
+    color: gray;
+    font-size: 20px;
+    width: 200px;
+}
+.men-drop-down li:hover{
+    transition: all 0.2s ease-out;
+    background-color: #1888ff;
+    color:white
+}

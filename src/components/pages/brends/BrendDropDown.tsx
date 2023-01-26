@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Row } from 'react-bootstrap'
-import brendList from './pages/brends/brend.json'
+import brendList from './brend.json'
 import './BrendDropDown.css'
 
 type BrendDropDownPorps={

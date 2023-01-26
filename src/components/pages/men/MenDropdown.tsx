@@ -1,15 +1,20 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import categoryItems from './categoryMen.json'
+import './MenDropDown.css'
 
-const MenDropdown = () => {
+type MenDropDownProps={
+  closeMenDropDown:()=>void
+}
+
+const MenDropdown = ({closeMenDropDown}:MenDropDownProps) => {
   return (
-    <div style={{
-        position:'absolute',top:'135px',zIndex:'1',
-        width:'100%',height:'320px',background:'red'}}>
+    <div  className='men-drop-down' onMouseLeave={closeMenDropDown}>
          <ul>
              {categoryItems.map((item,id)=>{
                 return(
-                     <li key={id}>{item.category}</li>
+                    <Link to={item.imgPath}>
+                     <li onClick={closeMenDropDown} key={id}>{item.category}</li>
+                    </Link>
                   )
              })}
          </ul>

@@ -17,10 +17,8 @@
     text-decoration: none;
     color: gray;
 }
-.scroll-div-men li{
-    background-color: rgb(242, 246, 248);
-}
 .scroll-div-men li:hover{
-    background-color: rgb(80, 160, 230);
-    color: white;
+    transition: all 0.2s ease-out;
+    background-color: #1888ff;
+    color:white
 }

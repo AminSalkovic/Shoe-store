@@ -58,7 +58,7 @@ const Men = () => {
       <div style={{display:'flex'}}>
         <div>
         <div className='div-part-1'>
-                <h1>kategorija</h1>
+                <p>Kategorija</p>
               <div className='scroll-div-men'>
                   <ul>
                       {categoryItems.map((el,index)=>{
@@ -74,7 +74,7 @@ const Men = () => {
                 </div>
           </div>
         <div className='div-part-1'>
-                <h1>MARKE</h1>
+                <p>Marke</p>
               <div className='scroll-div-men'>
                   <ul>
                      <li onClick={adidasFunction}>Adidas</li>

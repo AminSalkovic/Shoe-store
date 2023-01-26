@@ -17,5 +17,7 @@
     font-size: 20px;
 }
 .brendDropDown li:hover{
-    background-color: aliceblue;
+    transition: all 0.2s ease-out;
+    background-color: #1888ff;
+    color:white
 }
