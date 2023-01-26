@@ -109,16 +109,15 @@ const Men = () => {
                 </Row>
             </Container>
           <Container>
-            <button onClick={()=>{setNumber(0);setNumber2(0);setCurrentPage(1)}}>Svi proizvodi</button>
-            {adidas&& <button onClick={()=>{setAdidas(false);setCategories('')}}>Adidas &times;</button>}
-            {nike&& <button onClick={()=>{setNike(false);setCategories('')}}>Nike &times;</button>}
-            {fila&& <button onClick={()=>{setFila(false);setCategories('')}}>Fila &times;</button>}
-            {puma&& <button onClick={()=>{setPuma(false);setCategories('')}}>Puma &times;</button>}
-            {rebook&& <button onClick={()=>{setRebook(false);setCategories('')}}>Rebook &times;</button>}
-            {kapa&& <button onClick={()=>{setKapa(false);setCategories('')}}>Kapa &times;</button>}
-            {bench&& <button onClick={()=>{setBench(false);setCategories('')}}>Bench &times;</button>}
-            {sprit&& <button onClick={()=>{setSprit(false);setCategories('')}}>Sprit &times;</button>}
-
+            <Button variant="secondary" onClick={()=>{setNumber(0);setNumber2(0);setCurrentPage(1)}}>Svi proizvodi</Button>
+            {adidas&&< Button variant="outline-danger" onClick={()=>{setAdidas(false);setCategories('')}}>Adidas X</ Button >}
+            {nike&& < Button variant="outline-danger" onClick={()=>{setNike(false);setCategories('')}}>Nike X</ Button >}
+            {fila&& < Button variant="outline-danger" onClick={()=>{setFila(false);setCategories('')}}>Fila &times;</ Button >}
+            {puma&& < Button variant="outline-danger" onClick={()=>{setPuma(false);setCategories('')}}>Puma &times;</ Button >}
+            {rebook&& < Button variant="outline-danger" onClick={()=>{setRebook(false);setCategories('')}}>Rebook &times;</ Button >}
+            {kapa&& < Button variant="outline-danger" onClick={()=>{setKapa(false);setCategories('')}}>Kapa &times;</ Button >}
+            {bench&& < Button variant="outline-danger" onClick={()=>{setBench(false);setCategories('')}}>Bench &times;</ Button >}
+            {sprit&& < Button variant="outline-danger" onClick={()=>{setSprit(false);setCategories('')}}>Sprit &times;</ Button >}
             
               <Pagination 
               setCurrentPages={setCurrentPage}

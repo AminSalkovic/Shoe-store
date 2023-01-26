@@ -17,6 +17,10 @@
     text-decoration: none;
     color: gray;
 }
+.scroll-div-men li{
+    background-color: rgb(242, 246, 248);
+}
 .scroll-div-men li:hover{
-    background-color: aliceblue;
+    background-color: rgb(80, 160, 230);
+    color: white;
 }

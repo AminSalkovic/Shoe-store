@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 type BrendCardProps={
     imgUrl:string,
-    imgPath:string
+    imgPath:string,
 }
 const BrendCard = ({imgPath,imgUrl}:BrendCardProps) => {
   return (

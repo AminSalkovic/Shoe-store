@@ -10,6 +10,8 @@ import Nike from './components/pages/brends/Nike'
 import Fila from './components/pages/brends/Fila'
 import Puma from './components/pages/brends/Puma'
 import Rebook from './components/pages/brends/Rebook'
+import FashionSnikers from './components/pages/men/categories/FashionSnikers'
+import Boots from './components/pages/men/categories/Boots'
 
 function App() {
   
@@ -29,6 +31,8 @@ function App() {
       <Route path='/marke/fila' element={<Fila/>}/>
       <Route path='/marke/puma' element={<Puma/>}/>
       <Route path='marke/rebook' element={<Rebook/>}/>
+      <Route path='/muskarci/modne-patike' element={<FashionSnikers/>}/>
+      <Route path="/muskarci/cizme&gleznjace" element={<Boots/>}/>
      </Routes>
    </ShoppingCartProvider>
   )
