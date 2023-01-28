@@ -19,6 +19,7 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
     const[puma,setPuma]=useState(false)
     const[rebook,setRebook]=useState(false)
     const[kapa,setKapa]=useState(false)
+    const[highlandCreek,setHighlandCreek]=useState(false)
     const[bench,setBench]=useState(false)
     const[sprit,setSprit]=useState(false)
 
@@ -29,8 +30,10 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
     const pumaFunction=()=>{setPuma(true);setCategories('Puma')}
     const rebookFunction=()=>{setRebook(true);setCategories('Rebook')}
     const kapaFunction=()=>{setKapa(true);setCategories('Kapa')}
+    const highlandCreekFunction=()=>{setHighlandCreek(true);setCategories('Highland Creek')}
     const benchFunction=()=>{setBench(true);setCategories('Bench')}
     const spritFunction=()=>{setSprit(true);setCategories('Sprit')}
+
 
 
   return (
@@ -47,6 +50,7 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
                      <li onClick={pumaFunction}>Puma</li>
                      <li onClick={rebookFunction}>Rebook</li>
                      <li onClick={kapaFunction}>Kapa</li>
+                     <li onClick={highlandCreekFunction}>Highland Creek</li>
                      <li onClick={benchFunction}>Bench</li>
                      <li onClick={spritFunction}>Sprit</li>
                   </ul>
@@ -59,6 +63,7 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
             {fila&& < Button variant="outline-danger" onClick={()=>{setFila(false);setCategories('')}}>Fila &times;</ Button >}
             {puma&& < Button variant="outline-danger" onClick={()=>{setPuma(false);setCategories('')}}>Puma &times;</ Button >}
             {rebook&& < Button variant="outline-danger" onClick={()=>{setRebook(false);setCategories('')}}>Rebook &times;</ Button >}
+            {highlandCreek && < Button variant="outline-danger" onClick={()=>{setHighlandCreek(false);setCategories('')}}>Highland Creek &times;</ Button >}
             {kapa&& < Button variant="outline-danger" onClick={()=>{setKapa(false);setCategories('')}}>Kapa &times;</ Button >}
             {bench&& < Button variant="outline-danger" onClick={()=>{setBench(false);setCategories('')}}>Bench &times;</ Button >}
             {sprit&& < Button variant="outline-danger" onClick={()=>{setSprit(false);setCategories('')}}>Sprit &times;</ Button >}
@@ -67,7 +72,7 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
                   if(item.category===category){ 
                       if(categories==='Adidas' || categories==='Nike' || categories==='Fila' 
                       || categories==='Puma' || categories==='Rebook' || categories==='Kapa'
-                      || categories ==='Bench' || categories ==='Sprit'){
+                      || categories ==='Bench' || categories ==='Sprit' || categories==='Highland Creek'){
                           if(item.brend === categories){
                               return(
                                   <Col key={index}>

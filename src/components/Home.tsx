@@ -5,11 +5,34 @@ import homeBrendCards from './pages/brends/brend.json'
 import HomeBrendCard from "./HomeBrendCard"
 import ArticleCard from "./ArticleCard"
 import articleCards from './articles.json'
+import HomeKidsCard from "./HomeKidsCard"
 
 const Home = () => {
   return (
     <>
       <Container>
+         <div style={{border:'2px solid green'}}>
+             <h1 style={{textAlign:'center',color:'green'}}>DECA</h1>
+          </div>
+          <h1 style={{textAlign:'center',marginTop:"50px"}}>VRHUNSKI BRENDOVI ZA DECU</h1>
+              <Container style={{marginTop:'20px'}}>
+              <Row md={2} xs={1} lg={4} className='g-3'>
+                {homeBrendCards.map((item,index)=>{
+                  if(item.id>15 && item.id<20){
+                    return(
+                      <Col key={index}>
+                        <HomeKidsCard imgUrl={item.imgUrl}
+                         category={item.name}
+                         imgPath={item.imgPath}
+                        />
+                      </Col>
+                    )
+                  }
+                })}
+              </Row>
+          </Container>
+      </Container>
+      <Container style={{marginTop:'80px'}}>
           <div style={{border:'2px solid green'}}>
              <h1 style={{textAlign:'center',color:'green'}}>MUSKARCI</h1>
           </div>
@@ -41,7 +64,7 @@ const Home = () => {
              })}
         </Row>
       </Container>
-      <Container>
+      <Container style={{marginTop:'3..0px'}}>
           <Row md={2} xs={1} lg={5} className='g-3'>
                 {articleCards.map((item,index)=>{
                   if(item.id>29 && item.id<35){

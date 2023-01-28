@@ -18,7 +18,7 @@
     },
     {  
         "id":3,   
-        "imgPath":"/skechers",
+        "imgPath":"marke/skechers",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/skechers_%20225x197%20(25).jpg",
         "name":"Skechers"
     },
@@ -36,7 +36,7 @@
     },
     {  
        "id":6,    
-       "imgPath":"/kapa",
+       "imgPath":"marke/kapa",
        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/kappa_%20225x197%20(54).jpg",
        "name":"Kapa"
     },
@@ -54,7 +54,7 @@
     },
     {   
         "id":9,   
-        "imgPath":"/venice",
+        "imgPath":"/marke/venice",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/venice_%20225x197%20(8).jpg",
         "name":"Venice"
     },
@@ -72,7 +72,7 @@
     },
     {   
         "id":12,   
-        "imgPath":"/highland-creek",
+        "imgPath":"/marke/highland-creek",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/highland_creek_-225x197-(2).jpg",
         "name":"Highland Creek"
     },
@@ -84,7 +84,7 @@
     },
     {   
         "id":14,   
-        "imgPath":"/easy-street",
+        "imgPath":"/marke/easy-street",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/easy_street_%20225x197%20(44).jpg",
         "name":"Easy Street"
     },

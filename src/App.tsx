@@ -12,6 +12,12 @@ import Puma from './components/pages/brends/Puma'
 import Rebook from './components/pages/brends/Rebook'
 import FashionSnikers from './components/pages/men/categories/FashionSnikers'
 import Boots from './components/pages/men/categories/Boots'
+import DeepSnikers from './components/pages/men/categories/DeepSnikers'
+import HighlandCreek from './components/pages/brends/HighlandCreek'
+import SportSnikers from './components/pages/men/categories/SportSnikers'
+import ElegantShoes from './components/pages/men/categories/ElegantShoes'
+import Venice from './components/pages/brends/Venice'
+import EasyStreet from './components/pages/brends/EasyStreet'
 
 function App() {
   
@@ -31,8 +37,14 @@ function App() {
       <Route path='/marke/fila' element={<Fila/>}/>
       <Route path='/marke/puma' element={<Puma/>}/>
       <Route path='marke/rebook' element={<Rebook/>}/>
+      <Route path='/marke/venice' element={<Venice/>}/>
+      <Route path='/marke/easy-street' element={<EasyStreet/>}/>
+      <Route path='marke/highland-creek' element={<HighlandCreek/>}/>
       <Route path='/muskarci/modne-patike' element={<FashionSnikers/>}/>
       <Route path="/muskarci/cizme&gleznjace" element={<Boots/>}/>
+      <Route path='/muskarci/elegantne-cipele' element={<ElegantShoes/>}/>
+      <Route path='/muskarci/duboke-patike'  element={<DeepSnikers/>}/>
+       <Route path='/muskarci/sportske-patike' element={<SportSnikers/>}/>
      </Routes>
    </ShoppingCartProvider>
   )
