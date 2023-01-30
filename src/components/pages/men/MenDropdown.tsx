@@ -12,7 +12,7 @@ const MenDropdown = ({closeMenDropDown}:MenDropDownProps) => {
          <ul>
              {categoryItems.map((item,id)=>{
                 return(
-                    <Link to={item.imgPath}>
+                    <Link key={id} to={item.imgPath}>
                      <li onClick={closeMenDropDown} key={id}>{item.category}</li>
                     </Link>
                   )

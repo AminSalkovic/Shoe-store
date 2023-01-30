@@ -13,8 +13,8 @@ const BrendDropDown = ({closeBrendDropDown}:BrendDropDownPorps) => {
         <Row md={2} xs={1} lg={3} className='g-3'>          
         {brendList.map((items,index)=>{
             return(
-                <Link to={items.imgPath}>
-                <li onClick={closeBrendDropDown} key={index}>{items.name}</li>
+                <Link key={index} to={items.imgPath}>
+                <li key={index} onClick={closeBrendDropDown}>{items.name}</li>
             </Link>
             );
         })}

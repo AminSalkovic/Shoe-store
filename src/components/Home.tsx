@@ -64,7 +64,7 @@ const Home = () => {
              })}
         </Row>
       </Container>
-      <Container style={{marginTop:'3..0px'}}>
+      <Container style={{marginTop:'30px'}}>
           <Row md={2} xs={1} lg={5} className='g-3'>
                 {articleCards.map((item,index)=>{
                   if(item.id>29 && item.id<35){

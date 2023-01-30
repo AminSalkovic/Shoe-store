@@ -18,8 +18,11 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
     const[fila,setFila]=useState(false)
     const[puma,setPuma]=useState(false)
     const[rebook,setRebook]=useState(false)
+    const[skechers,setSkechers]=useState(false)
     const[kapa,setKapa]=useState(false)
     const[highlandCreek,setHighlandCreek]=useState(false)
+    const[easyStreet,setEasyStreet]=useState(false)
+    const[venice,setVenice]=useState(false)
     const[bench,setBench]=useState(false)
     const[sprit,setSprit]=useState(false)
 
@@ -29,8 +32,11 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
     const filaFunction=()=>{setFila(true);setCategories('Fila')}
     const pumaFunction=()=>{setPuma(true);setCategories('Puma')}
     const rebookFunction=()=>{setRebook(true);setCategories('Rebook')}
+    const skechersFunction=()=>{setSkechers(true);setCategories('Skechers')}
     const kapaFunction=()=>{setKapa(true);setCategories('Kapa')}
     const highlandCreekFunction=()=>{setHighlandCreek(true);setCategories('Highland Creek')}
+    const easyStreetFunction=()=>{setEasyStreet(true);setCategories('Easy street')}
+    const veniceFunction=()=>{setVenice(true);setCategories('Venice')}
     const benchFunction=()=>{setBench(true);setCategories('Bench')}
     const spritFunction=()=>{setSprit(true);setCategories('Sprit')}
 
@@ -49,8 +55,11 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
                      <li onClick={filaFunction}>Fila</li>
                      <li onClick={pumaFunction}>Puma</li>
                      <li onClick={rebookFunction}>Rebook</li>
+                     <li onClick={skechersFunction}>Skechers</li>
                      <li onClick={kapaFunction}>Kapa</li>
                      <li onClick={highlandCreekFunction}>Highland Creek</li>
+                     <li onClick={easyStreetFunction}>Easy street</li>
+                     <li onClick={veniceFunction}>Venice</li>
                      <li onClick={benchFunction}>Bench</li>
                      <li onClick={spritFunction}>Sprit</li>
                   </ul>
@@ -63,8 +72,11 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
             {fila&& < Button variant="outline-danger" onClick={()=>{setFila(false);setCategories('')}}>Fila &times;</ Button >}
             {puma&& < Button variant="outline-danger" onClick={()=>{setPuma(false);setCategories('')}}>Puma &times;</ Button >}
             {rebook&& < Button variant="outline-danger" onClick={()=>{setRebook(false);setCategories('')}}>Rebook &times;</ Button >}
-            {highlandCreek && < Button variant="outline-danger" onClick={()=>{setHighlandCreek(false);setCategories('')}}>Highland Creek &times;</ Button >}
+            {skechers&& < Button variant="outline-danger" onClick={()=>{setSkechers(false);setCategories('')}}>Skechers&times;</ Button >}
             {kapa&& < Button variant="outline-danger" onClick={()=>{setKapa(false);setCategories('')}}>Kapa &times;</ Button >}
+            {highlandCreek && < Button variant="outline-danger" onClick={()=>{setHighlandCreek(false);setCategories('')}}>Highland Creek &times;</ Button >}
+            {easyStreet&& < Button variant="outline-danger" onClick={()=>{setEasyStreet(false);setCategories('')}}>Easy street &times;</ Button >}
+            {venice&& < Button variant="outline-danger" onClick={()=>{setVenice(false);setCategories('')}}>Venice &times;</ Button >}
             {bench&& < Button variant="outline-danger" onClick={()=>{setBench(false);setCategories('')}}>Bench &times;</ Button >}
             {sprit&& < Button variant="outline-danger" onClick={()=>{setSprit(false);setCategories('')}}>Sprit &times;</ Button >}
             <Row md={2} xs={1} lg={3} className='g-3'>
@@ -72,7 +84,8 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
                   if(item.category===category){ 
                       if(categories==='Adidas' || categories==='Nike' || categories==='Fila' 
                       || categories==='Puma' || categories==='Rebook' || categories==='Kapa'
-                      || categories ==='Bench' || categories ==='Sprit' || categories==='Highland Creek'){
+                      || categories ==='Bench' || categories ==='Sprit' || categories==='Highland Creek' 
+                      || categories==='Skechers' || categories==='Easy street' || categories==='Venice'){
                           if(item.brend === categories){
                               return(
                                   <Col key={index}>

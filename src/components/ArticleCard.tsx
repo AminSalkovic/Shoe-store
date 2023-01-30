@@ -4,6 +4,7 @@ import { useShoppingCart } from "../context/ShoppingCartContext"
 import './ArticleCard.css'
 
 type CategoryItemsProps={
+    redni:number,
     id:number,
     imgUrl:string,
     category:string,
@@ -15,10 +16,9 @@ type CategoryItemsProps={
 }
 
 
-const ArticleCard = ({id,imgPath,imgUrl,category,name,password,brend,price}:CategoryItemsProps) => {
+const ArticleCard = ({id,imgPath,imgUrl,category,name,password,brend,price,redni}:CategoryItemsProps) => {
 
-    const{increaseCartQuantity,getItemQuantity}=useShoppingCart()
-    const quantity= getItemQuantity(id)
+    const{increaseCartQuantity}=useShoppingCart()
   return (
     <div style={{display:"flex",flexDirection:'column',alignItems:"center",justifyContent:'center'}}>
         <Card className="articleCard">
