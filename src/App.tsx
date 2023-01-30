@@ -21,6 +21,8 @@ import EasyStreet from './components/pages/brends/EasyStreet'
 import Skechers from './components/pages/brends/Skechers'
 import Trekking from './components/pages/men/categories/Trekking'
 import Sandals from './components/pages/men/categories/Sandals'
+import Slippers from './components/pages/men/categories/Slippers'
+import Kappa from './components/pages/brends/Kappa'
 
 function App() {
   
@@ -39,6 +41,7 @@ function App() {
       <Route path='/marke/puma' element={<Puma/>}/>
       <Route path='marke/rebook' element={<Rebook/>}/>
       <Route path='/marke/skechers' element={<Skechers/>}/>
+      <Route path='/marke/kappa' element={<Kappa/>}/>
       <Route path='/marke/venice' element={<Venice/>}/>
       <Route path='/marke/easy-street' element={<EasyStreet/>}/>
       <Route path='marke/highland-creek' element={<HighlandCreek/>}/>
@@ -49,6 +52,7 @@ function App() {
       <Route path='/muskarci/sportske-patike' element={<SportSnikers/>}/>
       <Route path='/muskarci/trekking' element={<Trekking/>}/>
       <Route path='/muskarci/sandale' element={<Sandals/>}/>
+      <Route path='/muskarci/papuce' element={<Slippers/>}/>
      </Routes>
    </ShoppingCartProvider>
   )

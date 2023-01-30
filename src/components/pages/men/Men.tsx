@@ -9,7 +9,6 @@ import Pagination from '../../Pagination'
 import './Men.css'
 
 
-
 const Men = () => {
      
     const[currentPage,setCurrentPage]=useState(1)
@@ -30,29 +29,25 @@ const Men = () => {
     const[fila,setFila]=useState(false)
     const[puma,setPuma]=useState(false)
     const[rebook,setRebook]=useState(false)
-    const[kapa,setKapa]=useState(false)
-    const[bench,setBench]=useState(false)
-    const[sprit,setSprit]=useState(false)
-
+    const[skechers,setSkechers]=useState(false)
+    const[kappa,setKappa]=useState(false)
+    const[highlandCreek,setHighlandCreek]=useState(false)
+    const[easyStreet,setEasyStreet]=useState(false)
+    const[venice,setVenice]=useState(false)
     
     const adidasFunction=()=>{setAdidas(true);setCategories('Adidas');}
     const nikeFunction=()=>{setNike(true);setCategories('Nike')}
     const filaFunction=()=>{setFila(true);setCategories('Fila')}
     const pumaFunction=()=>{setPuma(true);setCategories('Puma')}
     const rebookFunction=()=>{setRebook(true);setCategories('Rebook')}
-    const kapaFunction=()=>{setKapa(true);setCategories('Kapa')}
-    const benchFunction=()=>{setBench(true);setCategories('Bench')}
-    const spritFunction=()=>{setSprit(true);setCategories('Sprit')}
+    const skechersFunction=()=>{setSkechers(true);setCategories('Skechers')}
+    const kappaFunction=()=>{setKappa(true);setCategories('Kappa')}
+    const highlandCreekFunction=()=>{setHighlandCreek(true);setCategories('Highland Creek')}
+    const easyStreetFunction=()=>{setEasyStreet(true);setCategories('Easy street')}
+    const veniceFunction=()=>{setVenice(true);setCategories('Venice')}
 
 
-    const cipele=()=>setCategories('cipele');
-    const cizme=()=>setCategories('ČIZME&GLEŽNJAČE')
-     
-
-      
-    
-    
-
+ 
     return (
       <Container>
       <div style={{display:'flex'}}>
@@ -64,9 +59,8 @@ const Men = () => {
                       {categoryItems.map((el,index)=>{
                         return(
                           <li key={index} onClick={()=>{
-                            setNumber(el.num)
+                                setNumber(el.num)
                                 setNumber2(el.amin)
-                             
                               }}>{el.category}({el.count})</li>
                           )
                           })}
@@ -77,19 +71,16 @@ const Men = () => {
                 <p>Marke</p>
               <div className='scroll-div-men'>
                   <ul>
-                     <li onClick={adidasFunction}>Adidas</li>
-                     <li onClick={nikeFunction}>Nike</li>
-                     <li onClick={filaFunction}>Fila</li>
-                     <li onClick={pumaFunction}>Puma</li>
-                     <li onClick={rebookFunction}>Rebook</li>
-                     <li onClick={kapaFunction}>Kapa</li>
-                     <li onClick={benchFunction}>Bench</li>
-                     <li onClick={spritFunction}>Sprit</li>
-                     <li onClick={cizme}>Venice</li>
-                     <li onClick={cizme}>Cortina</li>
-                     <li onClick={cizme}>Victory</li>
-                     <li onClick={cizme}>Highland Creek</li>
-                     <li onClick={cizme}>Croscs</li>
+                    <li onClick={adidasFunction}>Adidas (46)</li>
+                     <li onClick={nikeFunction}>Nike (39)</li>
+                     <li onClick={pumaFunction}>Puma (27)</li>
+                     <li onClick={filaFunction}>Fila (23) </li>
+                     <li onClick={rebookFunction}>Rebook (20) </li>
+                     <li onClick={skechersFunction}>Skechers (9)</li>
+                     <li onClick={kappaFunction}>Kappa (8)</li>
+                     <li onClick={highlandCreekFunction}>Highland Creek (3)</li>
+                     <li onClick={easyStreetFunction}>Easy street (5)</li>
+                     <li onClick={veniceFunction}>Venice (11)</li>
                   </ul>
                 </div>
         </div>
@@ -109,15 +100,18 @@ const Men = () => {
                 </Row>
             </Container>
           <Container>
-            <Button variant="secondary" onClick={()=>{setNumber(0);setNumber2(0);setCurrentPage(1)}}>Svi proizvodi</Button>
-            {adidas&&< Button variant="outline-danger" onClick={()=>{setAdidas(false);setCategories('')}}>Adidas X</ Button >}
-            {nike&& < Button variant="outline-danger" onClick={()=>{setNike(false);setCategories('')}}>Nike X</ Button >}
-            {fila&& < Button variant="outline-danger" onClick={()=>{setFila(false);setCategories('')}}>Fila &times;</ Button >}
-            {puma&& < Button variant="outline-danger" onClick={()=>{setPuma(false);setCategories('')}}>Puma &times;</ Button >}
-            {rebook&& < Button variant="outline-danger" onClick={()=>{setRebook(false);setCategories('')}}>Rebook &times;</ Button >}
-            {kapa&& < Button variant="outline-danger" onClick={()=>{setKapa(false);setCategories('')}}>Kapa &times;</ Button >}
-            {bench&& < Button variant="outline-danger" onClick={()=>{setBench(false);setCategories('')}}>Bench &times;</ Button >}
-            {sprit&& < Button variant="outline-danger" onClick={()=>{setSprit(false);setCategories('')}}>Sprit &times;</ Button >}
+            <Button variant="secondary" onClick={()=>{setNumber(0);setNumber2(0);setCurrentPage(1)}}>Svi proizvodi (191)</Button>
+            {adidas&&< Button variant="outline-danger" onClick={()=>{setAdidas(false);setCategories('')}}>Adidas X (46)</ Button >}
+            {nike&& < Button variant="outline-danger" onClick={()=>{setNike(false);setCategories('')}}>Nike X (38)</ Button >}
+            {fila&& < Button variant="outline-danger" onClick={()=>{setFila(false);setCategories('')}}>Fila X (23)</ Button >}
+            {puma&& < Button variant="outline-danger" onClick={()=>{setPuma(false);setCategories('')}}>Puma X (27)</ Button >}
+            {rebook&& < Button variant="outline-danger" onClick={()=>{setRebook(false);setCategories('')}}>Rebook X (20) </ Button >}
+            {skechers&& < Button variant="outline-danger" onClick={()=>{setSkechers(false);setCategories('')}}>Skechers X (9)</ Button >}
+            {kappa&& < Button variant="outline-danger" onClick={()=>{setKappa(false);setCategories('')}}>Kapa X (8) </ Button >}
+            {highlandCreek && < Button variant="outline-danger" onClick={()=>{setHighlandCreek(false);setCategories('')}}>Highland Creek X (3)  </ Button >}
+            {easyStreet&& < Button variant="outline-danger" onClick={()=>{setEasyStreet(false);setCategories('')}}>Easy street X (5) </ Button >}
+            {venice&& < Button variant="outline-danger" onClick={()=>{setVenice(false);setCategories('')}}>Venice X (11) </ Button >}
+            
             
               <Pagination 
               setCurrentPages={setCurrentPage}

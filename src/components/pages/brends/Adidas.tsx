@@ -2,7 +2,7 @@ import BrendFile from './BrendFile'
 
 const Adidas = () => {
   return (
-    <BrendFile brend='Adidas'/>
+    <BrendFile brend='Adidas' count={46}/>
   )
 }
 

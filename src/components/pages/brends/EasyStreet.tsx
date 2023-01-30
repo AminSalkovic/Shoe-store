@@ -2,7 +2,7 @@ import BrendFile from './BrendFile'
 
 const EasyStreet = () => { 
     return (
-      <BrendFile brend='Easy street'/>
+      <BrendFile brend='Easy street' count={5}/>
     )
 }
 

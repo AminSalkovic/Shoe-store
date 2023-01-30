@@ -2,7 +2,7 @@ import BrendFile from './BrendFile'
 
 const Rebook = () => {
     return (
-       <BrendFile brend='Rebook'/>
+       <BrendFile brend='Rebook'count={20}/>
     )
 }
 

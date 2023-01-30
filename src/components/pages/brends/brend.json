@@ -36,96 +36,78 @@
     },
     {  
        "id":6,    
-       "imgPath":"marke/kapa",
+       "imgPath":"marke/kappa",
        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/kappa_%20225x197%20(54).jpg",
-       "name":"Kapa"
-    },
-    {  
-        "id":7,
-       "imgPath":"/bench",
-       "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/bench_%20225x197%20(6).jpg",
-       "name":"Bench"
-    },
-    {  
-        "id":8,       
-        "imgPath":"/sprit",
-        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/esprit_-225x197-(2).jpg",
-        "name":"Sprit"
+       "name":"Kappa"
     },
     {   
-        "id":9,   
+        "id":7,   
         "imgPath":"/marke/venice",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/venice_%20225x197%20(8).jpg",
         "name":"Venice"
     },
     {   
-        "id":10,   
+        "id":8,   
         "imgPath":"/cortina",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/cortina_%20225x197%20(32).jpg",
         "name":"Cortina"
     },
     {   
-        "id":11,   
+        "id":9,   
         "imgPath":"/victory",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/victory_%20225x197%20(9).jpg",
         "name":"Victory"
     },
     {   
-        "id":12,   
+        "id":10,   
         "imgPath":"/marke/highland-creek",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/highland_creek_-225x197-(2).jpg",
         "name":"Highland Creek"
     },
     {   
-        "id":13,   
-        "imgPath":"/crocs",
-        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/crocs_logo_225x197.jpg",
-        "name":"Crocs"
-    },
-    {   
-        "id":14,   
+        "id":11,   
         "imgPath":"/marke/easy-street",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/easy_street_%20225x197%20(44).jpg",
         "name":"Easy Street"
     },
     {   
-        "id":15,   
+        "id":12,   
         "imgPath":"/bjorndal",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/bjorndal_%20225x197%20(7).jpg",
         "name":"Bjorndal"
     },
     {   
-        "id":16,   
+        "id":13,   
         "imgPath":"/casa-mia",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/casa_mia_%20225x197%20(20).jpg",
         "name":"Case Mia"
     },
     {   
-        "id":17,   
+        "id":14,   
         "imgPath":"/reiker-brand",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/rieker_brand_225x197.jpg",
         "name":"Reiker Brand"
     },
     {   
-        "id":18,   
+        "id":15,   
         "imgPath":"/hello-kitty",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/hello_kitty_%20225x197%20(53).jpg",
         "name":"Hello Kitty"
     },
     {   
-        "id":19,   
+        "id":16,   
         "imgPath":"/bobbi-shoes",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/Bobbi_shoes_%20225x197%20(14).jpg",
         "name":"Bobbi Shoes"
     },
     {   
-        "id":20,   
+        "id":17,   
         "imgPath":"/minnie-mouse",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/minnie_mouse_%20225x197%20(43).jpg",
         "name":"Minnie Mouse"
     },
     {   
-        "id":21,   
+        "id":18,   
         "imgPath":"/elefanten",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/elefanten_%20225x197%20(39).jpg",
         "name":"Elefanten"

@@ -1,8 +1,7 @@
 .brendDropDown{
     position: absolute;
     top: 130px;
-    left: 36%;
-    width: 500px;
+    width:100%;
     min-height: 330px;
     z-index: 10;
     background-color: rgb(255, 255, 255);
@@ -15,6 +14,7 @@
 .brendDropDown li {
     color: gray;
     font-size: 20px;
+    text-align: center;
 }
 .brendDropDown li:hover{
     transition: all 0.2s ease-out;

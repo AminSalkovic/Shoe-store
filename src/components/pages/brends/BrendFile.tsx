@@ -5,10 +5,11 @@ import articles from '../../articles.json'
 import categoryItems from '../men/categoryMen.json'
 
 type BrendFileProps={
-    brend:string
+    brend:string,
+    count:number
 }
 
-const BrendFile = ({brend}:BrendFileProps) => {
+const BrendFile = ({brend,count}:BrendFileProps) => {
    
   const[number,setNumber]=useState(0);
   const [number2,setNumber2]=useState(0)
@@ -32,7 +33,7 @@ const BrendFile = ({brend}:BrendFileProps) => {
                 </div>
           </div>
     <Container>
-            <Button onClick={()=>{setNumber(0);setNumber2(0)}}>Svi proizvodi</Button>
+            <Button onClick={()=>{setNumber(0);setNumber2(0)}}>Svi proizvodi ({count})</Button>
             <Row md={2} xs={1} lg={3} className='g-3'>
               {articles.map((item,index)=>{
                 if(item.brend===brend){    
