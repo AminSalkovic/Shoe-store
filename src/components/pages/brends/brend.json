@@ -18,7 +18,7 @@
     },
     {  
         "id":3,   
-        "imgPath":"marke/skechers",
+        "imgPath":"/marke/skechers",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/skechers_%20225x197%20(25).jpg",
         "name":"Skechers"
     },
@@ -41,7 +41,7 @@
        "name":"Kapa"
     },
     {  
-        "id":7,    
+        "id":7,
        "imgPath":"/bench",
        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/bench_%20225x197%20(6).jpg",
        "name":"Bench"

@@ -40,63 +40,35 @@
                 "category":"Sportske patike",
                 "imgUrl":"/",
                 "imgPath":"/muskarci/sportske-patike",
-                "count":78,
+                "count":61,
                 "num":178,
                 "amin":99
-                }, {
-         "id":6,
-         "category":"Mokasine",
-         "imgUrl":"/",
-         "imgPath":"/duboke-patike",
-         "count":47,
-         "num":5,
-         "amin":8
-
-    },
+        }, 
     {
-        "id":7,
+        "id":6,
          "category":"Trekking",
          "imgUrl":"/",
-         "imgPath":"/sportske-patike",
-         "count":40,
+         "imgPath":"/muskarci/trekking",
+         "count":6,
          "num":5,
          "amin":8
-
-    },{
-        "id":8,
-         "category":"Platnene patike",
-         "imgUrl":"/",
-         "imgPath":"/duboke-patike",
-         "count":35,
-         "num":5,
-         "amin":8
-
     },
     {
-        "id":9,
-         "category":"Slobodno vreme",
-         "imgUrl":"/",
-         "imgPath":"/sportske-patike",
-         "count":30,
-         "num":5,
-         "amin":8
-
-    },{
-         "id":10,
+         "id":7,
          "category":"Sandale",
          "imgUrl":"/",
-         "imgPath":"/duboke-patike",
+         "imgPath":"/muskarci/sandale",
          "count":23,
          "num":5,
          "amin":8
 
     },
     {
-        "id":11,
+        "id":8,
          "category":"Kućne cipele",
          "imgUrl":"/",
          "imgPath":"/sportske-patike",
-         "count":14,
+         "count":7,
          "num":5,
          "amin":8
     }

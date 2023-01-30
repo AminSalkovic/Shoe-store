@@ -4,14 +4,25 @@ import ArticleCard from '../../../ArticleCard'
 import articles from '../../../articles.json'
 
 type CategoriesFileProps={
+    adidasCount:number,
+    nikeCount:number,
+    filaCount:number,
+    pumaCount:number,
+    rebookCount:number,
+    skechersCount:number,
+    kappaCount:number,
+    highlandCreekCount:number,
+    easyStreetCount:number,
+    veniceCount:number,
     category:string
     count:number
 }
 
-const CategoriesFile = ({category,count}:CategoriesFileProps) => {
+const CategoriesFile = ({category,count,adidasCount,nikeCount,filaCount,
+  pumaCount,rebookCount,skechersCount,kappaCount,
+  highlandCreekCount,easyStreetCount,veniceCount}:CategoriesFileProps) => {
     
     const[categories,setCategories]=useState('')
-
 
     const[adidas,setAdidas]=useState(false);
     const[nike,setNike]=useState(false)
@@ -19,29 +30,22 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
     const[puma,setPuma]=useState(false)
     const[rebook,setRebook]=useState(false)
     const[skechers,setSkechers]=useState(false)
-    const[kapa,setKapa]=useState(false)
+    const[kappa,setKapa]=useState(false)
     const[highlandCreek,setHighlandCreek]=useState(false)
     const[easyStreet,setEasyStreet]=useState(false)
     const[venice,setVenice]=useState(false)
-    const[bench,setBench]=useState(false)
-    const[sprit,setSprit]=useState(false)
 
-    
     const adidasFunction=()=>{setAdidas(true);setCategories('Adidas');}
     const nikeFunction=()=>{setNike(true);setCategories('Nike')}
     const filaFunction=()=>{setFila(true);setCategories('Fila')}
     const pumaFunction=()=>{setPuma(true);setCategories('Puma')}
     const rebookFunction=()=>{setRebook(true);setCategories('Rebook')}
     const skechersFunction=()=>{setSkechers(true);setCategories('Skechers')}
-    const kapaFunction=()=>{setKapa(true);setCategories('Kapa')}
+    const kappaFunction=()=>{setKapa(true);setCategories('Kappa')}
     const highlandCreekFunction=()=>{setHighlandCreek(true);setCategories('Highland Creek')}
     const easyStreetFunction=()=>{setEasyStreet(true);setCategories('Easy street')}
     const veniceFunction=()=>{setVenice(true);setCategories('Venice')}
-    const benchFunction=()=>{setBench(true);setCategories('Bench')}
-    const spritFunction=()=>{setSprit(true);setCategories('Sprit')}
-
-
-
+  
   return (
     <Container>
      <div style={{display:'flex'}}>
@@ -50,41 +54,37 @@ const CategoriesFile = ({category,count}:CategoriesFileProps) => {
                 <p>Kategorija</p>
               <div className='scroll-div-men'>
                   <ul>
-                  <li onClick={adidasFunction}>Adidas</li>
-                     <li onClick={nikeFunction}>Nike</li>
-                     <li onClick={filaFunction}>Fila</li>
-                     <li onClick={pumaFunction}>Puma</li>
-                     <li onClick={rebookFunction}>Rebook</li>
-                     <li onClick={skechersFunction}>Skechers</li>
-                     <li onClick={kapaFunction}>Kapa</li>
-                     <li onClick={highlandCreekFunction}>Highland Creek</li>
-                     <li onClick={easyStreetFunction}>Easy street</li>
-                     <li onClick={veniceFunction}>Venice</li>
-                     <li onClick={benchFunction}>Bench</li>
-                     <li onClick={spritFunction}>Sprit</li>
+                     <li onClick={adidasFunction}>Adidas ({adidasCount})</li>
+                     <li onClick={nikeFunction}>Nike ({nikeCount})</li>
+                     <li onClick={pumaFunction}>Puma ({pumaCount})</li>
+                     <li onClick={filaFunction}>Fila ({filaCount}) </li>
+                     <li onClick={rebookFunction}>Rebook ({rebookCount}) </li>
+                     <li onClick={skechersFunction}>Skechers ({skechersCount})</li>
+                     <li onClick={kappaFunction}>Kapa ({kappaCount})</li>
+                     <li onClick={highlandCreekFunction}>Highland Creek ({highlandCreekCount})</li>
+                     <li onClick={easyStreetFunction}>Easy street ({easyStreetCount})</li>
+                     <li onClick={veniceFunction}>Venice ({veniceCount})</li>
                   </ul>
                 </div>
           </div>
     <Container>
      <Button variant='secondary' onClick={()=>setCategories('')}>Svi proizvodi ({count})</Button>
-    {adidas&&< Button variant="outline-danger" onClick={()=>{setAdidas(false);setCategories('')}}>Adidas X</ Button >}
-            {nike&& < Button variant="outline-danger" onClick={()=>{setNike(false);setCategories('')}}>Nike X</ Button >}
-            {fila&& < Button variant="outline-danger" onClick={()=>{setFila(false);setCategories('')}}>Fila &times;</ Button >}
-            {puma&& < Button variant="outline-danger" onClick={()=>{setPuma(false);setCategories('')}}>Puma &times;</ Button >}
-            {rebook&& < Button variant="outline-danger" onClick={()=>{setRebook(false);setCategories('')}}>Rebook &times;</ Button >}
-            {skechers&& < Button variant="outline-danger" onClick={()=>{setSkechers(false);setCategories('')}}>Skechers&times;</ Button >}
-            {kapa&& < Button variant="outline-danger" onClick={()=>{setKapa(false);setCategories('')}}>Kapa &times;</ Button >}
-            {highlandCreek && < Button variant="outline-danger" onClick={()=>{setHighlandCreek(false);setCategories('')}}>Highland Creek &times;</ Button >}
-            {easyStreet&& < Button variant="outline-danger" onClick={()=>{setEasyStreet(false);setCategories('')}}>Easy street &times;</ Button >}
-            {venice&& < Button variant="outline-danger" onClick={()=>{setVenice(false);setCategories('')}}>Venice &times;</ Button >}
-            {bench&& < Button variant="outline-danger" onClick={()=>{setBench(false);setCategories('')}}>Bench &times;</ Button >}
-            {sprit&& < Button variant="outline-danger" onClick={()=>{setSprit(false);setCategories('')}}>Sprit &times;</ Button >}
+    {adidas&&< Button variant="outline-danger" onClick={()=>{setAdidas(false);setCategories('')}}>Adidas X ({adidasCount})</ Button >}
+            {nike&& < Button variant="outline-danger" onClick={()=>{setNike(false);setCategories('')}}>Nike X ({nikeCount})</ Button >}
+            {fila&& < Button variant="outline-danger" onClick={()=>{setFila(false);setCategories('')}}>Fila X ({filaCount}) </ Button >}
+            {puma&& < Button variant="outline-danger" onClick={()=>{setPuma(false);setCategories('')}}>Puma X ({pumaCount}) </ Button >}
+            {rebook&& < Button variant="outline-danger" onClick={()=>{setRebook(false);setCategories('')}}>Rebook X ({rebookCount}) </ Button >}
+            {skechers&& < Button variant="outline-danger" onClick={()=>{setSkechers(false);setCategories('')}}>Skechers X ({skechersCount})</ Button >}
+            {kappa&& < Button variant="outline-danger" onClick={()=>{setKapa(false);setCategories('')}}>Kappa X ({kappaCount}) </ Button >}
+            {highlandCreek && < Button variant="outline-danger" onClick={()=>{setHighlandCreek(false);setCategories('')}}>Highland Creek X ({highlandCreekCount})  </ Button >}
+            {easyStreet&& < Button variant="outline-danger" onClick={()=>{setEasyStreet(false);setCategories('')}}>Easy street X ({easyStreetCount}) </ Button >}
+            {venice&& < Button variant="outline-danger" onClick={()=>{setVenice(false);setCategories('')}}>Venice X ({veniceCount}) </ Button >}
             <Row md={2} xs={1} lg={3} className='g-3'>
               {articles.map((item,index)=>{
                   if(item.category===category){ 
                       if(categories==='Adidas' || categories==='Nike' || categories==='Fila' 
-                      || categories==='Puma' || categories==='Rebook' || categories==='Kapa'
-                      || categories ==='Bench' || categories ==='Sprit' || categories==='Highland Creek' 
+                      || categories==='Puma' || categories==='Rebook' || categories==='Kappa'
+                      ||  categories==='Highland Creek' 
                       || categories==='Skechers' || categories==='Easy street' || categories==='Venice'){
                           if(item.brend === categories){
                               return(
