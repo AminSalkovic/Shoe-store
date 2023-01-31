@@ -3,9 +3,9 @@ import HomeCard from "./HomeCard"
 import homeCards from './pages/men/categoryMen.json'
 import homeBrendCards from './pages/brends/brend.json'
 import HomeBrendCard from "./HomeBrendCard"
-import ArticleCard from "./ArticleCard"
 import articleCards from './articles.json'
 import HomeKidsCard from "./HomeKidsCard"
+import HomeArticleCard from "./HomeArticleCard"
 
 const Home = () => {
   return (
@@ -16,9 +16,9 @@ const Home = () => {
           </div>
           <h1 style={{textAlign:'center',marginTop:"50px"}}>VRHUNSKI BRENDOVI ZA DECU</h1>
               <Container style={{marginTop:'20px'}}>
-              <Row md={2} xs={1} lg={4} className='g-3'>
+              <Row md={2} xs={2} lg={4} className='g-3'>
                 {homeBrendCards.map((item,index)=>{
-                  if(item.id>15 && item.id<20){
+                  if(item.id>14 && item.id<20){
                     return(
                       <Col key={index}>
                         <HomeKidsCard imgUrl={item.imgUrl}
@@ -37,7 +37,7 @@ const Home = () => {
              <h1 style={{textAlign:'center',color:'green'}}>MUSKARCI</h1>
           </div>
       </Container>
-      <Container>
+      <Container >
       <Row md={2} xs={1} lg={4} className='g-3'>
              {homeCards.map((item,index)=>{
                if(item.id>2 && item.id<7){
@@ -52,7 +52,7 @@ const Home = () => {
       </Container>
 
       <Container style={{marginTop:'20px'}}>
-      <Row md={2} xs={1} lg={6} className='g-3'>
+      <Row md={3} xs={2} lg={6} className='g-3'>
              {homeBrendCards.map((item,index)=>{
                if(item.id<6){
                 return(
@@ -67,10 +67,10 @@ const Home = () => {
       <Container style={{marginTop:'30px'}}>
           <Row md={2} xs={1} lg={5} className='g-3'>
                 {articleCards.map((item,index)=>{
-                  if(item.id>29 && item.id<35){
+                  if(item.id>111 && item.id<118){
                     return(
                       <Col key={index}>
-                        <ArticleCard {...item}/>
+                        <HomeArticleCard {...item}/>
                       </Col>
                     )
                   }

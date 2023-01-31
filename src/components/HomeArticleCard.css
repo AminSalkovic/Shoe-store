@@ -1,0 +1,28 @@
+.homearticlecard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homeArticleCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 320px;
+}
+.homeArticleCardImg{
+   height: 130px;
+   width: 170px;
+   object-fit: cover;
+}
+.homeArticleCardImg:hover{
+  height: 140px;
+  width: 180px;
+}
+.priceH1{
+    color: rgb(7, 116, 7);
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: 300;
+}

@@ -10,19 +10,24 @@ type CartItemProps={
 
 const CartItem = ({id,quantity}:CartItemProps) => {
  
- const{removeFromCart}=useShoppingCart()
+ const{removeFromCart,increaseCartQuantity,decreaseCartQuantity}=useShoppingCart()
 
  const item = articleItems.find(i=> i.id ===id)
 
  if(item==null) return null
 
   return (
+    <>
     <Stack direction="horizontal" gap={2} className='d-flex align-items-center'>
-      <img src={item.imgUrl} style={{width:'125px',height:"75px",objectFit:'cover'}}/>
+      <img src={item.imgUrl} style={{width:'125px',height:"100px",objectFit:'cover'}}/>
        <div className="me-auto">
          <div>
             {item.name}{' '}
-            <span className="text-muted" style={{fontSize:".65rem"}}>{quantity}x</span>
+            <div style={{display:'felx',width:'100'}}>
+            <span className="text-muted" style={{fontSize:".75rem"}}>{quantity}x</span>
+             <Button onClick={()=>decreaseCartQuantity(id)} variant="outline-danger" size="sm" style={{width:'27px',marginLeft:'3px'}}>-</Button>
+             <Button onClick={()=>increaseCartQuantity(id)} variant="outline-success" size="sm" style={{marginLeft:'3px'}} >+</Button>
+            </div>
          </div>
          <div className='text-muted' style={{fontSize:'.75rem'}}>
          {formatCurrency(item.price)}
@@ -35,6 +40,8 @@ const CartItem = ({id,quantity}:CartItemProps) => {
            &times;
        </Button>
     </Stack>
+    
+    </>
   )
 }
 

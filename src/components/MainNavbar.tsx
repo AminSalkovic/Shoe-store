@@ -1,33 +1,37 @@
+import { useEffect, useState } from 'react'
 import { Container,Navbar as NavbarBs,Nav } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import * as AiIcons from 'react-icons/ai'
 import { useShoppingCart } from '../context/ShoppingCartContext'
+import './MainNavbar.css'
+import data from './articles.json'
 
-
+type MainNavbarItem={
+    output:string
+}
 
 const MainNavbar = () => {
    
     const {openMobileDropdown}=useShoppingCart()
 
     return (
-    <NavbarBs variant='light' className='bg-light shadow-sm mb-3'>
-    <Container>
-       <Nav className='me-auto'>
+         <div className='mainNavbar'>
+         <div className='mainNavbarPart1'>
             <Nav.Link to='/' as={NavLink}>
                 Home
             </Nav.Link>
             <form>
-                <input type="text"  placeholder='Pretraga'/>
+                <input  type="text" placeholder='Search'/>
             </form>
             <Nav.Link to='/Novo' as={NavLink}>
                 Kontakt
             </Nav.Link>
-       </Nav>
+         </div> 
+     
         <div>
             <AiIcons.AiOutlineMenu onClick={openMobileDropdown} style={{color:'black'}}/>
         </div>
-    </Container>
-</NavbarBs>
+        </div>
   )
 }
 

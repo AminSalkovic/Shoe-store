@@ -6,7 +6,7 @@ import categoryItems from '../men/categoryMen.json'
 
 type BrendFileProps={
     brend:string,
-    count:number
+    count:number,
 }
 
 const BrendFile = ({brend,count}:BrendFileProps) => {
@@ -33,7 +33,8 @@ const BrendFile = ({brend,count}:BrendFileProps) => {
                 </div>
           </div>
     <Container>
-            <Button onClick={()=>{setNumber(0);setNumber2(0)}}>Svi proizvodi ({count})</Button>
+             <h1 style={{fontWeight:'700',fontStretch:'ultra-expanded'}}>{brend.toUpperCase()}</h1>
+            <Button variant='secondary' onClick={()=>{setNumber(0);setNumber2(0)}}>Svi proizvodi ({count})</Button>
             <Row md={2} xs={1} lg={3} className='g-3'>
               {articles.map((item,index)=>{
                 if(item.brend===brend){    

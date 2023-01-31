@@ -1,0 +1,32 @@
+.homeCardKids{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+.homeCardKids h1{
+    color: gray;
+    font-size: 27px;
+    text-align: center;
+}
+.homeCardKidsImg{
+    height: 220px;
+    width: 240px;
+    object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+    .homeCardKids{
+        width: 150px;
+        height: 210px;
+    }
+    .homeCardKidsImg{
+        width: 150px;
+        height: 150px;
+    }
+    .homeCardKids h1{
+        font-size: 17px;
+    }
+  }

@@ -1,0 +1,20 @@
+.mainNavbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainNavbarPart1{
+    width: 60%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mainNavbarPart1 input{
+    border: none;
+    border-bottom:1px solid black ;
+    width: 300px;
+}
+.mainNavbarPart1 input:focus{
+    border: none;
+}

@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <>
-    <NavbarBs variant='dark' className='bg-dark shadow-sm mb-3'>
+    <NavbarBs variant='light' className='bg-light shadow-sm mb-3'>
     <Container>
        <Nav className='me-auto'>
             <Nav.Link to='/Muskarci' as={NavLink} onMouseEnter={openMenDropdown}>
@@ -33,7 +33,7 @@ const Navbar = () => {
             <Nav.Link to='/Sport' as={NavLink}>
                 SPORT
             </Nav.Link>
-            <Nav.Link to='/Specijalne-cene' as={NavLink}>
+            <Nav.Link  to='/Specijalne-cene' as={NavLink} style={{color:'red'}}>
                 SPECIJALNE CENE %
             </Nav.Link>
             <Nav.Link to='/Marke' as={NavLink} onMouseEnter={openBrendDropDown}>

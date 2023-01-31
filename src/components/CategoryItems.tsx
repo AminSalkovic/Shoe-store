@@ -10,13 +10,14 @@ type CategoryItemsProps={
 
 const CategoryItems = ({imgUrl,category,imgPath}:CategoryItemsProps) => {
   return (
-    <div  style={{display:"flex",flexDirection:'column',alignItems:"center",justifyContent:'center'}}>
+    <div  style={{display:"flex",flexDirection:'column',alignItems:"center",justifyContent:'center',marginTop:'20px'}}>
+        <Link to={imgPath} style={{textDecoration:"none"}}>
         <Card style={{
             display:'flex',alignItems:'center',justifyContent:'center',
-            width:'180px',height:'180px',borderRadius:'100%',border:'1px solid black'}}>
+            width:'200px',height:'200px',borderRadius:'100%',}}>
             <Card.Img variant='top' 
             src={imgUrl} 
-            style={{height:"120px",width:'120px',objectFit:'cover'}}
+            style={{height:"200px",width:'200px',objectFit:'cover',borderRadius:'100%'}}
             /> 
         </Card>
             <Card.Body className='d-flex flex-column'>
@@ -24,6 +25,7 @@ const CategoryItems = ({imgUrl,category,imgPath}:CategoryItemsProps) => {
                     <h1 style={{color:'gray',fontSize:'23px',marginTop:'2px'}}>{category.toLocaleUpperCase()}</h1>
                 </Card.Title>
             </Card.Body>
+       </Link>
       </div>
   )
 }
