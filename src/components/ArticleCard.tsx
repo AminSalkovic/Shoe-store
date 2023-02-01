@@ -3,6 +3,7 @@ import { Button, Card, Container,} from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import './ArticleCard.css'
+import ArticleCardInformation from "./ArticleCardInformation"
 
 type CategoryItemsProps={
     id:number,
@@ -20,11 +21,17 @@ const ArticleCard = ({id,imgPath,imgUrl,category,name,password,brend,price}:Cate
 
     const[addButton,setAddButton]=useState(false)
 
+    const[showArticle,setShowArticle]=useState(false)
+    const viewArticle=()=>{
+      setShowArticle(!showArticle)
+    }
+    const turnOff=()=>setShowArticle(false)
+
     const hoverButton=()=> setAddButton(true)
     const unhoverButton=()=>setAddButton(false)
 
-    const{increaseCartQuantity}=useShoppingCart()
   return (
+    <>
     <div className="articleCardDiv"
       onMouseEnter={hoverButton}
       onMouseLeave={unhoverButton}
@@ -46,14 +53,18 @@ const ArticleCard = ({id,imgPath,imgUrl,category,name,password,brend,price}:Cate
                      <h1>{price}RSD</h1>
                </div>
          </div>
-
           {addButton && 
                 <div style={{height:'40px'}}>
-                  <Button  variant="secondary" onClick={()=>increaseCartQuantity(id)} className='w-100'>+ Add To Card </Button> 
+                  <Button  variant="secondary" onClick={viewArticle} className='w-100'>Brzi pregled</Button> 
                </div>
           }
         </Card>
-      </div>
+          {showArticle && <ArticleCardInformation heading={name}
+            imgUrl={imgUrl} password={password} price={price} id={id}
+            turnOff={turnOff}
+            />}
+        </div>
+        </>
   )
 }
 

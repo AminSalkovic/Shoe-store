@@ -15,12 +15,13 @@ type CategoriesFileProps={
     easyStreetCount:number,
     veniceCount:number,
     category:string
-    count:number
+    count:number,
+    heading:string
 }
 
 const CategoriesFile = ({category,count,adidasCount,nikeCount,filaCount,
   pumaCount,rebookCount,skechersCount,kappaCount,
-  highlandCreekCount,easyStreetCount,veniceCount}:CategoriesFileProps) => {
+  highlandCreekCount,easyStreetCount,veniceCount,heading}:CategoriesFileProps) => {
     
     const[categories,setCategories]=useState('')
 
@@ -68,6 +69,7 @@ const CategoriesFile = ({category,count,adidasCount,nikeCount,filaCount,
                 </div>
           </div>
     <Container>
+              <h1>{heading.toUpperCase()}</h1>
      <Button variant='secondary' onClick={()=>setCategories('')}>Svi proizvodi ({count})</Button>
     {adidas&&< Button variant="outline-danger" onClick={()=>{setAdidas(false);setCategories('')}}>Adidas X ({adidasCount})</ Button >}
             {nike&& < Button variant="outline-danger" onClick={()=>{setNike(false);setCategories('')}}>Nike X ({nikeCount})</ Button >}

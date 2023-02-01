@@ -6,7 +6,7 @@ const Sandals = () => {
     filaCount={0} pumaCount={0}
     rebookCount={0} skechersCount={0}
     kappaCount={0} highlandCreekCount={0}
-    easyStreetCount={0} veniceCount={0}/>
+    easyStreetCount={0} veniceCount={0} heading={'Sandale'}/>
   )
 }
 

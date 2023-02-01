@@ -7,7 +7,7 @@ const FashionSnikers = () => {
       filaCount={3} pumaCount={2}
       rebookCount={5} skechersCount={3}
       kappaCount={2} highlandCreekCount={0}
-      easyStreetCount={0} veniceCount={0}/>
+      easyStreetCount={0} veniceCount={0} heading={'Modne Patike'}/> 
   )
 }
 

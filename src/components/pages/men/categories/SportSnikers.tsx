@@ -6,7 +6,7 @@ const SportSnikers = () => {
     filaCount={7} pumaCount={12}
     rebookCount={9} skechersCount={6}
     kappaCount={0} highlandCreekCount={0}
-    easyStreetCount={0} veniceCount={0}/>
+    easyStreetCount={0} veniceCount={0} heading={'Sportske Patike'}/>
   )
 }
 

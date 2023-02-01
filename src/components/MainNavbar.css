@@ -1,11 +1,11 @@
 .mainNavbar{
+    height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .mainNavbarPart1{
-    width: 60%;
-    height: 80px;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -16,5 +16,11 @@
     width: 300px;
 }
 .mainNavbarPart1 input:focus{
-    border: none;
+    border: 1px solid red;
+}
+.searchIcon{
+    position: absolute;
+    margin-left:-30px;
+    margin-top: 3px;
+    font-size: 20px;
 }

@@ -6,7 +6,7 @@ const ElegantShoes = () => {
     filaCount={0} pumaCount={0}
     rebookCount={0} skechersCount={0}
     kappaCount={0} highlandCreekCount={0}
-    easyStreetCount={5} veniceCount={11}/>
+    easyStreetCount={5} veniceCount={11} heading={'Elegantne Cipele'}/>
   )
 }
 

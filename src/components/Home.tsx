@@ -6,6 +6,7 @@ import HomeBrendCard from "./HomeBrendCard"
 import articleCards from './articles.json'
 import HomeKidsCard from "./HomeKidsCard"
 import HomeArticleCard from "./HomeArticleCard"
+import ArticleCardInformation from "./ArticleCardInformation"
 
 const Home = () => {
   return (

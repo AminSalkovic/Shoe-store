@@ -1,0 +1,23 @@
+.searchList{
+    position: absolute;
+    z-index: 10;
+    background: white;
+    border: 1px solid rgb(207, 201, 201);
+    top: 54px;
+    width: 300px;
+    height: 280px;
+}
+.searchList a{
+    list-style: none;
+    text-decoration: none;
+}
+.searchList li {
+    color: gray;
+    font-size: 20px;
+    width: 200px;
+}
+.searchList li:hover{
+    transition: all 0.2s ease-out;
+    background-color: #1888ff;
+    color:white
+}

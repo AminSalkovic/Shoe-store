@@ -1,0 +1,42 @@
+.articleCardInformation{
+    width:500px;
+    height: 450px;
+    position: absolute;
+    margin-top: 150px;
+    z-index: 10;
+    background: white;
+    border: 1px solid rgb(134, 14, 14);
+}
+.closeIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    border-radius: 6px;
+    font-size: 25px;
+}
+.closeIcon:hover{
+    border: 1px solid rgb(247, 34, 34);
+    color: red;
+}
+.articleCardInformationPart1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+}
+.articleCardInformationPart1 img{
+    object-fit: contain;
+}
+.articleCardInformationPart2 h1{
+   font-size: 30px;
+}
+.articleCardInformationPart2 h2{
+    font-size: 27px;
+    font-weight: 400;
+    color: rgb(12, 160, 49);
+ }

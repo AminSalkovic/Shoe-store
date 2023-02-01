@@ -24,7 +24,9 @@ const Navbar = () => {
     <NavbarBs variant='light' className='bg-light shadow-sm mb-3'>
     <Container>
        <Nav className='me-auto'>
-            <Nav.Link to='/Muskarci' as={NavLink} onMouseEnter={openMenDropdown}>
+            <Nav.Link to='/Muskarci' as={NavLink} 
+            onClick={closeMenDropdown}
+            onMouseEnter={openMenDropdown}>
                 MUSKARCI
             </Nav.Link>
             <Nav.Link to='/Deca' as={NavLink}>

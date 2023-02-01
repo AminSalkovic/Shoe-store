@@ -4,15 +4,17 @@ import { NavLink } from 'react-router-dom'
 import * as AiIcons from 'react-icons/ai'
 import { useShoppingCart } from '../context/ShoppingCartContext'
 import './MainNavbar.css'
-import data from './articles.json'
+import SearchList from './SearchList'
 
-type MainNavbarItem={
-    output:string
-}
+
 
 const MainNavbar = () => {
    
     const {openMobileDropdown}=useShoppingCart()
+    const[searchText,setSearchText]=useState('')
+    const[input,setInput]=useState(false)
+     
+     const showList=()=>setInput(!input)
 
     return (
          <div className='mainNavbar'>
@@ -21,8 +23,15 @@ const MainNavbar = () => {
                 Home
             </Nav.Link>
             <form>
-                <input  type="text" placeholder='Search'/>
+                <input  type="text" placeholder='Search'
+                 onClick={showList}
+                 onChange={(event)=>setSearchText(event.target.value)}
+                 />
+                 <AiIcons.AiOutlineSearch className='searchIcon'/>
             </form>
+            {(input || searchText.length>0) &&
+             <SearchList searchText={searchText} showInput={input}/>
+            }
             <Nav.Link to='/Novo' as={NavLink}>
                 Kontakt
             </Nav.Link>

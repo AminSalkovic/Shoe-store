@@ -23,6 +23,7 @@ import Trekking from './components/pages/men/categories/Trekking'
 import Sandals from './components/pages/men/categories/Sandals'
 import Slippers from './components/pages/men/categories/Slippers'
 import Kappa from './components/pages/brends/Kappa'
+import ArticleCardInformation from './components/ArticleCardInformation'
 
 function App() {
   
@@ -54,6 +55,7 @@ function App() {
       <Route path='/muskarci/sandale' element={<Sandals/>}/>
       <Route path='/muskarci/papuce' element={<Slippers/>}/>
      </Routes>
+     
    </ShoppingCartProvider>
   )
 }

@@ -9,7 +9,7 @@ const Boots = () => {
     filaCount={5} pumaCount={6}
     rebookCount={0} skechersCount={0}
     kappaCount={0} highlandCreekCount={3}
-    easyStreetCount={0} veniceCount={0}/>
+    easyStreetCount={0} veniceCount={0} heading={'Cizme & Gleznjace'}/>
   )
 }
 
