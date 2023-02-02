@@ -1,11 +1,15 @@
 .articleCardInformation{
     width:500px;
-    height: 450px;
+    height: 360px;
     position: absolute;
-    margin-top: 150px;
+    margin-top: 50px;
+    margin-left: -200px;
+    border-radius: 6px;
     z-index: 10;
     background: white;
-    border: 1px solid rgb(134, 14, 14);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 17px;
+    animation:fadeIn;
+    animation-duration:1s;
 }
 .closeIcon{
     display: flex;
@@ -32,6 +36,10 @@
 .articleCardInformationPart1 img{
     object-fit: contain;
 }
+.articleCardInformationPart1 img:hover{
+    width: 250xp;
+    height: 250px;
+}
 .articleCardInformationPart2 h1{
    font-size: 30px;
 }
@@ -40,3 +48,33 @@
     font-weight: 400;
     color: rgb(12, 160, 49);
  }
+ .articleCardInformationPart2 p{
+    color: rgb(172, 163, 163);
+    font-size: 15px;
+ }
+.buttons{
+    width: 160px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.numberButtonHave
+,.numberButtonDontHave{
+    background-color: white;
+    font-size: 14px;
+    color: rgb(145, 130, 130);
+    width: 50px;
+    height: 30px;
+    border: 0.3px solid rgb(187, 178, 178);
+    border-radius: 5px;
+}
+.numberButtonHave:hover{
+  background: rgb(22, 126, 22);
+  color: white;
+}
+.numberButtonDontHave:hover{
+    background: rgb(219, 12, 12);
+    color: white;
+}
