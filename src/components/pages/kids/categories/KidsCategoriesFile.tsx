@@ -1,24 +1,16 @@
-import { useState } from 'react'
-import { Link, Route,Routes } from 'react-router-dom'
-import { Row,Container,Col, Button } from 'react-bootstrap'
-import CategoryItems from '../../CategoryItems'
-import articles from '../../articles.json'
-import ArticleCard from '../../ArticleCard'
-import Pagination from '../../Pagination'
-import './Kids.css'
+import {useState} from 'react'
+import { Container,Row,Col,Button} from 'react-bootstrap'
+import ArticleCard from '../../../ArticleCard'
+import articles from '../../../articles.json'
 
-const Kids = () => {
-    const[currentPage,setCurrentPage]=useState(1)
-    const [postPerPage,setPostPerPage]=useState(15);
+type KidsCategoriesFileProps={
+    category:string,
+    heading:string
+}
 
-    const  lastPostIndex=currentPage*postPerPage;
-    const firstPostindex=lastPostIndex-postPerPage;
-    const currentPost=articles.slice(firstPostindex,lastPostIndex)
-     
-    const[category,setCategory]=useState('')
-    const kidsSnikers=()=>setCategory('Deca patike');
-    const kidsBoots=()=>setCategory('Deca cizme');
+const KidsCategoriesFile = ({category,heading}:KidsCategoriesFileProps) => {
     
+
     const[brend,setBrend]=useState('')
 
     const[adidas,setAdidas]=useState(false);
@@ -36,29 +28,16 @@ const Kids = () => {
     const skechersFunction=()=>{setBrend('Skechers');setSkechers(true)}
     const helloKittyFunction=()=>{setBrend('Hello Kitty');setHelloKitty(true)}
     const miniMouseFunction=()=>{setBrend('Mini mouse');setMiniMouse(true)}
-
-
+  
   return (
     <Container>
-      <div style={{display:'flex'}}>
-        <div>
-        <div className='div-part-1'>
-                <p>Kategorija</p>
-              <div className='scroll-div-men'>
-                  <ul>
-                      <li onClick={kidsSnikers}>Deca Patike</li>
-                      <li onClick={kidsBoots}>Deca Čizme</li>
-                       <li>Deca gumene čizme</li>
-                        <li>Deca duboke patike</li>
-                       <li>Deca kućne papuče</li>
-                  </ul>
-                </div>
-          </div>
-        <div className='div-part-1'>
+     <div style={{display:'flex'}}>
+
+     <div className='div-part-1'>
                 <p>Marka</p>
               <div className='scroll-div-men'>
                   <ul>
-                    <li onClick={adidasFunction}>Adidas</li>
+                  <li onClick={adidasFunction}>Adidas</li>
                     <li onClick={nikeFunction}>Nike</li>
                     <li onClick={filaFunction}>Fila</li>
                     <li onClick={pumaFunction}>Puma</li>
@@ -69,14 +48,10 @@ const Kids = () => {
                     <li>Elefanten</li>
                   </ul>
                 </div>
-        </div>
-    </div>
-        <Container>
-            <Container>
-        
-            </Container>
-          <Container>
-              <Button onClick={()=>{setCategory('');setBrend('')}}>Svi proizvodi</Button>
+          </div>
+    <Container>
+    <h1>{heading.toUpperCase()}</h1>
+    <Button onClick={()=>{setBrend('')}}>Svi proizvodi</Button>
               {adidas&&< Button variant="outline-danger" onClick={()=>{setAdidas(false);setBrend('')}}>Adidas X ()</ Button >}
               {nike&&< Button variant="outline-danger" onClick={()=>{setNike(false);setBrend('')}}>Nike X ()</ Button >}
               {fila&&< Button variant="outline-danger" onClick={()=>{setFila(false);setBrend('')}}>Fila X ()</ Button >}
@@ -84,21 +59,16 @@ const Kids = () => {
               {skechers&&< Button variant="outline-danger" onClick={()=>{setSkechers(false);setBrend('')}}>Skechers X ()</ Button >}
               {helloKitty&&< Button variant="outline-danger" onClick={()=>{setHelloKitty(false);setBrend('')}}>Hello Kitty X ()</ Button >}
               {miniMouse&&< Button variant="outline-danger" onClick={()=>{setMiniMouse(false);setBrend('')}}>Mini mouse X ()</ Button >}
-               
-              <Pagination 
-              setCurrentPages={setCurrentPage}
-              totalPost={articles.length} 
-               postPerPage={postPerPage}
-               currentPage={currentPage}
-              />
+
             <Row md={2} xs={1} lg={3} className='g-3'>
-            {articles.map((item,index)=>{
-                if(item.category===category){
-                    if(item.brend === brend){
+              {articles.map((item,index)=>{
+                  if(item.category===category){
+                    if(item.brend===brend){
                         return(
                             <Col key={index}>
                                <ArticleCard {...item}/>
-                         </Col> )
+                            </Col> 
+                          )
                     }else if(brend===''){
                         return(
                             <Col key={index}>
@@ -106,29 +76,13 @@ const Kids = () => {
                              </Col>
                           ) 
                     }
-                }else if(category===''){
-                    if(item.id > 191){
-                      if(item.brend === brend){
-                        return(
-                            <Col key={index}>
-                               <ArticleCard {...item}/>
-                         </Col> )
-                      }else if(brend===''){
-                        return(
-                            <Col key={index}>
-                               <ArticleCard {...item}/>
-                         </Col> )
-                      }
-                    }
-                }
-             })}
-
+                  }
+                 })}
                 </Row>
             </Container>
-        </Container>
-       </div>
-    </Container>
-  );
+        </div>
+      </Container>
+  )
 }
 
-export default Kids
+export default KidsCategoriesFile

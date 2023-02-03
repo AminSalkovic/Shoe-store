@@ -1,8 +1,8 @@
-import BrendFile from './BrendFile'
+import KidsBrendFile from './KidsBrendFile'
 
 const Fila = () => { 
     return (
-      <BrendFile brend='Hello Kitty' count={23}/>
+      <KidsBrendFile brend='Hello Kitty'/>
     )
 }
 
