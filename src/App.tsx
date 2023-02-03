@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import MainNavbar from './components/MainNavbar'
 import Home from './components/Home'
 import Men from './components/pages/men/Men'
+import Kids from './components/pages/kids/Kids'
 import Brends from './components/pages/brends/Brends'
 import Adidas from './components/pages/brends/Adidas'
 import Nike from './components/pages/brends/Nike'
@@ -23,6 +24,7 @@ import Trekking from './components/pages/men/categories/Trekking'
 import Sandals from './components/pages/men/categories/Sandals'
 import Slippers from './components/pages/men/categories/Slippers'
 import Kappa from './components/pages/brends/Kappa'
+import HelloKitty from './components/pages/brends/HelloKitty'
 import ArticleCardInformation from './components/ArticleCardInformation'
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
      <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/muskarci' element={<Men/>}/>
+      <Route path='/deca' element={<Kids/>}/>
       <Route path='/Marke' element={<Brends/>}/>
       <Route path='/marke/adidas' element={<Adidas/>}/>
       <Route path='/marke/nike' element={<Nike/>}/>
@@ -44,6 +47,7 @@ function App() {
       <Route path='/marke/skechers' element={<Skechers/>}/>
       <Route path='/marke/kappa' element={<Kappa/>}/>
       <Route path='/marke/venice' element={<Venice/>}/>
+      <Route path='/marke/hello-kitty' element={<HelloKitty/>}/>
       <Route path='/marke/easy-street' element={<EasyStreet/>}/>
       <Route path='marke/highland-creek' element={<HighlandCreek/>}/>
       <Route path='/muskarci/modne-patike' element={<FashionSnikers/>}/>
