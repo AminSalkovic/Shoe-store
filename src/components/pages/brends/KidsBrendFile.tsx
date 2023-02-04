@@ -11,7 +11,10 @@ const KidsBrendFile = ({brend}:KidsBrendFileProps) => {
     
     const[category,setCategory]=useState('')
     const kidsSnikers=()=>setCategory('Deca patike');
+    const kidsDeepSnikers=()=>setCategory('Deca duboke patike');
     const kidsBoots=()=>setCategory('Deca cizme');
+    const kidsRubberBoots=()=>setCategory('Deca gumene cizme');
+    const kidsHomeSlippers=()=>setCategory('Deca kucne papuce')
     
   
   return (
@@ -21,11 +24,11 @@ const KidsBrendFile = ({brend}:KidsBrendFileProps) => {
                 <p style={{textAlign:'center'}}>Kategorija</p>
               <div className='scroll-div-men'>
                   <ul>
-                      <li onClick={kidsSnikers}>Deca Patike</li>
-                      <li onClick={kidsBoots}>Deca Čizme</li>
-                      <li>Deca gumene čizme</li>
-                      <li>Deca duboke patike</li>
-                      <li>Deca kućne papuče</li>
+                      <li onClick={kidsSnikers}>Deca patike</li>
+                       <li onClick={kidsDeepSnikers}>Deca duboke patike</li>
+                       <li onClick={kidsBoots}>Deca cizme</li>
+                       <li onClick={kidsRubberBoots}>Deca gumene čizme</li>
+                       <li onClick={kidsHomeSlippers}>Deca kućne papuče</li>
                   </ul>
                 </div>
           </div>
