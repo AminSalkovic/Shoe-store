@@ -48,66 +48,30 @@
     },
     {   
         "id":8,   
-        "imgPath":"/cortina",
-        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/cortina_%20225x197%20(32).jpg",
-        "name":"Cortina"
-    },
-    {   
-        "id":9,   
-        "imgPath":"/victory",
-        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/victory_%20225x197%20(9).jpg",
-        "name":"Victory"
-    },
-    {   
-        "id":10,   
         "imgPath":"/marke/highland-creek",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/highland_creek_-225x197-(2).jpg",
         "name":"Highland Creek"
     },
     {   
-        "id":11,   
+        "id":9,   
         "imgPath":"/marke/easy-street",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/easy_street_%20225x197%20(44).jpg",
         "name":"Easy Street"
     },
     {   
-        "id":12,   
-        "imgPath":"/bjorndal",
-        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/bjorndal_%20225x197%20(7).jpg",
-        "name":"Bjorndal"
-    },
-    {   
-        "id":13,   
-        "imgPath":"/casa-mia",
-        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/casa_mia_%20225x197%20(20).jpg",
-        "name":"Case Mia"
-    },
-    {   
-        "id":14,   
-        "imgPath":"/reiker-brand",
-        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/rieker_brand_225x197.jpg",
-        "name":"Reiker Brand"
-    },
-    {   
-        "id":15,   
+        "id":10,   
         "imgPath":"/marke/hello-kitty",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/hello_kitty_%20225x197%20(53).jpg",
         "name":"Hello Kitty"
     },
     {   
-        "id":16,   
-        "imgPath":"/marke/bobbi-shoes",
-        "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/Bobbi_shoes_%20225x197%20(14).jpg",
-        "name":"Bobbi Shoes"
-    },
-    {   
-        "id":17,   
+        "id":11,   
         "imgPath":"/marke/minnie-mouse",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/minnie_mouse_%20225x197%20(43).jpg",
         "name":"Minnie Mouse"
     },
     {   
-        "id":18,   
+        "id":12,   
         "imgPath":"/marke/elefanten",
         "imgUrl":"https://www.deichmann.com/RS/sr/shop/content/img/elefanten_%20225x197%20(39).jpg",
         "name":"Elefanten"

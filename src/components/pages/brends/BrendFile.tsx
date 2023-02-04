@@ -19,12 +19,14 @@ type BrendFileProps={
     kidsSnikersCount:number,
     kidsRubberBootsCount:number,
     kidsDeepSnikersCount:number,
-    kidsHomeSlippersCount:number
+    kidsHomeSlippersCount:number,
+    men:number,
+    kids:number
 }
 
 const BrendFile = ({brend,count,fashionShoesCount,bootsCount,deepSnikersCount,elegantShoesCount,
 trekkingCount,sandalsCount,slippersCount,kidsBootsCount,kidsDeepSnikersCount,
-kidsHomeSlippersCount,kidsRubberBootsCount,kidsSnikersCount,sportSnikersCount}:BrendFileProps) => {
+kidsHomeSlippersCount,kidsRubberBootsCount,kidsSnikersCount,sportSnikersCount,men,kids}:BrendFileProps) => {
 
   const[category,setCategory]=useState('')
 
@@ -72,7 +74,7 @@ kidsHomeSlippersCount,kidsRubberBootsCount,kidsSnikersCount,sportSnikersCount}:B
       <div>
 
      <div className='div-part-1'>
-                <p style={{textAlign:'center'}}>Muskarci</p>
+                <p style={{textAlign:'center'}}>Muskarci ({men})</p>
               <div className='scroll-div-men'>
                   <ul>
                       <li onClick={fashionShoesFunction}>Modne Patike ({fashionShoesCount})</li>
@@ -87,7 +89,7 @@ kidsHomeSlippersCount,kidsRubberBootsCount,kidsSnikersCount,sportSnikersCount}:B
                 </div>
           </div>
                 <div className='div-part-1'>
-                <p style={{textAlign:'center'}}>Deca</p>
+                <p style={{textAlign:'center'}}>Deca ({kids})</p>
               <div className='scroll-div-men'>
                   <ul>
                       <li onClick={kidsSnikersFunction}>Deca Patike ({kidsSnikersCount}) </li>

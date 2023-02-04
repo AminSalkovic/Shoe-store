@@ -2,10 +2,10 @@ import BrendFile from './BrendFile'
 
 const Nike = () => {
     return (
-      <BrendFile brend='Nike' count={39} fashionShoesCount={0} bootsCount={0} elegantShoesCount={0}
-      deepSnikersCount={0} sportSnikersCount={0} trekkingCount={0} sandalsCount={0}
-      slippersCount={0} kidsBootsCount={0} kidsDeepSnikersCount={0} kidsHomeSlippersCount={0}
-      kidsRubberBootsCount={0} kidsSnikersCount={0}/>
+      <BrendFile brend='Nike' count={49} fashionShoesCount={1} bootsCount={8} elegantShoesCount={0}
+      deepSnikersCount={9} sportSnikersCount={13} trekkingCount={0} sandalsCount={4}
+      slippersCount={4} kidsBootsCount={1} kidsDeepSnikersCount={3} kidsHomeSlippersCount={0}
+      kidsRubberBootsCount={0} kidsSnikersCount={6} men={39} kids={10}/>
     )
 }
 

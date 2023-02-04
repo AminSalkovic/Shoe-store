@@ -5,6 +5,7 @@ import CategoryItems from '../../CategoryItems'
 import articles from '../../articles.json'
 import ArticleCard from '../../ArticleCard'
 import Pagination from '../../Pagination'
+import categoryItems from './CategoryKids.json'
 import './Kids.css'
 
 const Kids = () => {
@@ -30,7 +31,8 @@ const Kids = () => {
     const[puma,setPuma]=useState(false);
     const[skechers,setSkechers]=useState(false);
     const[helloKitty,setHelloKitty]=useState(false);
-    const[miniMouse,setMiniMouse]=useState(false)
+    const[miniMouse,setMiniMouse]=useState(false);
+    const[elefanten,setElefanten]=useState(false)
 
     const adidasFunction=()=>{setBrend('Adidas');setAdidas(true)};
     const nikeFunction=()=>{setBrend('Nike');setNike(true)}
@@ -39,6 +41,7 @@ const Kids = () => {
     const skechersFunction=()=>{setBrend('Skechers');setSkechers(true)}
     const helloKittyFunction=()=>{setBrend('Hello Kitty');setHelloKitty(true)}
     const miniMouseFunction=()=>{setBrend('Mini mouse');setMiniMouse(true)}
+    const elefantenFunction=()=>{setBrend('Elefanten');setElefanten(true)}
 
 
   return (
@@ -68,15 +71,24 @@ const Kids = () => {
                     <li onClick={skechersFunction}>Skechers</li>
                     <li onClick={helloKittyFunction}>Hello Kitty</li>
                     <li onClick={miniMouseFunction}>Mini Mouse</li>
-                    <li>Bobbi shoes</li>
-                    <li>Elefanten</li>
+                    <li onClick={elefantenFunction}>Elefanten</li>
                   </ul>
                 </div>
         </div>
     </div>
         <Container>
             <Container>
-        
+              <Row md={2} xs={1} lg={3} className='g-3'>
+                {categoryItems.map((item)=>{
+                  if(item.id<4){
+                    return(
+                                <Col  key={item.id}>
+                                    <CategoryItems {...item}/>
+                                 </Col> 
+                            )
+                          }
+                        })}
+                </Row>
             </Container>
           <Container>
               <Button onClick={()=>{setCategory('');setBrend('')}}>Svi proizvodi</Button>
@@ -87,6 +99,7 @@ const Kids = () => {
               {skechers&&< Button variant="outline-danger" onClick={()=>{setSkechers(false);setBrend('')}}>Skechers X ()</ Button >}
               {helloKitty&&< Button variant="outline-danger" onClick={()=>{setHelloKitty(false);setBrend('')}}>Hello Kitty X ()</ Button >}
               {miniMouse&&< Button variant="outline-danger" onClick={()=>{setMiniMouse(false);setBrend('')}}>Mini mouse X ()</ Button >}
+              {elefanten&&< Button variant="outline-danger" onClick={()=>{setElefanten(false);setBrend('')}}>Elefanten X ()</ Button >}
                
               <Pagination 
               setCurrentPages={setCurrentPage}

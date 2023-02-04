@@ -28,6 +28,10 @@ import HelloKitty from './components/pages/brends/HelloKitty'
 import KidsSnikers from './components/pages/kids/categories/KidsSnikers'
 import Elefanten from './components/pages/brends/Elefanten'
 import MinnieMouse from './components/pages/brends/MinnieMouse'
+import KidsDeepSnikers from './components/pages/kids/categories/KidsDeepSnikers'
+import KidsBoots from './components/pages/kids/categories/KidsBoots'
+import KidsRubberBoots from './components/pages/kids/categories/KidsRubberBoots'
+import KidsHomeSlippers from './components/pages/kids/categories/KidsHomeSlippers'
 
 
 function App() {
@@ -64,6 +68,10 @@ function App() {
       <Route path='/muskarci/sandale' element={<Sandals/>}/>
       <Route path='/muskarci/papuce' element={<Slippers/>}/>
       <Route path='/deca/patike' element={<KidsSnikers/>}/>
+      <Route path='/deca/duboke-patike' element={<KidsDeepSnikers/>}/>
+      <Route path='/deca/cizme' element={<KidsBoots/>}/>
+      <Route path='/deca/gumene-cizme' element={<KidsRubberBoots/>}/>
+      <Route path='/deca/kucne-papuce' element={<KidsHomeSlippers/>}/>
      </Routes>
      
    </ShoppingCartProvider>

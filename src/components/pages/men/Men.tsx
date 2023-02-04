@@ -67,14 +67,14 @@ const Men = () => {
                 <p>Kategorija</p>
               <div className='scroll-div-men'>
                   <ul>
-                      <li onClick={fashionShoesFunction}>Modne Patike</li>
-                      <li onClick={bootsFunction}>Cizme</li>
-                      <li onClick={elegantShoesFunction}>Elegantne Cipele</li>
-                      <li onClick={deepSnikersFunction}>Duboke Patike</li>
-                      <li onClick={sportSnikersFunction}>Sportske Patike</li>
-                      <li onClick={trekkingFunction}>Trekking </li>
-                      <li onClick={sandalsFunction}>Sandale</li>
-                      <li onClick={slippersFunction}>Papuce</li>
+                      <li onClick={fashionShoesFunction}>Modne Patike (20)</li>
+                      <li onClick={bootsFunction}>Cizme (34)</li>
+                      <li onClick={elegantShoesFunction}>Elegantne Cipele (16)</li>
+                      <li onClick={deepSnikersFunction}>Duboke Patike (30)</li>
+                      <li onClick={sportSnikersFunction}>Sportske Patike (61)</li>
+                      <li onClick={trekkingFunction}>Trekking (6) </li>
+                      <li onClick={sandalsFunction}>Sandale (7)</li>
+                      <li onClick={slippersFunction}>Papuce (18)</li>
                   </ul>
                 </div>
           </div>

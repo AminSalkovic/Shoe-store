@@ -21,7 +21,7 @@ const Brends = () => {
                 <h1>UNIVERSAL</h1>
              <Row md={2} xs={1} lg={4} className='g-3'>
                  {brend.map((item)=>{
-                   if(item.id>7 && item.id<14){
+                   if(item.id>7 && item.id<10){
                     return(
                         <BrendCard {...item}/>
                     )
@@ -33,7 +33,7 @@ const Brends = () => {
                 <h1>DECA</h1>
              <Row md={2} xs={1} lg={4} className='g-3'>
                  {brend.map((item)=>{
-                   if(item.id>14){
+                   if(item.id>9){
                     return(
                         <BrendCard {...item}/>
                     )
