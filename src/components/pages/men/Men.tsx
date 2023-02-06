@@ -21,16 +21,66 @@ const Men = () => {
 
     
     const[category,setCategory]=useState('')
+    const[header,setHeader]=useState('');
 
+    const[adidasCount,setAdidasCount]=useState(13);
+    const[nikeCount,setNikeCount]=useState(10);
+    const[filaCount,setFilaCount]=useState(3);
+    const[pumaCount,setPumaCount]=useState(9);
+    const[rebookCount,setRebookCount]=useState(1)
+    const[skechersCount,setSkechersCount]=useState(4);
+    const[kappaCount,setKappaCount]=useState(0);
+    const[highlandCounut,setHighlandCount]=useState(3);
+    const[easyStreetCount,setEasyStreetCount]=useState(2);
+    const[veniceCount,setVeniceCount]=useState(2)
     
-    const fashionShoesFunction=()=>setCategory('MODNE PATIKE')
-    const bootsFunction=()=>setCategory('ČIZME&GLEŽNJAČE')
-    const deepSnikersFunction=()=>setCategory('DUBOKE PATIKE');
-    const elegantShoesFunction=()=>setCategory('ELEGANTNE CIPELE');
-    const sportSnikersFunction=()=>setCategory('Sportske patike');
-    const trekkingFunction=()=>setCategory('Trekking')
-    const sandalsFunction=()=>setCategory('Sandale');
-    const slippersFunction=()=>setCategory('Papuce')
+    const fashionShoesFunction=()=>{
+      setCategory('MODNE PATIKE');setHeader('Modne patike');
+      setAdidasCount(4);setNikeCount(1);setPumaCount(2);setFilaCount(3);
+      setRebookCount(5);setSkechersCount(3);setKappaCount(2)
+    }
+    const bootsFunction=()=>{
+      setCategory('ČIZME&GLEŽNJAČE');setHeader('Čizme i gležnjače');
+      setAdidasCount(5);setNikeCount(8);setPumaCount(6);setFilaCount(6);
+      setRebookCount(0);setSkechersCount(0);setKappaCount(6);setHighlandCount(3);
+      setEasyStreetCount(0);setVeniceCount(0)
+    }
+    const deepSnikersFunction=()=>{
+      setCategory('DUBOKE PATIKE');setHeader('Duboke patike');
+      setAdidasCount(10);setNikeCount(9);setPumaCount(5);setFilaCount(2);
+      setRebookCount(4);setSkechersCount(0);setKappaCount(6);setHighlandCount(0);
+      setEasyStreetCount(0);setVeniceCount(0)
+    };
+    const elegantShoesFunction=()=>{
+      setCategory('ELEGANTNE CIPELE');setHeader('Elegantne cipele');
+      setAdidasCount(0);setNikeCount(0);setPumaCount(0);setFilaCount(0);
+      setRebookCount(0);setSkechersCount(0);setKappaCount(0);setHighlandCount(0);
+      setEasyStreetCount(5);setVeniceCount(11)
+  };
+    const sportSnikersFunction=()=>{
+      setCategory('Sportske patike');setHeader('Sportske patike');
+      setAdidasCount(14);setNikeCount(13);setPumaCount(12);setFilaCount(7);
+      setRebookCount(9);setSkechersCount(9);setKappaCount(0);setHighlandCount(0);
+      setEasyStreetCount(0);setVeniceCount(0)
+    };
+    const trekkingFunction=()=>{
+      setCategory('Trekking');setHeader('Trekking');
+      setAdidasCount(6);setNikeCount(0);setPumaCount(0);setFilaCount(0);
+      setRebookCount(0);setSkechersCount(0);setKappaCount(0);setHighlandCount(0);
+      setEasyStreetCount(0);setVeniceCount(0)
+    }
+    const sandalsFunction=()=>{
+      setCategory('Sandale');setHeader('Sandale');
+      setAdidasCount(3);setNikeCount(4);setPumaCount(0);setFilaCount(0);
+      setRebookCount(0);setSkechersCount(0);setKappaCount(0);setHighlandCount(0);
+      setEasyStreetCount(0);setVeniceCount(0)
+    };
+    const slippersFunction=()=>{
+      setCategory('Papuce');setHeader('Čizme i gležnjače');
+      setAdidasCount(4);setNikeCount(4);setPumaCount(3);setFilaCount(5);
+      setRebookCount(2);setSkechersCount(0);setKappaCount(0);setHighlandCount(0);
+      setEasyStreetCount(0);setVeniceCount(0)
+  }
     
     
     const[brend,setBrend]=useState('')
@@ -82,16 +132,16 @@ const Men = () => {
                 <p>Marke</p>
               <div className='scroll-div-men'>
                   <ul>
-                    <li onClick={adidasFunction}>Adidas (46)</li>
-                     <li onClick={nikeFunction}>Nike (39)</li>
-                     <li onClick={pumaFunction}>Puma (27)</li>
-                     <li onClick={filaFunction}>Fila (23) </li>
-                     <li onClick={rebookFunction}>Rebook (20) </li>
-                     <li onClick={skechersFunction}>Skechers (9)</li>
-                     <li onClick={kappaFunction}>Kappa (8)</li>
-                     <li onClick={highlandCreekFunction}>Highland Creek (3)</li>
-                     <li onClick={easyStreetFunction}>Easy street (5)</li>
-                     <li onClick={veniceFunction}>Venice (11)</li>
+                    <li onClick={adidasFunction}>Adidas ({adidasCount})</li>
+                     <li onClick={nikeFunction}>Nike ({nikeCount})</li>
+                     <li onClick={pumaFunction}>Puma ({pumaCount})</li>
+                     <li onClick={filaFunction}>Fila ({filaCount}) </li>
+                     <li onClick={rebookFunction}>Rebook ({rebookCount}) </li>
+                     <li onClick={skechersFunction}>Skechers ({skechersCount})</li>
+                     <li onClick={kappaFunction}>Kappa ({kappaCount})</li>
+                     <li onClick={highlandCreekFunction}>Highland Creek ({highlandCounut})</li>
+                     <li onClick={easyStreetFunction}>Easy street ({easyStreetCount})</li>
+                     <li onClick={veniceFunction}>Venice ({veniceCount})</li>
                   </ul>
                 </div>
         </div>
@@ -111,7 +161,7 @@ const Men = () => {
                 </Row>
             </Container>
           <Container>
-            <Button variant="secondary">Svi proizvodi (191)</Button>
+            <Button variant="secondary" onClick={()=>{setCategory('');setBrend('')}}>Svi proizvodi (191)</Button> 
             {adidas&&< Button variant="outline-danger" onClick={()=>{setAdidas(false);setBrend('')}}>Adidas X (46)</ Button >}
             {nike&& < Button variant="outline-danger" onClick={()=>{setNike(false);setBrend('')}}>Nike X (38)</ Button >}
             {fila&& < Button variant="outline-danger" onClick={()=>{setFila(false);setBrend('')}}>Fila X (23)</ Button >}
@@ -123,6 +173,7 @@ const Men = () => {
             {easyStreet&& < Button variant="outline-danger" onClick={()=>{setEasyStreet(false);setBrend('')}}>Easy street X (5) </ Button >}
             {venice&& < Button variant="outline-danger" onClick={()=>{setVenice(false);setBrend('')}}>Venice X (11) </ Button >}
             
+            <h1>{header.toUpperCase()}</h1>
             
               <Pagination 
               setCurrentPages={setCurrentPage}

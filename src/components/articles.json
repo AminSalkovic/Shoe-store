@@ -598,7 +598,7 @@
          "brend":"Easy street",
          "name":"Elegantne cipele ",
          "password":2635448,
-         "price":42000
+         "price":4200
        },
        { 
         "redni":57,
@@ -620,8 +620,8 @@
          "brend":"Easy street",
          "name":"Elegantne cipele ",
          "password":3635448,
-         "price":69000
-       },
+         "price":6900       
+        },
        { 
         "redni":59,
         "id":59,
@@ -631,7 +631,7 @@
          "brend":"Easy street",
          "name":"Elegantne cipele ",
          "password":3635448,
-         "price":39000
+         "price":3900
        },
        { 
         "redni":60,

@@ -2,8 +2,8 @@
     {
         "id":1,
          "category":"Deca patike",
-         "imgUrl":"https://images.unsplash.com/photo-1620794341491-76be6eeb6946?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjYyfHxmYXNoaW9uJTIwc2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-         "imgPath":"/muskarci/modne-patike",
+         "imgUrl":"https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8a2lkcyUyMHNob2VzJTIwYWRpZGFzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+         "imgPath":"/deca/patike",
          "count":20,
          "num":20,
          "amin":0
@@ -11,16 +11,16 @@
     {
         "id":2,
          "category":"Deca cizme",
-         "imgUrl":"https://images.unsplash.com/photo-1520219306100-ec4afeeefe58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJvb3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-         "imgPath":"/muskarci/cizme&gleznjace",
+         "imgUrl":"https://media.istockphoto.com/id/1288119800/photo/family-enjoying-nature.jpg?s=612x612&w=0&k=20&c=vBXEtR97aHQpGBG0rOywthQj8OxlpLrYZj8QkwzOjQs=",
+         "imgPath":"/deca/cizme",
          "count":34,
          "num":54,
          "amin":20
          },{
              "id":3,
               "category":"Deca gumene cizme",
-              "imgUrl":"https://images.unsplash.com/photo-1641893843833-a006778dc00b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGVsZWdhbnQlMjBzaG9lc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-              "imgPath":"/muskarci/elegantne-cipele",
+              "imgUrl":"https://media.istockphoto.com/id/616020418/photo/closeup-of-kids-galoshes-splashing-in-street-puddle.jpg?s=612x612&w=0&k=20&c=g960vZnMc5VjC0CPtTctG3q0cI49YVQBOaN--Bm7yq4=",
+              "imgPath":"/deca/gumene-cizme",
               "count":16,
               "num":70,
               "amin":54

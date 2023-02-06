@@ -31,7 +31,7 @@ const CategoriesFile = ({category,count,adidasCount,nikeCount,filaCount,
     const[puma,setPuma]=useState(false)
     const[rebook,setRebook]=useState(false)
     const[skechers,setSkechers]=useState(false)
-    const[kappa,setKapa]=useState(false)
+    const[kappa,setKappa]=useState(false)
     const[highlandCreek,setHighlandCreek]=useState(false)
     const[easyStreet,setEasyStreet]=useState(false)
     const[venice,setVenice]=useState(false)
@@ -42,10 +42,17 @@ const CategoriesFile = ({category,count,adidasCount,nikeCount,filaCount,
     const pumaFunction=()=>{setPuma(true);setCategories('Puma')}
     const rebookFunction=()=>{setRebook(true);setCategories('Rebook')}
     const skechersFunction=()=>{setSkechers(true);setCategories('Skechers')}
-    const kappaFunction=()=>{setKapa(true);setCategories('Kappa')}
+    const kappaFunction=()=>{setKappa(true);setCategories('Kappa')}
     const highlandCreekFunction=()=>{setHighlandCreek(true);setCategories('Highland Creek')}
     const easyStreetFunction=()=>{setEasyStreet(true);setCategories('Easy street')}
     const veniceFunction=()=>{setVenice(true);setCategories('Venice')}
+
+    const buttonFunction=()=>{
+      setCategories('');setAdidas(false);setNike(false);
+      setFila(false);setPuma(false);setRebook(false);setSkechers(false);
+      setKappa(false);setHighlandCreek(false);setEasyStreet(false)
+      ;setEasyStreet(false);setVenice(false)
+    }
   
   return (
     <Container>
@@ -70,7 +77,7 @@ const CategoriesFile = ({category,count,adidasCount,nikeCount,filaCount,
           </div>
     <Container>
               <h1>{heading.toUpperCase()}</h1>
-     <Button variant='secondary' onClick={()=>setCategories('')}>Svi proizvodi ({count})</Button>
+     <Button variant='secondary' onClick={buttonFunction}>Svi proizvodi ({count})</Button>
     {adidas&&< Button variant="outline-danger" onClick={()=>{setAdidas(false);setCategories('')}}>Adidas X ({adidasCount})</ Button >}
             {nike&& < Button variant="outline-danger" onClick={()=>{setNike(false);setCategories('')}}>Nike X ({nikeCount})</ Button >}
             {fila&& < Button variant="outline-danger" onClick={()=>{setFila(false);setCategories('')}}>Fila X ({filaCount}) </ Button >}
