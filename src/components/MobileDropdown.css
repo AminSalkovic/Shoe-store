@@ -1,0 +1,11 @@
+.mobileDiv li{
+  list-style: none;
+  font-size: 20px;
+  color: rgb(88, 85, 85);
+}
+.mobileDiv li:hover{
+    color:rgb(56, 54, 54) ;
+}
+.mobileDiv a{
+    text-decoration: none;
+}

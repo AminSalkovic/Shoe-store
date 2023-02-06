@@ -38,7 +38,7 @@ const MainNavbar = () => {
          </div> 
      
         <div>
-            <AiIcons.AiOutlineMenu onClick={openMobileDropdown} style={{color:'black'}}/>
+            <AiIcons.AiOutlineMenu onClick={openMobileDropdown} className='menuMobileIcon'/>
         </div>
         </div>
   )

@@ -132,7 +132,7 @@ const Kids = () => {
             <Container>
               <Row md={2} xs={1} lg={3} className='g-3'>
                 {categoryItems.map((item)=>{
-                  if(item.id<4){
+                  if(item.id<3){
                     return(
                                 <Col  key={item.id}>
                                     <CategoryItems {...item}/>
