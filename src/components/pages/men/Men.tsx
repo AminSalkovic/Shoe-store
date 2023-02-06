@@ -76,7 +76,7 @@ const Men = () => {
       setEasyStreetCount(0);setVeniceCount(0)
     };
     const slippersFunction=()=>{
-      setCategory('Papuce');setHeader('Čizme i gležnjače');
+      setCategory('Papuce');setHeader('Papuče');
       setAdidasCount(4);setNikeCount(4);setPumaCount(3);setFilaCount(5);
       setRebookCount(2);setSkechersCount(0);setKappaCount(0);setHighlandCount(0);
       setEasyStreetCount(0);setVeniceCount(0)
@@ -106,7 +106,13 @@ const Men = () => {
     const highlandCreekFunction=()=>{setHighlandCreek(true);setBrend('Highland Creek')}
     const easyStreetFunction=()=>{setEasyStreet(true);setBrend('Easy street')}
     const veniceFunction=()=>{setVenice(true);setBrend('Venice')}
-
+    
+    const buttonFunction=()=>{
+      setCategory('');setBrend('');setHeader('');setAdidas(false);
+      setNike(false);setFila(false);setPuma(false);setRebook(false);
+      setSkechers(false);setKappa(false);setHighlandCreek(false);
+      setEasyStreet(false);setVenice(false)
+    }
 
  
     return (
@@ -161,7 +167,7 @@ const Men = () => {
                 </Row>
             </Container>
           <Container>
-            <Button variant="secondary" onClick={()=>{setCategory('');setBrend('')}}>Svi proizvodi (191)</Button> 
+            <Button variant="secondary" onClick={buttonFunction}>Svi proizvodi (191)</Button> 
             {adidas&&< Button variant="outline-danger" onClick={()=>{setAdidas(false);setBrend('')}}>Adidas X (46)</ Button >}
             {nike&& < Button variant="outline-danger" onClick={()=>{setNike(false);setBrend('')}}>Nike X (38)</ Button >}
             {fila&& < Button variant="outline-danger" onClick={()=>{setFila(false);setBrend('')}}>Fila X (23)</ Button >}

@@ -24,5 +24,14 @@
               "count":16,
               "num":70,
               "amin":54
-         }
+         },
+         {
+            "id":3,
+             "category":"Deca papuce",
+             "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUbdxdoFX9MJUaxq6rXW3lklNjsPABCZTE1HIwPUAWzd6C64__tCNr3_4Bvd_eh7E0no&usqp=CAU",
+             "imgPath":"/deca/papuce",
+             "count":16,
+             "num":70,
+             "amin":54
+        }
 ]
