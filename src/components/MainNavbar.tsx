@@ -9,7 +9,7 @@ import SearchList from './SearchList'
 
 
 const MainNavbar = () => {
-   
+    const {cartQuantity,openShoppingCart}=useShoppingCart()
     const {openMobileDropdown}=useShoppingCart()
     const[searchText,setSearchText]=useState('')
     const[input,setInput]=useState(false)
@@ -32,11 +32,18 @@ const MainNavbar = () => {
             {(input || searchText.length>0) &&
              <SearchList searchText={searchText} showInput={input}/>
             }
+            <div className='navbarContact'>
             <Nav.Link to='/Novo' as={NavLink}>
                 Kontakt
             </Nav.Link>
+            </div>
          </div> 
-     
+        <div className='shoppingCartIcon' onClick={openShoppingCart}>
+        <AiIcons.AiOutlineShoppingCart/>
+          <div>
+            {cartQuantity}
+          </div>
+        </div>
         <div>
             <AiIcons.AiOutlineMenu onClick={openMobileDropdown} className='menuMobileIcon'/>
         </div>

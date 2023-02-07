@@ -6,11 +6,11 @@ import { useShoppingCart } from '../context/ShoppingCartContext'
 import BrendDropDown from './pages/brends/BrendDropDown'
 import MenDropdown from './pages/men/MenDropdown'
 import KidsDropdown from './pages/kids/KidsDropdown'
+import './Navbar.css'
 
 
 const Navbar = () => {
 
-    const{openShoppingCart,cartQuantity}=useShoppingCart()
     const[brendsDropdown,setBrendDropdown]=useState(false);
     const[isOpenMenDropdown,setIsOpenMenDropdown]=useState(false);
     const[isOpenKidsDropdown,setIsOpenKidsDropdown]=useState(false);
@@ -25,9 +25,7 @@ const Navbar = () => {
 
   return (
     <>
-    <NavbarBs variant='light' className='bg-light shadow-sm mb-3'>
-    <Container>
-       <Nav className='me-auto'>
+    <div className='navbar2'>
             <Nav.Link to='/Muskarci' as={NavLink} 
             onClick={closeMenDropdown}
             onMouseEnter={openMenDropdown}>
@@ -50,23 +48,7 @@ const Navbar = () => {
             <Nav.Link to='/Novo' as={NavLink}>
                 NOVO
             </Nav.Link>
-       </Nav>
-       <Button  onClick={openShoppingCart} variant='secondary' style={{width:'3rem',height:"3rem",position:'relative'}} >
-           <AiIcons.AiOutlineShoppingCart/>
-             <Container className="rounded-circle bg-danger d-flex align-items-center justify-content-center"
-             style={{
-                 position:"absolute",
-                 bottom:'0',
-                 right:'0',
-                 width:'1.5rem',
-                 height:'1.5rem',
-                 transform:'translate(25%,25%)'}}
-                 >
-                    {cartQuantity}
-             </Container>
-        </Button>
-    </Container>
-</NavbarBs>
+    </div>
   {brendsDropdown && <BrendDropDown  closeBrendDropDown={closeBrendDropDown}/>}
   {isOpenMenDropdown && <MenDropdown closeMenDropDown={closeMenDropdown}/>}
   {isOpenKidsDropdown && <KidsDropdown closeKidsDropdown={closeKidsDrodown}/>}

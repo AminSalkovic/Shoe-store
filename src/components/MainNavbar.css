@@ -1,11 +1,11 @@
 .mainNavbar{
-    height: 80px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .mainNavbarPart1{
-    width: 40%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -24,6 +24,32 @@
     margin-top: 3px;
     font-size: 20px;
 }
+.shoppingCartIcon{
+    margin-left: 200px;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(153, 145, 145);
+    font-size: 24px;
+    color: rgb(221, 211, 211);
+}
+.shoppingCartIcon div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 33px;
+    margin-top: 23px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: rgb(204, 52, 52);
+    color: white;
+}
 .menuMobileIcon{
     color: rgb(27, 24, 24);
     font-size: 20px;
@@ -32,5 +58,18 @@
 @media screen and (max-width:768px){
     .menuMobileIcon{
         display: block;
+    }
+    .navbarContact{
+        display: none;
+    }
+    .mainNavbarPart1{
+        width: 90%;
+    }
+    .mainNavbarPart1 input{
+        width: 200px;
+        margin-left: -50px;
+    }
+    .shoppingCartIcon{
+        margin-left: -50px;
     }
 }

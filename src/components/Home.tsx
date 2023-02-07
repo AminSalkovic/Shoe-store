@@ -12,7 +12,7 @@ import './Home.css'
 const Home = () => {
   return (
     <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
-      <Container>
+      <Container  className='picturesDiv'>
           <div style={{display:'flex'}}>
             <div className="picture1" style={{width:'50%'}}>
             <img style={{width:'100%',height:'500px',objectFit:'cover'}} 
@@ -45,7 +45,7 @@ const Home = () => {
              })}
               </Row>
           </Container>
-          <Container style={{marginTop:'50px'}}>
+          <Container className="kidsContainer2">
             <Row md={2} xs={1} lg={4} className='g-3'>
                   {homeKidsCards.map((item,index)=>{
                     if(item.id<4){

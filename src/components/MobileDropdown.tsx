@@ -3,6 +3,7 @@ import {useState} from 'react'
 import {Offcanvas} from 'react-bootstrap'
 import { useShoppingCart } from '../context/ShoppingCartContext'
 import * as AiIcons from 'react-icons/ai'
+import * as FaIcons from 'react-icons/fa'
 import menData from './pages/men/categoryMen.json'
 import './MobileDropdown.css'
 
@@ -25,12 +26,6 @@ const MobileDropdown = ({isOpenMobileDropdown}:MobileDropdownProps) => {
     </Offcanvas.Header>
     <Offcanvas.Body>
       <div className='mobileDiv'>
-        <Link to='/'>
-           <li onClick={closeMobileDropdown} >Home</li>
-        </Link>
-        <Link to='/kontakt'>
-           <li onClick={closeMobileDropdown} >Kontakt</li>
-        </Link>
         <Link to='/Muskarci'>
                 <li  onClick={menFunction}> Muskarci {men ? <AiIcons.AiOutlineUp/> : <AiIcons.AiOutlineDown/>}</li>
                 {men && <div style={{marginLeft:'30px'}}>
@@ -74,6 +69,12 @@ const MobileDropdown = ({isOpenMobileDropdown}:MobileDropdownProps) => {
             </Link>
             <Link to='/Novo' >
                 <li onClick={closeMobileDropdown} >Novo</li>
+            </Link>
+            <Link to='/'>
+              <li onClick={closeMobileDropdown} >Home</li>
+           </Link>
+            <Link to='/kontakt' >
+              <li  onClick={closeMobileDropdown}> <FaIcons.FaPhoneAlt/> Kontakt </li>
             </Link>
       </div>
     </Offcanvas.Body>

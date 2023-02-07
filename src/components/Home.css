@@ -1,5 +1,12 @@
+.kidsContainer2{
+    margin-top:50px;
+}
+
 @media only screen and (max-width:600px) {
-    .picture2{
+    .picturesDiv{
         display: none;
+    }
+    .kidsContainer2{
+        margin-left: 100px;
     }
   }

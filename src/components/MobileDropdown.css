@@ -1,7 +1,8 @@
 .mobileDiv li{
   list-style: none;
   font-size: 20px;
-  color: rgb(88, 85, 85);
+  color: rgb(119, 113, 113);
+  border-bottom:0.2px solid rgb(218, 210, 210) ;
 }
 .mobileDiv li:hover{
     color:rgb(56, 54, 54) ;
