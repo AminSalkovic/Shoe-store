@@ -1,0 +1,8 @@
+.kidsDiv{
+    display: flex;
+}
+@media screen and (max-width:920px){
+    .kidsDiv{
+        display:block;
+    }
+}

@@ -13,10 +13,15 @@ const MainNavbar = () => {
     const {openMobileDropdown}=useShoppingCart()
     const[searchText,setSearchText]=useState('')
     const[input,setInput]=useState(false)
-     
-     const showList=()=>setInput(!input)
+    const[mobileInput,setMobileInput]=useState(false)
+    const showList=()=>setInput(!input);
+
+    const closeInputForm=()=>{
+      setInput(false);setMobileInput(false)
+    }
 
     return (
+      <>
          <div className='mainNavbar'>
          <div className='mainNavbarPart1'>
             <Nav.Link to='/' as={NavLink}>
@@ -30,13 +35,16 @@ const MainNavbar = () => {
                  <AiIcons.AiOutlineSearch className='searchIcon'/>
             </form>
             {(input || searchText.length>0) &&
-             <SearchList searchText={searchText} showInput={input}/>
+             <SearchList searchText={searchText} showInput={input} 
+             closeInputForm={closeInputForm}/>
             }
             <div className='navbarContact'>
             <Nav.Link to='/Novo' as={NavLink}>
                 Kontakt
             </Nav.Link>
             </div>
+            <AiIcons.AiOutlineSearch className='mobileSearchIcon' 
+            onClick={()=>setMobileInput(!mobileInput)}/>
          </div> 
         <div className='shoppingCartIcon' onClick={openShoppingCart}>
         <AiIcons.AiOutlineShoppingCart/>
@@ -44,10 +52,20 @@ const MainNavbar = () => {
             {cartQuantity}
           </div>
         </div>
-        <div>
+        <div className='navbarMenuIcon'>
             <AiIcons.AiOutlineMenu onClick={openMobileDropdown} className='menuMobileIcon'/>
         </div>
         </div>
+        {mobileInput &&  
+             <form>
+                <input className='mobileInput' type="text" placeholder='Pretrazi...'
+                 onClick={showList}
+                 onChange={(event)=>setSearchText(event.target.value)}
+                 />
+                 <AiIcons.AiOutlineSearch className='searchIcon2'/>
+            </form>
+             }
+      </>
   )
 }
 

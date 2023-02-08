@@ -6,6 +6,7 @@ import Home from './components/Home'
 import Men from './components/pages/men/Men'
 import Kids from './components/pages/kids/Kids'
 import Brends from './components/pages/brends/Brends'
+import SpecialPrices from './components/pages/SpecialPrices'
 import Adidas from './components/pages/brends/Adidas'
 import Nike from './components/pages/brends/Nike'
 import Fila from './components/pages/brends/Fila'
@@ -45,6 +46,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/muskarci' element={<Men/>}/>
       <Route path='/deca' element={<Kids/>}/>
+      <Route path='/Specijalne-cene' element={<SpecialPrices/>}/>
       <Route path='/Marke' element={<Brends/>}/>
       <Route path='/marke/adidas' element={<Adidas/>}/>
       <Route path='/marke/nike' element={<Nike/>}/>

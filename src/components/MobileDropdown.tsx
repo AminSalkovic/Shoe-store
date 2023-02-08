@@ -29,6 +29,9 @@ const MobileDropdown = ({isOpenMobileDropdown}:MobileDropdownProps) => {
         <Link to='/Muskarci'>
                 <li  onClick={menFunction}> Muskarci {men ? <AiIcons.AiOutlineUp/> : <AiIcons.AiOutlineDown/>}</li>
                 {men && <div style={{marginLeft:'30px'}}>
+                           <Link to='/Muskarci'>
+                             <li onClick={closeMobileDropdown}>Muskarci</li>
+                           </Link>
                           {menData.map((item,index)=>{
                               return(
                                 <Link to={item.imgPath}>

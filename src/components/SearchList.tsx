@@ -5,10 +5,11 @@ import './SearchList.css'
 
 type searchTextProps={
     searchText:string,
-    showInput:boolean
+    showInput:boolean,
+    closeInputForm:()=>void;
 }
 
-const SearchList = ({searchText,showInput}:searchTextProps) => {
+const SearchList = ({searchText,showInput,closeInputForm}:searchTextProps) => {
 
     const newData=data.filter((el)=>el.category.toLowerCase().includes(searchText))
 
@@ -19,12 +20,27 @@ const SearchList = ({searchText,showInput}:searchTextProps) => {
                 return(
                     <>
                        <Link to={item.imgPath}>
-                           <li key={index}>{item.category}</li>
+                           <li onClick={closeInputForm} key={index}>{item.category}</li>
                        </Link>
                     </>
                 )
             }
         })}
+        <Link to='/deca/patike'>
+            <li onClick={closeInputForm}>Deca patike</li>
+        </Link>
+        <Link to='/deca/duboke-patike'>
+            <li onClick={closeInputForm}>Deca duboke patike</li>
+        </Link>
+        <Link to='/deca/cizme'>
+            <li onClick={closeInputForm}>Deca cizme</li>
+        </Link>
+        <Link to='/deca/gumene-cizme'>
+            <li onClick={closeInputForm}>Deca gumene cizme</li>
+        </Link>
+        <Link to='/deca/kucne-papuce'>
+            <li onClick={closeInputForm}>Deca kucne papuce</li>
+        </Link>
     </div>
   )
 }

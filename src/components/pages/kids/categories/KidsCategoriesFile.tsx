@@ -54,7 +54,7 @@ filaCount,rebookCount,helloKittyCount,miniMouseCount,elefantenCount,countButton,
     
   return (
     <Container>
-     <div style={{display:'flex'}}>
+     <div className='categoriesFile'>
 
      <div className='div-part-1'>
                 <p>Marka</p>
@@ -74,7 +74,7 @@ filaCount,rebookCount,helloKittyCount,miniMouseCount,elefantenCount,countButton,
           </div>
     <Container>
     <h1>{heading.toUpperCase()}</h1>
-    <Button onClick={buttonFunction}>Svi proizvodi ({countButton})</Button>
+    <Button variant='secondary' onClick={buttonFunction}>Svi proizvodi ({countButton})</Button>
               {adidas&&< Button variant="outline-danger" onClick={()=>{setAdidas(false);setBrend('')}}>Adidas X ({adidasCount})</ Button >}
               {nike&&< Button variant="outline-danger" onClick={()=>{setNike(false);setBrend('')}}>Nike X ({nikeCount})</ Button >}
               {fila&&< Button variant="outline-danger" onClick={()=>{setFila(false);setBrend('')}}>Fila X ({filaCount})</ Button >}

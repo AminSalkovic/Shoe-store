@@ -97,7 +97,7 @@ const Kids = () => {
 
   return (
     <Container>
-      <div style={{display:'flex'}}>
+      <div className='kidsDiv'>
         <div>
         <div className='div-part-1'>
                 <p>Kategorija</p>
@@ -130,7 +130,7 @@ const Kids = () => {
     </div>
         <Container>
             <Container>
-              <Row md={2} xs={1} lg={3} className='g-3'>
+              <Row md={3} xs={1} lg={3} className='g-3'>
                 {categoryItems.map((item)=>{
                   if(item.id<3){
                     return(

@@ -1,12 +1,34 @@
 .kidsContainer2{
     margin-top:50px;
 }
+.home-kids-image,
+.home-men-image{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.homeArticleCardDiv{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:768px) {
     .picturesDiv{
         display: none;
     }
     .kidsContainer2{
         margin-left: 100px;
+    }
+    .home-kids-image,
+    .home-men-image{
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+    }
+    .homeArticleCardDiv{
+       margin-left: 50px;
     }
   }

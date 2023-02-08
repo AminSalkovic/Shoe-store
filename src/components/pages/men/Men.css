@@ -22,3 +22,20 @@
     background-color: #1888ff;
     color:white
 }
+.menDiv{
+    display: flex;
+}
+.categoriesFile{
+    display: flex;
+}
+
+@media screen and (max-width:600px){
+    .categoriesFile{
+       display: block;
+    }
+}
+@media screen and (max-width:1000px){
+    .menDiv{
+        display:block;
+    }
+}

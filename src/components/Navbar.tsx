@@ -1,8 +1,5 @@
-import { Container,Navbar as NavbarBs ,Nav,Button, Fade} from 'react-bootstrap'
 import {useState} from 'react'
-import { NavLink } from 'react-router-dom'
-import * as AiIcons from 'react-icons/ai'
-import { useShoppingCart } from '../context/ShoppingCartContext'
+import { Link } from 'react-router-dom'
 import BrendDropDown from './pages/brends/BrendDropDown'
 import MenDropdown from './pages/men/MenDropdown'
 import KidsDropdown from './pages/kids/KidsDropdown'
@@ -26,28 +23,28 @@ const Navbar = () => {
   return (
     <>
     <div className='navbar2'>
-            <Nav.Link to='/Muskarci' as={NavLink} 
+            <Link to='/Muskarci' 
             onClick={closeMenDropdown}
             onMouseEnter={openMenDropdown}>
                 MUSKARCI
-            </Nav.Link>
-            <Nav.Link to='/Deca' as={NavLink}
+            </Link>
+            <Link to='/Deca'
              onClick={closeKidsDrodown}
              onMouseEnter={openKidsDropdown}>
                  DECA
-            </Nav.Link>
-            <Nav.Link to='/Sport' as={NavLink}>
+            </Link>
+            <Link to='/Sport'>
                 SPORT
-            </Nav.Link>
-            <Nav.Link  to='/Specijalne-cene' as={NavLink} style={{color:'red'}}>
+            </Link>
+            <Link  to='/Specijalne-cene' style={{color:'red'}}>
                 SPECIJALNE CENE %
-            </Nav.Link>
-            <Nav.Link to='/Marke' as={NavLink} onMouseEnter={openBrendDropDown}>
+            </Link>
+            <Link to='/Marke' onMouseEnter={openBrendDropDown}>
                 MARKE
-            </Nav.Link>
-            <Nav.Link to='/Novo' as={NavLink}>
+            </Link>
+            <Link to='/Novo'>
                 NOVO
-            </Nav.Link>
+            </Link>
     </div>
   {brendsDropdown && <BrendDropDown  closeBrendDropDown={closeBrendDropDown}/>}
   {isOpenMenDropdown && <MenDropdown closeMenDropDown={closeMenDropdown}/>}

@@ -29,7 +29,8 @@ const Home = () => {
              <h1 style={{textAlign:'center',color:'gray'}}>DECA</h1>
           </div>
           <Container style={{marginTop:'50px'}}>
-             <img style={{width:'100%',height:'500px',objectFit:'cover'}} src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"  />
+             <img  className="home-kids-image"
+             src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"  />
           </Container>
           <h1 style={{textAlign:'center',marginTop:"50px"}}>VRHUNSKI BRENDOVI ZA DECU</h1>
               <Container style={{marginTop:'50px',}}>
@@ -46,7 +47,9 @@ const Home = () => {
               </Row>
           </Container>
           <Container className="kidsContainer2">
-            <Row md={2} xs={1} lg={4} className='g-3'>
+            
+            
+            <div className="homeArticleCardDiv" >
                   {homeKidsCards.map((item,index)=>{
                     if(item.id<4){
                       return(
@@ -56,7 +59,7 @@ const Home = () => {
                       )
                     }
                   })}
-              </Row>
+              </div>
       </Container>
       </Container>
       <Container style={{marginTop:'80px'}}>
@@ -64,7 +67,7 @@ const Home = () => {
              <h1 style={{textAlign:'center',color:'gray'}}>MUSKARCI</h1>
           </div>
           <Container style={{marginTop:'50px'}}>
-             <img style={{width:'100%',height:'500px',objectFit:'cover'}} 
+             <img className="home-men-image"
              src="https://images.unsplash.com/photo-1623684225794-a8f1f5037f5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"/>
           </Container>
       </Container>
@@ -82,17 +85,17 @@ const Home = () => {
         </Row>
       </Container>
       <Container style={{marginTop:'50px'}} >
-      <Row md={2} xs={1} lg={4} className='g-3'>
+        <div className="homeArticleCardDiv">
              {homeCards.map((item,index)=>{
                if(item.id>2 && item.id<7){
-                return(
-                  <Col key={index}>
+                 return(
+                   <Col key={index}>
                     <HomeCard {...item}/>
                   </Col>
                 )
-               }
-             })}
-        </Row>
+              }
+            })}
+          </div>
       </Container>
       <Container style={{marginTop:'50px'}}>
           <Row md={2} xs={1} lg={5} className='g-3'>

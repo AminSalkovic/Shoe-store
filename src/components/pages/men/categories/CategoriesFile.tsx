@@ -56,7 +56,7 @@ const CategoriesFile = ({category,count,adidasCount,nikeCount,filaCount,
   
   return (
     <Container>
-     <div style={{display:'flex'}}>
+     <div className='categoriesFile'>
 
      <div className='div-part-1'>
                 <p>Kategorija</p>
