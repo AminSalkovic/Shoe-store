@@ -2,14 +2,15 @@ import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import emailjs from '@emailjs/browser';
 import {useRef} from 'react'
-
 import './Contact.css'
+
+
 
 const Contact = () => {
 
-    const form = useRef();
+    const form = useRef<any>();
 
-    const sendEmail = (e) => {
+    const sendEmail = (e:any) => {
         e.preventDefault();
         emailjs.sendForm('service_yrqt3v9', 'template_o4zgfwe', form.current, 'ljWGCvqVBFgClHLHo')
           .then(() => {
@@ -29,13 +30,13 @@ const Contact = () => {
          <div className="input-form">
           <form ref={form} onSubmit={sendEmail}>
             <p>Ime *</p>
-            <input type="text" name="user_name" required="required"/>
+            <input type="text" name="user_name" />
             <p>Email *</p>
-            <input type="email" name="user_email" required="required" />
+            <input type="email" name="user_email"/>
             <p>Poruka *</p>
             <textarea name="message"></textarea>
             <div>
-                <input type="submit" />
+                <input type="submit" value="POTVRDI"  className='potvrdi'/>
             </div>
          </form>
          </div>

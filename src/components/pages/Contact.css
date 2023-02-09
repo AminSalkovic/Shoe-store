@@ -3,6 +3,20 @@
     flex-direction: column;
     align-items: center;
 }
+.contact h1{
+    font-size: 35px;
+}
+.contact p{
+  font-size: 18px;
+}
+.contact input{
+    width:400px;
+    height: 40px;
+}
+.input-form textarea{
+    width: 400px;
+    height: 100px;
+}
 .input-box{
     display: block;
 }

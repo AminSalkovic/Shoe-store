@@ -25,7 +25,7 @@ const MainNavbar = () => {
          <div className='mainNavbar'>
          <div className='mainNavbarPart1'>
             <Nav.Link to='/' as={NavLink}>
-                Home
+                <AiIcons.AiFillHome className='homeIcon'/>
             </Nav.Link>
             <form>
                 <input  type="text" placeholder='Search'
