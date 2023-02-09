@@ -33,6 +33,7 @@ import KidsDeepSnikers from './components/pages/kids/categories/KidsDeepSnikers'
 import KidsBoots from './components/pages/kids/categories/KidsBoots'
 import KidsRubberBoots from './components/pages/kids/categories/KidsRubberBoots'
 import KidsHomeSlippers from './components/pages/kids/categories/KidsHomeSlippers'
+import Footer from './components/footer/Footer'
 
 
 function App() {
@@ -75,7 +76,7 @@ function App() {
       <Route path='/deca/gumene-cizme' element={<KidsRubberBoots/>}/>
       <Route path='/deca/kucne-papuce' element={<KidsHomeSlippers/>}/>
      </Routes>
-     
+     <Footer/>
    </ShoppingCartProvider>
   )
 }
