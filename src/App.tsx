@@ -34,6 +34,7 @@ import KidsBoots from './components/pages/kids/categories/KidsBoots'
 import KidsRubberBoots from './components/pages/kids/categories/KidsRubberBoots'
 import KidsHomeSlippers from './components/pages/kids/categories/KidsHomeSlippers'
 import Footer from './components/footer/Footer'
+import Contact from './components/pages/Contact'
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
      <Navbar/>
      <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/kontakt' element={<Contact/>}/>
       <Route path='/muskarci' element={<Men/>}/>
       <Route path='/deca' element={<Kids/>}/>
       <Route path='/Specijalne-cene' element={<SpecialPrices/>}/>

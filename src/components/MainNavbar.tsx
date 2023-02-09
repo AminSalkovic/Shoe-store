@@ -39,7 +39,7 @@ const MainNavbar = () => {
              closeInputForm={closeInputForm}/>
             }
             <div className='navbarContact'>
-            <Nav.Link to='/Novo' as={NavLink}>
+            <Nav.Link to='/kontakt' as={NavLink}>
                 Kontakt
             </Nav.Link>
             </div>

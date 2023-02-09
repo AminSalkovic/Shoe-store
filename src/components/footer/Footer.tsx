@@ -1,13 +1,13 @@
 import './Footer.css'
-import { Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import categoryItems from '../pages/men/categoryMen.json'
+import * as FaIcons from 'react-icons/fa'
 
 const Footer = () => {
   return (
     <div className='footer'>
         <div className="footer1">
-            
+
         </div>
         <div className='footer2'>
           <div>
@@ -69,7 +69,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer3">
-
+              <h1><FaIcons.FaPhoneAlt/>{' '}318 336</h1>
+              <p>Ponedeljak-Petak 08:00-18:00</p>
+              <p>AM Shoes d.o.o</p>
         </div>
     </div>
   )
