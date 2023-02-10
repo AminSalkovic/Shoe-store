@@ -25,12 +25,12 @@ const Navbar = () => {
     <div className='navbar2'>
             <Link to='/Muskarci' 
             onClick={closeMenDropdown}
-            onMouseEnter={openMenDropdown}>
+            onMouseOver={openMenDropdown}>
                 MUSKARCI
             </Link>
             <Link to='/Deca'
              onClick={closeKidsDrodown}
-             onMouseEnter={openKidsDropdown}>
+             onMouseOver={openKidsDropdown}>
                  DECA
             </Link>
             <Link to='/Sport'>
@@ -39,7 +39,7 @@ const Navbar = () => {
             <Link  to='/Specijalne-cene' style={{color:'red'}}>
                 SPECIJALNE CENE %
             </Link>
-            <Link to='/Marke' onMouseEnter={openBrendDropDown}>
+            <Link to='/Marke'  onMouseOver={openBrendDropDown}>
                 MARKE
             </Link>
             <Link to='/Novo'>

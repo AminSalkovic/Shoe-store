@@ -35,6 +35,7 @@ import KidsRubberBoots from './components/pages/kids/categories/KidsRubberBoots'
 import KidsHomeSlippers from './components/pages/kids/categories/KidsHomeSlippers'
 import Footer from './components/footer/Footer'
 import Contact from './components/pages/Contact'
+import CompaniData from './components/pages/CompaniData'
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
       <Route path='/deca' element={<Kids/>}/>
       <Route path='/Specijalne-cene' element={<SpecialPrices/>}/>
       <Route path='/Marke' element={<Brends/>}/>
+      <Route path='/podaci/o/kompaniji' element={<CompaniData/>}/>
       <Route path='/marke/adidas' element={<Adidas/>}/>
       <Route path='/marke/nike' element={<Nike/>}/>
       <Route path='/marke/fila' element={<Fila/>}/>

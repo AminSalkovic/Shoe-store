@@ -1,0 +1,16 @@
+.compani-data{
+    margin-left: 50px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.compani-data li{
+    color: black;
+    font-size: 20px;
+    font-weight:700 ;
+}
+.compani-data span{
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
