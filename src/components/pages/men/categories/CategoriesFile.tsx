@@ -57,7 +57,6 @@ const CategoriesFile = ({category,count,adidasCount,nikeCount,filaCount,
   return (
     <Container>
      <div className='categoriesFile'>
-
      <div className='div-part-1'>
                 <p>Kategorija</p>
               <div className='scroll-div-men'>

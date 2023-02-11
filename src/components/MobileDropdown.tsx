@@ -70,11 +70,8 @@ const MobileDropdown = ({isOpenMobileDropdown}:MobileDropdownProps) => {
             <Link to='/Marke' >
                <li onClick={closeMobileDropdown} > Marke</li>
             </Link>
-            <Link to='/Novo' >
-                <li onClick={closeMobileDropdown} >Novo</li>
-            </Link>
             <Link to='/'>
-              <li onClick={closeMobileDropdown} >Home</li>
+              <li onClick={closeMobileDropdown} ><AiIcons.AiFillHome className='homeIcon'/></li>
            </Link>
             <Link to='/kontakt' >
               <li  onClick={closeMobileDropdown}> <FaIcons.FaPhoneAlt/> Kontakt </li>

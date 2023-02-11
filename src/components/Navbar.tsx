@@ -42,9 +42,6 @@ const Navbar = () => {
             <Link to='/Marke'  onMouseOver={openBrendDropDown}>
                 MARKE
             </Link>
-            <Link to='/Novo'>
-                NOVO
-            </Link>
     </div>
   {brendsDropdown && <BrendDropDown  closeBrendDropDown={closeBrendDropDown}/>}
   {isOpenMenDropdown && <MenDropdown closeMenDropDown={closeMenDropdown}/>}

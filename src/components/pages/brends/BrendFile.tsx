@@ -70,9 +70,8 @@ kidsHomeSlippersCount,kidsRubberBootsCount,kidsSnikersCount,sportSnikersCount,me
 
   return (
     <Container>
-     <div style={{display:'flex'}}>
+     <div className='kidsBrendFile'>
       <div>
-
      <div className='div-part-1'>
                 <p style={{textAlign:'center'}}>Muskarci ({men})</p>
               <div className='scroll-div-men'>

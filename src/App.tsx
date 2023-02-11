@@ -37,6 +37,8 @@ import Footer from './components/footer/Footer'
 import Contact from './components/pages/Contact'
 import CompaniData from './components/pages/CompaniData'
 import PostOffice from './components/pages/PostOffice'
+import Reclamations from './components/pages/Reclamations'
+import Sport from './components/pages/Sport'
 
 
 function App() {
@@ -51,10 +53,12 @@ function App() {
       <Route path='/kontakt' element={<Contact/>}/>
       <Route path='/muskarci' element={<Men/>}/>
       <Route path='/deca' element={<Kids/>}/>
+      <Route path='/Sport' element={<Sport/>}/>
       <Route path='/Specijalne-cene' element={<SpecialPrices/>}/>
       <Route path='/Marke' element={<Brends/>}/>
       <Route path='/podaci/o/kompaniji' element={<CompaniData/>}/>
       <Route path='/dostava' element={<PostOffice/>}/>
+      <Route path='/reklamacija' element={<Reclamations/>}/>
       <Route path='/marke/adidas' element={<Adidas/>}/>
       <Route path='/marke/nike' element={<Nike/>}/>
       <Route path='/marke/fila' element={<Fila/>}/>

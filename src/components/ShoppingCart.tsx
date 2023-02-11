@@ -16,7 +16,7 @@ const ShoppingCart = ({isOpenCart}:ShoppingCartProps) => {
   return (
     <Offcanvas show={isOpenCart}  onHide={closeShoppingCart} placement='end'>
     <Offcanvas.Header closeButton>
-          <Offcanvas.Title>cart</Offcanvas.Title>
+          <Offcanvas.Title>Korpa</Offcanvas.Title>
     </Offcanvas.Header>
     <Offcanvas.Body>
     <Stack gap={3}>
@@ -25,7 +25,7 @@ const ShoppingCart = ({isOpenCart}:ShoppingCartProps) => {
             )}      
         </Stack>
         <div className='ms-auto fw-bold fs-5'>
-                    Total{' '}{formatCurrency(
+                    Ukupno{' '}{formatCurrency(
                         cartItems.reduce((total,cartItem)=>{
                             const item=articleItems.find(i=> i.id === cartItem.id)
                             return total + (item?.price || 0) * cartItem.quantity

@@ -55,7 +55,6 @@ filaCount,rebookCount,helloKittyCount,miniMouseCount,elefantenCount,countButton,
   return (
     <Container>
      <div className='categoriesFile'>
-
      <div className='div-part-1'>
                 <p>Marka</p>
               <div className='scroll-div-men'>

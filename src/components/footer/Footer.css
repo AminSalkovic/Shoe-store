@@ -2,11 +2,12 @@
     width: 100%;
 }
 .footer1{
-    margin-top: 10px;
-    height: 40px;
+    margin-top: 20px;
+    height: 80px;
     background: rgb(44, 41, 41);
 }
 .footer2{
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;

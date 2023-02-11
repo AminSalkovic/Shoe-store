@@ -2,6 +2,7 @@ import {useState} from 'react'
 import { Container,Row,Col,Button} from 'react-bootstrap'
 import ArticleCard from '../../ArticleCard'
 import articles from '../../articles.json'
+import './KidsBrendFile.css'
 
 type KidsBrendFileProps={
     brend:string,
@@ -38,7 +39,7 @@ const KidsBrendFile = ({brend,kidsSnikersCount,kidsBootsCount,kidsDeepSnikersCou
   
   return (
     <Container>
-     <div style={{display:'flex'}}>
+     <div className='kidsBrendFile'>
      <div className='div-part-1'>
                 <p style={{textAlign:'center'}}>Kategorija</p>
               <div className='scroll-div-men'>

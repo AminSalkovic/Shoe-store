@@ -1,0 +1,8 @@
+.kidsBrendFile{
+    display: flex;
+}
+@media screen and (max-width:1000px){
+    .kidsBrendFile{
+       display: block;
+    }
+}
