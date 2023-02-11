@@ -6,7 +6,6 @@ type CategoryItemsProps={
     id:number,
     imgUrl:string,
     category:string,
-    imgPath:string,
     brend:string,
     password:number,
     name:string,
@@ -14,17 +13,15 @@ type CategoryItemsProps={
 }
 
 
-const HomeArticleCard = ({id,imgPath,imgUrl,category,name,password,brend,price}:CategoryItemsProps) => {
+const HomeArticleCard = ({id,imgUrl,category,name,password,brend,price}:CategoryItemsProps) => {
 
   return (
     <div className="homearticlecard">
         <Card className="homeArticleCard">
-        <Link to={imgPath} style={{textDecoration:"none"}}>
             <Card.Img variant='top' 
             src={imgUrl} 
             className="homeArticleCardImg"
             /> 
-         </Link>
             <Card.Body className='d-flex flex-column'>
                 <Card.Title>
                     <h1 style={{color:'gray',fontSize:'20px',marginTop:'2px'}}>{brend}</h1>
