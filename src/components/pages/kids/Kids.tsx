@@ -4,17 +4,10 @@ import { Row,Container,Col, Button } from 'react-bootstrap'
 import CategoryItems from '../../CategoryItems'
 import articles from '../../articles.json'
 import ArticleCard from '../../ArticleCard'
-import Pagination from '../../Pagination'
 import categoryItems from './CategoryKids.json'
 import './Kids.css'
 
 const Kids = () => {
-    const[currentPage,setCurrentPage]=useState(1)
-    const [postPerPage,setPostPerPage]=useState(15);
-
-    const  lastPostIndex=currentPage*postPerPage;
-    const firstPostindex=lastPostIndex-postPerPage;
-    const currentPost=articles.slice(firstPostindex,lastPostIndex)
      
     const[category,setCategory]=useState('');
     const[header,setHeader]=useState('')
@@ -153,13 +146,7 @@ const Kids = () => {
               {helloKitty&&< Button variant="outline-danger" onClick={()=>{setHelloKitty(false);setBrend('')}}>Hello Kitty X ({helloKittyCount})</ Button >}
               {miniMouse&&< Button variant="outline-danger" onClick={()=>{setMiniMouse(false);setBrend('')}}>Mini mouse X ({miniMouseCount})</ Button >}
               {elefanten&&< Button variant="outline-danger" onClick={()=>{setElefanten(false);setBrend('')}}>Elefanten X ({elefantenCount})</ Button >}
-               
-              <Pagination 
-              setCurrentPages={setCurrentPage}
-              totalPost={articles.length} 
-               postPerPage={postPerPage}
-               currentPage={currentPage}
-              />
+
               <h1>{header.toUpperCase()}</h1>
             <Row md={2} xs={1} lg={3} className='g-3'>
             {articles.map((item,index)=>{

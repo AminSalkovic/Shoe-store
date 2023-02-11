@@ -5,21 +5,11 @@ import CategoryItems from '../../CategoryItems'
 import categoryItems from './categoryMen.json'
 import articles from '../../articles.json'
 import ArticleCard from '../../ArticleCard'
-import Pagination from '../../Pagination'
 import './Men.css'
 
 
 const Men = () => {
-     
-    const[currentPage,setCurrentPage]=useState(1)
-    const [postPerPage,setPostPerPage]=useState(15);
-
-    const  lastPostIndex=currentPage*postPerPage;
-    const firstPostindex=lastPostIndex-postPerPage;
-    const currentPost=articles.slice(firstPostindex,lastPostIndex)
-
-
-    
+         
     const[category,setCategory]=useState('')
     const[header,setHeader]=useState('');
 
@@ -180,13 +170,6 @@ const Men = () => {
             {venice&& < Button variant="outline-danger" onClick={()=>{setVenice(false);setBrend('')}}>Venice X (11) </ Button >}
             
             <h1>{header.toUpperCase()}</h1>
-            
-              <Pagination 
-              setCurrentPages={setCurrentPage}
-              totalPost={articles.length} 
-               postPerPage={postPerPage}
-               currentPage={currentPage}
-              />
             <Row md={2} xs={1} lg={3} className='g-3'>
             {articles.map((item,index)=>{
                 if(item.category===category){
