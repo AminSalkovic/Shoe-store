@@ -67,7 +67,7 @@ const CategoriesFile = ({category,count,adidasCount,nikeCount,filaCount,
                      <li onClick={filaFunction}>Fila ({filaCount}) </li>
                      <li onClick={rebookFunction}>Rebook ({rebookCount}) </li>
                      <li onClick={skechersFunction}>Skechers ({skechersCount})</li>
-                     <li onClick={kappaFunction}>Kapa ({kappaCount})</li>
+                     <li onClick={kappaFunction}>Kappa ({kappaCount})</li>
                      <li onClick={highlandCreekFunction}>Highland Creek ({highlandCreekCount})</li>
                      <li onClick={easyStreetFunction}>Easy street ({easyStreetCount})</li>
                      <li onClick={veniceFunction}>Venice ({veniceCount})</li>
@@ -83,7 +83,7 @@ const CategoriesFile = ({category,count,adidasCount,nikeCount,filaCount,
             {puma&& < Button variant="outline-danger" onClick={()=>{setPuma(false);setCategories('')}}>Puma X ({pumaCount}) </ Button >}
             {rebook&& < Button variant="outline-danger" onClick={()=>{setRebook(false);setCategories('')}}>Rebook X ({rebookCount}) </ Button >}
             {skechers&& < Button variant="outline-danger" onClick={()=>{setSkechers(false);setCategories('')}}>Skechers X ({skechersCount})</ Button >}
-            {kappa&& < Button variant="outline-danger" onClick={()=>{setKapa(false);setCategories('')}}>Kappa X ({kappaCount}) </ Button >}
+            {kappa&& < Button variant="outline-danger" onClick={()=>{setKappa(false);setCategories('')}}>Kappa X ({kappaCount}) </ Button >}
             {highlandCreek && < Button variant="outline-danger" onClick={()=>{setHighlandCreek(false);setCategories('')}}>Highland Creek X ({highlandCreekCount})  </ Button >}
             {easyStreet&& < Button variant="outline-danger" onClick={()=>{setEasyStreet(false);setCategories('')}}>Easy street X ({easyStreetCount}) </ Button >}
             {venice&& < Button variant="outline-danger" onClick={()=>{setVenice(false);setCategories('')}}>Venice X ({veniceCount}) </ Button >}

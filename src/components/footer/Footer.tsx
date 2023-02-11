@@ -24,9 +24,6 @@ const Footer = () => {
           <div>
             <h1>POMOĆ PRI KUPOVINI</h1>
              <ul>
-                <Link to='/nacini/placanja'>
-                   <li>Načini plaćanja</li>
-                </Link>
                 <Link to='/dostava'>
                   <li>Dostava</li>
                  </Link>

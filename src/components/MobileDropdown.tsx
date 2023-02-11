@@ -34,7 +34,7 @@ const MobileDropdown = ({isOpenMobileDropdown}:MobileDropdownProps) => {
                            </Link>
                           {menData.map((item,index)=>{
                               return(
-                                <Link to={item.imgPath}>
+                                <Link key={index} to={item.imgPath}>
                                   <li onClick={closeMobileDropdown} key={index}>{item.category}</li>
                                 </Link>
                               )

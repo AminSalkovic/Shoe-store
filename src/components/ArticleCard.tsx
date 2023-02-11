@@ -1,7 +1,6 @@
 import { useState } from "react"
-import { Button, Card, Container,} from "react-bootstrap"
+import { Button, Card} from "react-bootstrap"
 import { Link } from "react-router-dom"
-import { useShoppingCart } from "../context/ShoppingCartContext"
 import './ArticleCard.css'
 import ArticleCardInformation from "./ArticleCardInformation"
 
@@ -9,7 +8,6 @@ type CategoryItemsProps={
     id:number,
     imgUrl:string,
     category:string,
-    imgPath:string,
     brend:string,
     password:number,
     name:string,
@@ -17,7 +15,7 @@ type CategoryItemsProps={
 }
 
 
-const ArticleCard = ({id,imgPath,imgUrl,category,name,password,brend,price}:CategoryItemsProps) => {
+const ArticleCard = ({id,imgUrl,category,name,password,brend,price}:CategoryItemsProps) => {
 
     const[addButton,setAddButton]=useState(false)
 
@@ -37,12 +35,10 @@ const ArticleCard = ({id,imgPath,imgUrl,category,name,password,brend,price}:Cate
       onMouseLeave={unhoverButton}
      >
         <Card className="articleCard">
-        <Link to={imgPath} style={{textDecoration:"none"}}>
             <Card.Img  
             className="articleCardImg"
             src={imgUrl} 
             /> 
-         </Link>
          <div>
             <div className="divPart1">
                     <h1>{brend}</h1>
