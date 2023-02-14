@@ -17,11 +17,11 @@
 .articleCardImg{
     width: 180px;
     height: 170px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .articleCardImg:hover{
-    width: 190px;
-    height: 180px;
+    width: 200px;
+    height: 190px;
 }
 .divPart1 h1{
     color: gray;

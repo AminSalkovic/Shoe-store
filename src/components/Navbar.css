@@ -13,7 +13,7 @@
 .navbar2 a:hover{
     color: white;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:900px){
    .navbar2 {
     display: none;
    }

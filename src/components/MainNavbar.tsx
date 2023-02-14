@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
-import { Container,Navbar as NavbarBs,Nav } from 'react-bootstrap'
+import { useState } from 'react'
+import { Nav } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import * as AiIcons from 'react-icons/ai'
+import * as HiIcons from 'react-icons/hi'
 import { useShoppingCart } from '../context/ShoppingCartContext'
 import './MainNavbar.css'
 import SearchList from './SearchList'
@@ -47,7 +48,7 @@ const MainNavbar = () => {
             onClick={()=>setMobileInput(!mobileInput)}/>
          </div> 
         <div className='shoppingCartIcon' onClick={openShoppingCart}>
-        <AiIcons.AiOutlineShoppingCart/>
+        <HiIcons.HiOutlineShoppingBag/>
           <div>
             {cartQuantity}
           </div>

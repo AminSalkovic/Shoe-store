@@ -35,20 +35,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(153, 145, 145);
-    font-size: 24px;
-    color: rgb(221, 211, 211);
+    font-size: 28px;
+    color: rgb(66, 63, 63);
 }
 .shoppingCartIcon div{
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-left: 33px;
+    margin-left:26px;
     margin-top: 23px;
-    font-size: 15px;
-    width: 25px;
-    height: 25px;
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
     border-radius: 100%;
     background: rgb(204, 52, 52);
     color: white;
@@ -69,7 +68,7 @@
     font-size: 18px;
     margin-top:6px;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:900px){
     .menuMobileIcon{
         display: block;
     }

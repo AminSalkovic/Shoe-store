@@ -44,6 +44,9 @@ const MobileDropdown = ({isOpenMobileDropdown}:MobileDropdownProps) => {
             <Link to='/Deca'>
                 <li onClick={kidsFunction}>Deca {kids ?  <AiIcons.AiOutlineUp/> : <AiIcons.AiOutlineDown/>}</li>
                 {kids && <div style={{marginLeft:'30px'}}>
+                  <Link to='/deca'>
+                    <li onClick={closeMobileDropdown}>Deca</li>
+                  </Link>
                   <Link to='/deca/patike'>
                     <li onClick={closeMobileDropdown} >Deca patike</li>
                   </Link>
@@ -70,12 +73,21 @@ const MobileDropdown = ({isOpenMobileDropdown}:MobileDropdownProps) => {
             <Link to='/Marke' >
                <li onClick={closeMobileDropdown} > Marke</li>
             </Link>
-            <Link to='/'>
-              <li onClick={closeMobileDropdown} ><AiIcons.AiFillHome className='homeIcon'/></li>
-           </Link>
             <Link to='/kontakt' >
               <li  onClick={closeMobileDropdown}> <FaIcons.FaPhoneAlt/> Kontakt </li>
             </Link>
+            <Link to='/podaci/o/kompaniji'>
+              <li onClick={closeMobileDropdown} >Podaci o kompaniji</li>
+           </Link>  
+             <Link to='/dostava'>
+              <li onClick={closeMobileDropdown} >Dostava</li>
+           </Link>
+           <Link to='/reklamacija'>
+              <li onClick={closeMobileDropdown} >Reklamacija</li>
+           </Link>
+           <Link to='/'>
+              <li onClick={closeMobileDropdown} ><AiIcons.AiFillHome className='homeIcon'/></li>
+           </Link>
       </div>
     </Offcanvas.Body>
 </Offcanvas>
