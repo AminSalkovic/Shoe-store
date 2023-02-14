@@ -14,11 +14,11 @@
 .homeArticleCardImg{
    height: 130px;
    width: 170px;
-   object-fit: cover;
+   object-fit: contain;
 }
 .homeArticleCardImg:hover{
-  height: 140px;
-  width: 180px;
+  height: 170px;
+  width: 190px;
 }
 .priceH1{
     color: rgb(7, 116, 7);
